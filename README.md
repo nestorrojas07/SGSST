@@ -1,7 +1,7 @@
-# SGSST
+﻿# SGSST
 Sistema de gestión para la salud y seguridad en el trabajo
 
-Resolución 1443 del año 2015, el sistema de gestión debe llevar ciertas pautas para el monitoreo de la salud ocupacional en el trabajo.
+De acuerdo a la resolución 1443 del año 2015, el sistema de gestión debe llevar ciertas pautas para el monitoreo de la salud ocupacional en el trabajo.
 
 Aspectos:
 
