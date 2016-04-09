@@ -63,19 +63,19 @@
 
 	<div >
 		<?php echo $form->labelEx($model,'Trabajador_Afiliaciones'); ?>
-		<?php echo $form->textField($model,'Trabajador_Afiliaciones'); ?>
+		<?php echo $form->dropDownList($model,'Trabajador_Afiliaciones',$model->getMenuAfiliaciones(),array("empty"=>"Seleccione una opción")); ?>
 		<?php echo $form->error($model,'Trabajador_Afiliaciones'); ?>
 	</div>
 
 	<div >
 		<?php echo $form->labelEx($model,'Trabajador_HistoriaClinica'); ?>
-		<?php echo $form->textField($model,'Trabajador_HistoriaClinica'); ?>
+		<?php echo $form->dropDownList($model,'Trabajador_HistoriaClinica', $model->getMenuHistoriaClinica(),array("empty"=>"Seleccione una opción")); ?>
 		<?php echo $form->error($model,'Trabajador_HistoriaClinica'); ?>
 	</div>
 
 	<div >
 		<?php echo $form->labelEx($model,'trabajador_trabajo'); ?>
-		<?php echo $form->textField($model,'trabajador_trabajo'); ?>
+		<?php echo $form->dropDownList($model,'trabajador_trabajo', $model->getMenuTrabajo(),array("empty"=>"Seleccione una opción")); ?>
 		<?php echo $form->error($model,'trabajador_trabajo'); ?>
 	</div>
 

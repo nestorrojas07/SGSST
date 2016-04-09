@@ -48,17 +48,17 @@
 
 	<div >
 		<?php echo $form->label($model,'Trabajador_Afiliaciones'); ?>
-		<?php echo $form->textField($model,'Trabajador_Afiliaciones'); ?>
+		<?php echo $form->dropDownList($model,'Trabajador_Afiliaciones',$model->getMenuAfiliaciones(),array("empty"=>"Seleccione una opción")); ?>
 	</div>
 
 	<div >
 		<?php echo $form->label($model,'Trabajador_HistoriaClinica'); ?>
-		<?php echo $form->textField($model,'Trabajador_HistoriaClinica'); ?>
+		<?php echo $form->dropDownList($model,'Trabajador_HistoriaClinica',$model->getMenuHistoriaClinica(),array("empty"=>"Seleccione una opción")); ?>
 	</div>
 
 	<div >
 		<?php echo $form->label($model,'trabajador_trabajo'); ?>
-		<?php echo $form->textField($model,'trabajador_trabajo'); ?>
+		<?php echo $form->dropDownList($model,'trabajador_trabajo',$model->getMenuTrabajo(),array("empty"=>"Seleccione una opción")); ?>
 	</div>
 
 	<div >
