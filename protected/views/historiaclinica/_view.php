@@ -13,5 +13,9 @@
 	<?php echo CHtml::encode($data->Descripcion); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('Examenes')); ?>:</b>
+	<?php echo CHtml::encode($data->Examenes); ?>
+	<br />
+
 
 </div>

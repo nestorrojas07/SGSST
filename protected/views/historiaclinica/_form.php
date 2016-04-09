@@ -27,8 +27,14 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'Descripcion'); ?>
-		<?php echo $form->textField($model,'Descripcion',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->textField($model,'Descripcion',array('size'=>60,'maxlength'=>500)); ?>
 		<?php echo $form->error($model,'Descripcion'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'Examenes'); ?>
+		<?php echo $form->textField($model,'Examenes'); ?>
+		<?php echo $form->error($model,'Examenes'); ?>
 	</div>
 
 	<div class="row buttons">

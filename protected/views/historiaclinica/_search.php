@@ -18,7 +18,12 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'Descripcion'); ?>
-		<?php echo $form->textField($model,'Descripcion',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->textField($model,'Descripcion',array('size'=>60,'maxlength'=>500)); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'Examenes'); ?>
+		<?php echo $form->textField($model,'Examenes'); ?>
 	</div>
 
 	<div class="row buttons">

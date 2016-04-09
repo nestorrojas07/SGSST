@@ -6,7 +6,10 @@ $this->breadcrumbs=array(
 	'About',
 );
 ?>
-<h1>About</h1>
+
+
+
+<h1>Acerca de </h1>
 
 <p><strong>Ley que rige el SGSST?</strong><BR>
 De conformidad con el artículo 2° del Decreto 1295 de 1994; la Comunidad Andina, de la cual Colombia es país miembro, en la Decisión 584 adoptó el "Instrumento Andino de Seguridad y Salud en el Trabajo", Que el artículo 56 del Decreto 1295 de 1994, Que el artículo 1° de la Ley 1562 del 11 de julio de 2012; Que la Organización Internacional del Trabajo - OIT publicó en el año 2001, las Directrices relativas a los sistemas de gestión de la 'seguridad y la salud en el trabajo (ILO-OSH 2001) la cual fue tomada como guía para realizar el presente decreto.<BR><BR>

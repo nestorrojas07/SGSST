@@ -32,7 +32,7 @@ class Afiliaciones extends CActiveRecord
 			array('Id, Nombre, Descripcion', 'required'),
 			array('Id', 'numerical', 'integerOnly'=>true),
 			array('Nombre', 'length', 'max'=>30),
-			array('Descripcion', 'length', 'max'=>100),
+			array('Descripcion', 'length', 'max'=>300),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('Id, Nombre, Descripcion', 'safe', 'on'=>'search'),
@@ -100,4 +100,6 @@ class Afiliaciones extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+	
 }

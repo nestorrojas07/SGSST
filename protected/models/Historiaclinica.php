@@ -6,8 +6,10 @@
  * The followings are the available columns in table 'historiaclinica':
  * @property integer $Id
  * @property string $Descripcion
+ * @property integer $Examenes
  *
  * The followings are the available model relations:
+ * @property Examenes $examenes
  * @property Trabajador[] $trabajadors
  */
 class Historiaclinica extends CActiveRecord
@@ -29,11 +31,11 @@ class Historiaclinica extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('Id, Descripcion', 'required'),
-			array('Id', 'numerical', 'integerOnly'=>true),
-			array('Descripcion', 'length', 'max'=>100),
+			array('Id, Examenes', 'numerical', 'integerOnly'=>true),
+			array('Descripcion', 'length', 'max'=>500),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('Id, Descripcion', 'safe', 'on'=>'search'),
+			array('Id, Descripcion, Examenes', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -45,6 +47,7 @@ class Historiaclinica extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'examenes' => array(self::HAS_ONE, 'Examenes', 'id'),
 			'trabajadors' => array(self::HAS_MANY, 'Trabajador', 'Trabajador_HistoriaClinica'),
 		);
 	}
@@ -57,6 +60,7 @@ class Historiaclinica extends CActiveRecord
 		return array(
 			'Id' => 'ID',
 			'Descripcion' => 'Descripcion',
+			'Examenes' => 'Examenes',
 		);
 	}
 
@@ -80,6 +84,7 @@ class Historiaclinica extends CActiveRecord
 
 		$criteria->compare('Id',$this->Id);
 		$criteria->compare('Descripcion',$this->Descripcion,true);
+		$criteria->compare('Examenes',$this->Examenes);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

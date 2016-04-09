@@ -3,21 +3,24 @@
 /* @var $data Trabajador */
 ?>
 
-<div class="view">
+<div class="media">
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('Cedula')); ?>:</b>
-	<?php echo CHtml::link(CHtml::encode($data->Cedula), array('view', 'id'=>$data->Cedula)); ?>
-	<br />
+	<div class="media body">
+		<h4 class="media heading">
+			
+			<b><?php echo CHtml::encode($data->getAttributeLabel('Cedula')); ?>:</b>
+			<small><b><?php echo CHtml::link(CHtml::encode($data->Cedula), array('view', 'id'=>$data->Cedula)); ?></b></small>
+			<br>
+			<b><?php echo CHtml::encode($data->getAttributeLabel('Nombre')); ?>:</b>
+			<small><b><?php echo CHtml::encode($data->Nombre); ?></b></small>
+			
+			
+		</h4>
+	</div>
 
 
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('Nombre')); ?>:</b>
-	<?php echo CHtml::encode($data->Nombre); ?>
-	<br />
-
-	<BR>
-
-	<!--<b><?php echo CHtml::encode($data->getAttributeLabel('Telefono')); ?>:</b>
+	<!--
+	<b><?php echo CHtml::encode($data->getAttributeLabel('Telefono')); ?>:</b>
 	<?php echo CHtml::encode($data->Telefono); ?>
 	<br />
 
@@ -31,7 +34,11 @@
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('Trabajador_HistoriaClinica')); ?>:</b>
 	<?php echo CHtml::encode($data->Trabajador_HistoriaClinica); ?>
-	<br />-->
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('trabajador_trabajo')); ?>:</b>
+	<?php echo CHtml::encode($data->trabajador_trabajo); ?>
+	<br /> -->
 
 
 </div>

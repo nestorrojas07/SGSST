@@ -9,10 +9,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Trabajador', 'url'=>array('index')),
-	array('label'=>'Create Trabajador', 'url'=>array('create')),
-	array('label'=>'View Trabajador', 'url'=>array('view', 'id'=>$model->Cedula)),
-	array('label'=>'Manage Trabajador', 'url'=>array('admin')),
+	array('label'=>'Lista de Trabajadores', 'url'=>array('index')),
+	array('label'=>'Crear Trabajador', 'url'=>array('create')),
+	array('label'=>'Ver Trabajador', 'url'=>array('view', 'id'=>$model->Cedula)),
+	array('label'=>'Administrar Trabajadores', 'url'=>array('admin')),
 );
 ?>
 

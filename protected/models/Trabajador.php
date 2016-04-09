@@ -8,12 +8,17 @@
  * @property string $Nombre
  * @property string $Telefono
  * @property string $Correo
+ * @property string $nivel_academico
+ * @property string $experiencia
+ * @property integer $ausencias
  * @property integer $Trabajador_Afiliaciones
  * @property integer $Trabajador_HistoriaClinica
+ * @property integer $trabajador_trabajo
  *
  * The followings are the available model relations:
  * @property Afiliaciones $trabajadorAfiliaciones
  * @property Historiaclinica $trabajadorHistoriaClinica
+ * @property Trabajo $trabajadorTrabajo
  */
 class Trabajador extends CActiveRecord
 {
@@ -33,14 +38,16 @@ class Trabajador extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Cedula, Nombre, Telefono, Correo', 'required'),
-			array('Trabajador_Afiliaciones, Trabajador_HistoriaClinica', 'numerical', 'integerOnly'=>true),
+			array('Cedula, Nombre, Telefono, Correo, nivel_academico, experiencia', 'required'),
+			array('ausencias, Trabajador_Afiliaciones, Trabajador_HistoriaClinica, trabajador_trabajo', 'numerical', 'integerOnly'=>true),
 			array('Cedula, Telefono', 'length', 'max'=>20),
 			array('Nombre', 'length', 'max'=>45),
 			array('Correo', 'length', 'max'=>30),
+			array('nivel_academico', 'length', 'max'=>100),
+			array('experiencia', 'length', 'max'=>500),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('Cedula, Nombre, Telefono, Correo, Trabajador_Afiliaciones, Trabajador_HistoriaClinica', 'safe', 'on'=>'search'),
+			array('Cedula, Nombre, Telefono, Correo, nivel_academico, experiencia, ausencias, Trabajador_Afiliaciones, Trabajador_HistoriaClinica, trabajador_trabajo', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -54,6 +61,7 @@ class Trabajador extends CActiveRecord
 		return array(
 			'trabajadorAfiliaciones' => array(self::BELONGS_TO, 'Afiliaciones', 'Trabajador_Afiliaciones'),
 			'trabajadorHistoriaClinica' => array(self::BELONGS_TO, 'Historiaclinica', 'Trabajador_HistoriaClinica'),
+			'trabajadorTrabajo' => array(self::BELONGS_TO, 'Trabajo', 'trabajador_trabajo'),
 		);
 	}
 
@@ -67,8 +75,12 @@ class Trabajador extends CActiveRecord
 			'Nombre' => 'Nombre',
 			'Telefono' => 'Telefono',
 			'Correo' => 'Correo',
+			'nivel_academico' => 'Nivel Academico',
+			'experiencia' => 'Experiencia',
+			'ausencias' => 'Ausencias',
 			'Trabajador_Afiliaciones' => 'Trabajador Afiliaciones',
 			'Trabajador_HistoriaClinica' => 'Trabajador Historia Clinica',
+			'trabajador_trabajo' => 'Trabajador Trabajo',
 		);
 	}
 
@@ -94,8 +106,12 @@ class Trabajador extends CActiveRecord
 		$criteria->compare('Nombre',$this->Nombre,true);
 		$criteria->compare('Telefono',$this->Telefono,true);
 		$criteria->compare('Correo',$this->Correo,true);
+		$criteria->compare('nivel_academico',$this->nivel_academico,true);
+		$criteria->compare('experiencia',$this->experiencia,true);
+		$criteria->compare('ausencias',$this->ausencias);
 		$criteria->compare('Trabajador_Afiliaciones',$this->Trabajador_Afiliaciones);
 		$criteria->compare('Trabajador_HistoriaClinica',$this->Trabajador_HistoriaClinica);
+		$criteria->compare('trabajador_trabajo',$this->trabajador_trabajo);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -111,5 +127,20 @@ class Trabajador extends CActiveRecord
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
+	}
+
+		public function getMenuAfiliaciones()
+	{
+		return Chtml::listData(Afiliaciones::model()->findAll(),"Id","Nombre");
+	}
+
+	public function getMenuHistoriaClinica()
+	{
+		return Chtml::listData(Historiaclinica::model()->findAll(),"Id","Id");
+	}
+
+	public function getMenuTrabajo()
+	{
+		return Chtml::listData(Trabajo::model()->findAll(),"Id","proceso");
 	}
 }

@@ -11,6 +11,7 @@ $this->breadcrumbs=array(
 
 <h1>Contact Us</h1>
 
+
 <?php if(Yii::app()->user->hasFlash('contact')): ?>
 
 <div class="flash-success">
@@ -35,7 +36,7 @@ If you have business inquiries or other questions, please fill out the following
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
-	<?php echo $form->errorSummary($model); ?>
+	<?php #echo $form->errorSummary($model); ?>
 
 	<div >
 		<?php echo $form->labelEx($model,'name'); ?>
@@ -70,12 +71,15 @@ If you have business inquiries or other questions, please fill out the following
 		</div>
 		<div class="hint">Please enter the letters as they are shown in the image above.
 		<br/>Letters are not case-sensitive.</div>
+		<br>
 		<?php echo $form->error($model,'verifyCode'); ?>
 	</div>
 	<?php endif; ?>
 
+	<br>
+
 	<div class="buttons">
-		<?php echo CHtml::submitButton('Submit',array("class"=>"btn btn-primary btn-large")); ?>
+		<?php echo CHtml::submitButton('Submit',array("class"=>"btn btn-primary btn-medium")); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

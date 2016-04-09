@@ -71,7 +71,14 @@ class TrabajadorController extends Controller
 		{
 			$model->attributes=$_POST['Trabajador'];
 			if($model->save())
+			{
+				Yii::app()->user->setFlash("success","El trabajador se creó correctamente");
 				$this->redirect(array('view','id'=>$model->Cedula));
+			}
+			else
+			{
+				Yii::app()->user->setFlash("error","El trabajador no se creó correctamente");
+			}
 		}
 
 		$this->render('create',array(
@@ -95,7 +102,14 @@ class TrabajadorController extends Controller
 		{
 			$model->attributes=$_POST['Trabajador'];
 			if($model->save())
+			{
+				Yii::app()->user->setFlash("success","El trabajador se actualizó correctamente");
 				$this->redirect(array('view','id'=>$model->Cedula));
+			}
+			else
+			{
+				Yii::app()->user->setFlash("error","El trabajador no se actualizó correctamente");
+			}
 		}
 
 		$this->render('update',array(
@@ -114,7 +128,14 @@ class TrabajadorController extends Controller
 
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		if(!isset($_GET['ajax']))
+		{
+			Yii::app()->user->setFlash("success","El trabajador se eliminó correctamente");
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+		}
+		else
+		{
+			Yii::app()->user->setFlash("error","El trabajador no se eliminó correctamente");
+		}
 	}
 
 	/**
