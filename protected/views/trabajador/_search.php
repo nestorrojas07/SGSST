@@ -62,7 +62,7 @@
 	</div>
 
 	<div >
-		<?php echo CHtml::submitButton('Search', array("class"=>"btn btn-primary btn-medium")); ?>
+		<?php echo CHtml::submitButton('Buscar', array("class"=>"btn btn-primary btn-medium")); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

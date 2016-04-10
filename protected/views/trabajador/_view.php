@@ -9,11 +9,11 @@
 	<div class="media body">
 		<h4 class="media heading">
 			
-			<b><?php echo CHtml::encode($data->getAttributeLabel('Cedula')); ?>:</b>
-			<small><b><?php echo CHtml::link(CHtml::encode($data->Cedula), array('view', 'id'=>$data->Cedula)); ?></b></small>
+			<b><strong><font color="#336699"><?php echo CHtml::encode($data->getAttributeLabel('Cedula')); ?>:</font></strong></b>
+			<small><?php echo CHtml::link(CHtml::encode($data->Cedula), array('view', 'id'=>$data->Cedula)); ?></small>
 			<br>
-			<b><?php echo CHtml::encode($data->getAttributeLabel('Nombre')); ?>:</b>
-			<small><b><?php echo CHtml::encode($data->Nombre); ?></b></small>
+			<b><strong><font color="#336699"><?php echo CHtml::encode($data->getAttributeLabel('Nombre')); ?>:</font></strong></b>
+			<font color="black"><?php echo CHtml::encode($data->Nombre); ?></font>
 			
 			
 		</h4>

@@ -136,12 +136,24 @@ class Trabajador extends CActiveRecord
 
 	public function getMenuTrabajo()
 	{
-		return CHtml::listData(Trabajo::Model()->findAll(),"id","tarea");
+		return CHtml::listData(Trabajo::Model()->findAll(),"Id","tarea");
 	}	
 
 	public function getMenuBrigada()
 	{
-		return CHtml::listData(Brigada::Model()->findAll(),"idBrigada","Funcion");
+		return CHtml::listData(Brigada::Model()->findAll(),"IdBrigada","Funcion");
 	}
+
+	public function getFuncionBrigada($id)
+	{
+		$modelo=Brigada::model()->findByPk($id);
+		return $modelo->Funcion;
+	}
+	public function getTareaTrabajo($id)
+	{
+		$modelo=Trabajo::model()->findByPk($id);
+		return $modelo->tarea;
+	}
+	
 
 }

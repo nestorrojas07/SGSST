@@ -17,7 +17,7 @@
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
-	<?php echo $form->errorSummary($model); ?>
+	<!--<?php echo $form->errorSummary($model); ?>-->
 
 	<div >
 		<?php echo $form->labelEx($model,'Cedula'); ?>
@@ -36,12 +36,12 @@
 		<?php echo $form->textField($model,'Telefono',array('size'=>20,'maxlength'=>20)); ?>
 		<?php echo $form->error($model,'Telefono'); ?>
 	</div>
-
+	<!--
 	<div >
 		<?php echo $form->labelEx($model,'Foto_Link'); ?>
 		<?php echo $form->textField($model,'Foto_Link',array('size'=>60,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'Foto_Link'); ?>
-	</div>
+	</div> -->
 
 	<div >
 		<?php echo $form->labelEx($model,'Correo'); ?>
@@ -69,18 +69,18 @@
 
 	<div >
 		<?php echo $form->labelEx($model,'IdBrigada'); ?>
-		<?php echo $form->textField($model,'IdBrigada'); ?>
+		<?php echo $form->dropDownList($model,'IdBrigada', $model->getMenuBrigada(),array("empty"=>"Seleccione una brigada")); ?>
 		<?php echo $form->error($model,'IdBrigada'); ?>
 	</div>
 
 	<div >
 		<?php echo $form->labelEx($model,'IdTrabajo'); ?>
-		<?php echo $form->textField($model,'IdTrabajo'); ?>
+		<?php echo $form->dropDownList($model,'IdTrabajo', $model-> getMenuTrabajo(), array("empty"=>"Seleccione una tarea")); ?>
 		<?php echo $form->error($model,'IdTrabajo'); ?>
 	</div>
 
 	<div>
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save', array("class"=>"btn btn-primary btn-medium")); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Crear' : 'Guardar', array("class"=>"btn btn-primary btn-medium")); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

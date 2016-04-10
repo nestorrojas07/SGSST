@@ -3,21 +3,22 @@
 /* @var $model Trabajador */
 
 $this->breadcrumbs=array(
-	'Trabajadors'=>array('index'),
+	'Trabajadores'=>array('index'),
 	$model->Cedula,
 );
 
 $this->menu=array(
-	array('label'=>'List Trabajador', 'url'=>array('index')),
-	array('label'=>'Create Trabajador', 'url'=>array('create')),
-	array('label'=>'Update Trabajador', 'url'=>array('update', 'id'=>$model->Cedula)),
-	array('label'=>'Delete Trabajador', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->Cedula),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Trabajador', 'url'=>array('admin')),
+	array('label'=>'Lista de Trabajadores', 'url'=>array('index')),
+	array('label'=>'Crear Trabajador', 'url'=>array('create')),
+	array('label'=>'Actualizar Trabajador', 'url'=>array('update', 'id'=>$model->Cedula)),
+	array('label'=>'Eliminar Trabajador', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->Cedula),'confirm'=>'Are you sure you want to delete this item?')),
+	#array('label'=>'Manage Trabajador', 'url'=>array('admin')),
+
 );
 ?>
 
-<h1>View Trabajador #<?php echo $model->Cedula; ?></h1>
-
+<h1><font color="#336699">Trabajador: </font><font color="black"> <?php echo $model->Cedula; ?></font></h1>
+<!--
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'htmlOptions'=>array("class"=>"table table-striped"),
@@ -25,7 +26,7 @@ $this->menu=array(
 		'Cedula',
 		'Nombre',
 		'Telefono',
-		#'Foto_Link',
+		'Foto_Link',
 		'Correo',
 		'Titulo_academico',
 		'experiencia',
@@ -33,4 +34,84 @@ $this->menu=array(
 		'IdBrigada',
 		'IdTrabajo',
 	),
-)); ?>
+)); ?>-->
+
+
+<table class="table table-bordered table-striped">
+	<tr>
+		<td><strong><font color="#336699">Cedula</font></strong></td>
+		<td><?php echo $model->Cedula ?></td>		
+	</tr>
+	<tr>
+		<td><strong><font color="#336699">Nombre</font></strong></td>
+		<td><?php echo $model->Nombre ?></td>
+		
+	</tr>
+	<tr>
+		<td><strong><font color="#336699">Telefono</font></strong></td>
+		<td><?php echo $model->Telefono ?></td>
+	</tr>
+	<tr>
+		<td><strong><font color="#336699">Correo</font></strong></td>
+		<td><?php echo $model->Correo ?></td>
+	</tr>
+	<tr>
+		<td><strong><font color="#336699">Titulo academico</font></strong></td>
+		<td><?php echo $model->Titulo_academico ?></td>
+	</tr>
+	<tr>
+		<td><strong><font color="#336699">Experiencia</font></strong></td>
+		<td><?php echo $model->experiencia ?></td>
+	</tr>
+	<tr>
+		<td><strong><font color="#336699">Ausencias</font></strong></td>
+		<td><?php echo $model->ausencias ?></td>
+	</tr>
+	<tr>
+		<td><strong><font color="#336699">Brigada</font></strong></td>
+		<td><?php echo $model->getFuncionBrigada($model->IdBrigada) ?></td>
+	</tr>
+	<tr>
+		<td><strong><font color="#336699">Tarea</font></strong></td>
+		<td><?php echo $model->getTareaTrabajo($model->IdTrabajo) ?></td>
+	</tr>	
+
+</table>
+
+<h2><font color="#336699">Lista de afiliaciones</font></h2>
+<table class="table table-bordered table-striped">
+	
+	<tr>
+		<!--<td><strong><font color="#336699">Id</font></strong></td>-->
+		<td> <strong><font color="#336699">Nombre</font></strong></td>
+		<td><strong><font color="#336699">Descripción</font></strong></td>
+	</tr>
+	<?php foreach ($model->afiliaciones as $afiliacion)	: ?>
+
+		<tr>			
+			<!--<td> <?php  echo $afiliacion->Id ?></td>-->
+			<td> <?php  echo $afiliacion->Nombre ?></td>
+			<td><?php echo $afiliacion->Descripcion ?></td>
+		</tr>
+
+	<?php  endforeach; ?>
+	
+</table>	
+
+<h2><font color="#336699">Lista de historias clínicas</font></h2>
+<table class="table table-bordered table-striped">
+	
+	<tr>
+		<td> <strong><font color="#336699">Id</font></strong></td>
+		<td><strong><font color="#336699">Descripción</font></strong></td>
+	</tr>
+	<?php foreach ($model->historiaclinicas as $historiaClinica)	: ?>
+
+		<tr>		
+			<td> <?php  echo $historiaClinica->Id ?></td>
+			<td><?php echo $historiaClinica->Descripcion ?></td>
+		</tr>
+
+	<?php  endforeach; ?>
+	
+</table>	

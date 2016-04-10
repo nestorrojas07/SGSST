@@ -51,7 +51,7 @@
           'htmlOptions'=> array("class"=>"nav"),
           'items'=>array(
             array('label'=>'Inicio', 'url'=>array('/site/index')),
-            array('label'=>'Hojas de vida', 'url'=>array('/trabajador/index')),
+            array('label'=>'Trabajadores', 'url'=>array('/trabajador/index')),
             array('label'=>'Cronogramas', 'url'=>array('/cronograma/index')),
             array('label'=>'Acerca de', 'url'=>array('/site/page', 'view'=>'about')),
             #array('label'=>'Contact', 'url'=>array('/site/contact')),
