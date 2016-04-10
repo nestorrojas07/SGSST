@@ -22,8 +22,10 @@ $this->menu=array(
 	'data'=>$model,
 	'attributes'=>array(
 		'id',
+		'Nombre',
 		'fecha',
-		'Insumo',
+		'Instrucciones',
 		'estado',
+		'Cedula_Trabajador',
 	),
 )); ?>

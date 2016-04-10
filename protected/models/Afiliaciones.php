@@ -7,6 +7,7 @@
  * @property integer $Id
  * @property string $Nombre
  * @property string $Descripcion
+ * @property string $Fecha
  *
  * The followings are the available model relations:
  * @property Trabajador[] $trabajadors
@@ -29,13 +30,12 @@ class Afiliaciones extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Id, Nombre, Descripcion', 'required'),
-			array('Id', 'numerical', 'integerOnly'=>true),
+			array('Nombre, Descripcion, Fecha', 'required'),
 			array('Nombre', 'length', 'max'=>30),
 			array('Descripcion', 'length', 'max'=>300),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('Id, Nombre, Descripcion', 'safe', 'on'=>'search'),
+			array('Id, Nombre, Descripcion, Fecha', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -47,7 +47,7 @@ class Afiliaciones extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'trabajadors' => array(self::HAS_MANY, 'Trabajador', 'Trabajador_Afiliaciones'),
+			'trabajadors' => array(self::MANY_MANY, 'Trabajador', 'trabajador_afiliaciones(IdAfiliaciones, Cedula)'),
 		);
 	}
 
@@ -60,6 +60,7 @@ class Afiliaciones extends CActiveRecord
 			'Id' => 'ID',
 			'Nombre' => 'Nombre',
 			'Descripcion' => 'Descripcion',
+			'Fecha' => 'Fecha',
 		);
 	}
 
@@ -84,6 +85,7 @@ class Afiliaciones extends CActiveRecord
 		$criteria->compare('Id',$this->Id);
 		$criteria->compare('Nombre',$this->Nombre,true);
 		$criteria->compare('Descripcion',$this->Descripcion,true);
+		$criteria->compare('Fecha',$this->Fecha,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -100,6 +102,4 @@ class Afiliaciones extends CActiveRecord
 	{
 		return parent::model($className);
 	}
-
-	
 }

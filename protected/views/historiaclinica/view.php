@@ -23,6 +23,6 @@ $this->menu=array(
 	'attributes'=>array(
 		'Id',
 		'Descripcion',
-		'Examenes',
+		'Cedula_trabajador',
 	),
 )); ?>

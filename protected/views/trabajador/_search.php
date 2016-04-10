@@ -27,13 +27,18 @@
 	</div>
 
 	<div >
+		<?php echo $form->label($model,'Foto_Link'); ?>
+		<?php echo $form->textField($model,'Foto_Link',array('size'=>60,'maxlength'=>255)); ?>
+	</div>
+
+	<div >
 		<?php echo $form->label($model,'Correo'); ?>
 		<?php echo $form->textField($model,'Correo',array('size'=>30,'maxlength'=>30)); ?>
 	</div>
 
 	<div >
-		<?php echo $form->label($model,'nivel_academico'); ?>
-		<?php echo $form->textField($model,'nivel_academico',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->label($model,'Titulo_academico'); ?>
+		<?php echo $form->textField($model,'Titulo_academico',array('size'=>60,'maxlength'=>100)); ?>
 	</div>
 
 	<div >
@@ -47,22 +52,17 @@
 	</div>
 
 	<div >
-		<?php echo $form->label($model,'Trabajador_Afiliaciones'); ?>
-		<?php echo $form->dropDownList($model,'Trabajador_Afiliaciones',$model->getMenuAfiliaciones(),array("empty"=>"Seleccione una opción")); ?>
+		<?php echo $form->label($model,'IdBrigada'); ?>
+		<?php echo $form->textField($model,'IdBrigada'); ?>
 	</div>
 
 	<div >
-		<?php echo $form->label($model,'Trabajador_HistoriaClinica'); ?>
-		<?php echo $form->dropDownList($model,'Trabajador_HistoriaClinica',$model->getMenuHistoriaClinica(),array("empty"=>"Seleccione una opción")); ?>
+		<?php echo $form->label($model,'IdTrabajo'); ?>
+		<?php echo $form->textField($model,'IdTrabajo'); ?>
 	</div>
 
 	<div >
-		<?php echo $form->label($model,'trabajador_trabajo'); ?>
-		<?php echo $form->dropDownList($model,'trabajador_trabajo',$model->getMenuTrabajo(),array("empty"=>"Seleccione una opción")); ?>
-	</div>
-
-	<div >
-		<?php echo CHtml::submitButton('Search',array("class"=>"btn btn-primary btn-medium")); ?>
+		<?php echo CHtml::submitButton('Search', array("class"=>"btn btn-primary btn-medium")); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

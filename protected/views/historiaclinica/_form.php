@@ -20,21 +20,15 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Id'); ?>
-		<?php echo $form->textField($model,'Id'); ?>
-		<?php echo $form->error($model,'Id'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->labelEx($model,'Descripcion'); ?>
 		<?php echo $form->textField($model,'Descripcion',array('size'=>60,'maxlength'=>500)); ?>
 		<?php echo $form->error($model,'Descripcion'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Examenes'); ?>
-		<?php echo $form->textField($model,'Examenes'); ?>
-		<?php echo $form->error($model,'Examenes'); ?>
+		<?php echo $form->labelEx($model,'Cedula_trabajador'); ?>
+		<?php echo $form->textField($model,'Cedula_trabajador',array('size'=>20,'maxlength'=>20)); ?>
+		<?php echo $form->error($model,'Cedula_trabajador'); ?>
 	</div>
 
 	<div class="row buttons">

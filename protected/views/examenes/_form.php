@@ -20,9 +20,29 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'id'); ?>
-		<?php echo $form->textField($model,'id'); ?>
-		<?php echo $form->error($model,'id'); ?>
+		<?php echo $form->labelEx($model,'Tipo'); ?>
+		<?php echo $form->textField($model,'Tipo',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->error($model,'Tipo'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'Fecha'); ?>
+		<?php 
+
+			$this->widget("zii.widgets.jui.CJuiDatePicker", array(
+			"attribute"=>"Fecha",
+			"model"=>$model,
+			"language"=>"es",
+			"options"=>array(
+				"dateFormat"=>"yy-mm-dd",
+				'showButtonPanel'=>true,
+				'changeYear'=>true,
+				'changeYear'=>true,
+				'yearRange'=>'0:+5',
+				'minDate'=>'0Y',
+				'maxDate'=>'+5Y',
+				)))
+		?>
 	</div>
 
 	<div class="row">
@@ -32,15 +52,15 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Fecha'); ?>
-		<?php echo $form->textField($model,'Fecha'); ?>
-		<?php echo $form->error($model,'Fecha'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->labelEx($model,'Diagnostico'); ?>
 		<?php echo $form->textField($model,'Diagnostico',array('size'=>60,'maxlength'=>500)); ?>
 		<?php echo $form->error($model,'Diagnostico'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'IdHistoriaClinica'); ?>
+		<?php echo $form->textField($model,'IdHistoriaClinica'); ?>
+		<?php echo $form->error($model,'IdHistoriaClinica'); ?>
 	</div>
 
 	<div class="row buttons">

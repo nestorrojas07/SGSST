@@ -5,12 +5,14 @@
  *
  * The followings are the available columns in table 'examenes':
  * @property integer $id
- * @property string $Descripcion
+ * @property string $Tipo
  * @property string $Fecha
+ * @property string $Descripcion
  * @property string $Diagnostico
+ * @property integer $IdHistoriaClinica
  *
  * The followings are the available model relations:
- * @property Historiaclinica $id0
+ * @property Historiaclinica $idHistoriaClinica
  */
 class Examenes extends CActiveRecord
 {
@@ -30,13 +32,14 @@ class Examenes extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id, Descripcion, Fecha, Diagnostico', 'required'),
-			array('id', 'numerical', 'integerOnly'=>true),
+			array('Tipo, Fecha, Descripcion, Diagnostico', 'required'),
+			array('IdHistoriaClinica', 'numerical', 'integerOnly'=>true),
+			array('Tipo', 'length', 'max'=>45),
 			array('Descripcion', 'length', 'max'=>200),
 			array('Diagnostico', 'length', 'max'=>500),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, Descripcion, Fecha, Diagnostico', 'safe', 'on'=>'search'),
+			array('id, Tipo, Fecha, Descripcion, Diagnostico, IdHistoriaClinica', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -48,7 +51,7 @@ class Examenes extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'id0' => array(self::BELONGS_TO, 'Historiaclinica', 'id'),
+			'idHistoriaClinica' => array(self::BELONGS_TO, 'Historiaclinica', 'IdHistoriaClinica'),
 		);
 	}
 
@@ -59,9 +62,11 @@ class Examenes extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'Descripcion' => 'Descripcion',
+			'Tipo' => 'Tipo',
 			'Fecha' => 'Fecha',
+			'Descripcion' => 'Descripcion',
 			'Diagnostico' => 'Diagnostico',
+			'IdHistoriaClinica' => 'Id Historia Clinica',
 		);
 	}
 
@@ -84,9 +89,11 @@ class Examenes extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('Descripcion',$this->Descripcion,true);
+		$criteria->compare('Tipo',$this->Tipo,true);
 		$criteria->compare('Fecha',$this->Fecha,true);
+		$criteria->compare('Descripcion',$this->Descripcion,true);
 		$criteria->compare('Diagnostico',$this->Diagnostico,true);
+		$criteria->compare('IdHistoriaClinica',$this->IdHistoriaClinica);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

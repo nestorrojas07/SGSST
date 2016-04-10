@@ -72,12 +72,12 @@ class CronogramaController extends Controller
 			$model->attributes=$_POST['Cronograma'];
 			if($model->save())
 			{
-				Yii::app()->user->setFlash("success","El cronograma se creó correctamente");
+				Yii::app()->user->setFlash("success","El cronograma se creó exitosamente");
 				$this->redirect(array('view','id'=>$model->id));
 			}
 			else
 			{
-				Yii::app()->user->setFlash("error","El cronograma no se creó correctamente");
+				Yii::app()->user->setFlash("error","El cronograma no se creó exitosamente");
 			}
 		}
 
@@ -103,12 +103,12 @@ class CronogramaController extends Controller
 			$model->attributes=$_POST['Cronograma'];
 			if($model->save())
 			{
-				Yii::app()->user->setFlash("success","El cronograma se actualizó correctamente");
+				Yii::app()->user->setFlash("success","El cronograma se actualizó exitosamente");
 				$this->redirect(array('view','id'=>$model->id));
 			}
 			else
 			{
-				Yii::app()->user->setFlash("error","El cronograma no se actualizó correctamente");
+				Yii::app()->user->setFlash("error","El cronograma no se actualizó exitosamente");
 			}
 		}
 
@@ -129,12 +129,12 @@ class CronogramaController extends Controller
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		if(!isset($_GET['ajax']))
 		{
-			Yii::app()->user->setFlash("success","El cronograma se eliminó correctamente");
+			Yii::app()->user->setFlash("success","El cronograma se eliminó exitosamente");
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
 		}
 		else
 		{
-			Yii::app()->user->setFlash("error","El cronograma no se eliminó correctamente");
+			Yii::app()->user->setFlash("error","El cronograma no se eliminó exitosamente");
 		}
 	}
 
@@ -143,13 +143,10 @@ class CronogramaController extends Controller
 	 */
 	public function actionIndex()
 	{
-		
 		$dataProvider=new CActiveDataProvider('Cronograma');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
-
-		
 	}
 
 	/**
@@ -193,26 +190,5 @@ class CronogramaController extends Controller
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
-	}
-
-	public function actionEnabled($id)
-	{
-
-		$model=Cronograma::model()->findByPk($id);
-		
-		if($model->estado==0)
-		{
-			$model->estado=1;
-		}
-		else
-		{
-			$model->estado=0;
-		}
-		$model->save();
-		$this->redirect(array("index"));
-		
-
-		
-
 	}
 }

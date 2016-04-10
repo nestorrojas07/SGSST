@@ -4,20 +4,19 @@
 
 $this->breadcrumbs=array(
 	'Cronogramas'=>array('index'),
-	$model->Descripcion,
+	$model->id,
 );
 
 $this->menu=array(
-	array('label'=>'Lista de Cronogramas', 'url'=>array('index')),
-	array('label'=>'Crear Cronograma', 'url'=>array('create')),
-	array('label'=>'Actualizar Cronograma', 'url'=>array('update', 'id'=>$model->id)),
-	array('label'=>'Eliminar Cronograma', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Seguro que desea eliminar este cronograma?')),
-	array('label'=>'Administrar Cronogramas', 'url'=>array('admin')),
+	array('label'=>'List Cronograma', 'url'=>array('index')),
+	array('label'=>'Create Cronograma', 'url'=>array('create')),
+	array('label'=>'Update Cronograma', 'url'=>array('update', 'id'=>$model->id)),
+	array('label'=>'Delete Cronograma', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Manage Cronograma', 'url'=>array('admin')),
 );
 ?>
 
-<h2>Cronograma: <font color="black"><?php echo $model->Descripcion; ?></font></h2>
-<br>
+<h1>View Cronograma #<?php echo $model->id; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,

@@ -22,8 +22,8 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'Examenes'); ?>
-		<?php echo $form->textField($model,'Examenes'); ?>
+		<?php echo $form->label($model,'Cedula_trabajador'); ?>
+		<?php echo $form->textField($model,'Cedula_trabajador',array('size'=>20,'maxlength'=>20)); ?>
 	</div>
 
 	<div class="row buttons">

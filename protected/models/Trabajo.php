@@ -24,7 +24,6 @@
  * @property integer $evaluacion_riesgo_nivel_riesgo_intervencion
  * @property string $evaluacion_riesgo_interpretacion_nivel_riesgo
  * @property string $valoracion_riesgo
- * @property integer $criterio_numero_expuestos
  * @property string $criterio_peor_consecuencia
  * @property integer $criterio_requisito_legal
  * @property string $intervencion_eliminacion
@@ -54,8 +53,8 @@ class Trabajo extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Id, proceso, zona, actividad, tarea, rutinaria, peligro_descripcion, peligro_clasificacion, peligro__efectosPosibles, evaluacion_riesgo_nivel_deficiencia, evaluacion_riesgo_nivel_exposicion, evaluacion_riesgo_nivel_probabilidad, evaluacion_riesgo_interpretacion_nivel_probabilidad, evaluacion_riesgo_nivel_consecuencia, evaluacion_riesgo_nivel_riesgo_intervencion, evaluacion_riesgo_interpretacion_nivel_riesgo, valoracion_riesgo, criterio_numero_expuestos, criterio_peor_consecuencia, criterio_requisito_legal', 'required'),
-			array('Id, rutinaria, evaluacion_riesgo_nivel_deficiencia, evaluacion_riesgo_nivel_exposicion, evaluacion_riesgo_nivel_probabilidad, evaluacion_riesgo_nivel_consecuencia, evaluacion_riesgo_nivel_riesgo_intervencion, criterio_numero_expuestos, criterio_requisito_legal', 'numerical', 'integerOnly'=>true),
+			array('proceso, zona, actividad, tarea, rutinaria, peligro_descripcion, peligro_clasificacion, peligro__efectosPosibles, evaluacion_riesgo_nivel_deficiencia, evaluacion_riesgo_nivel_exposicion, evaluacion_riesgo_nivel_probabilidad, evaluacion_riesgo_interpretacion_nivel_probabilidad, evaluacion_riesgo_nivel_consecuencia, evaluacion_riesgo_nivel_riesgo_intervencion, evaluacion_riesgo_interpretacion_nivel_riesgo, valoracion_riesgo, criterio_peor_consecuencia, criterio_requisito_legal', 'required'),
+			array('rutinaria, evaluacion_riesgo_nivel_deficiencia, evaluacion_riesgo_nivel_exposicion, evaluacion_riesgo_nivel_probabilidad, evaluacion_riesgo_nivel_consecuencia, evaluacion_riesgo_nivel_riesgo_intervencion, criterio_requisito_legal', 'numerical', 'integerOnly'=>true),
 			array('proceso', 'length', 'max'=>60),
 			array('zona, actividad, tarea', 'length', 'max'=>50),
 			array('peligro_descripcion, intervencion_elementos_proteccion_personal', 'length', 'max'=>200),
@@ -66,7 +65,7 @@ class Trabajo extends CActiveRecord
 			array('criterio_peor_consecuencia', 'length', 'max'=>250),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('Id, proceso, zona, actividad, tarea, rutinaria, peligro_descripcion, peligro_clasificacion, peligro__efectosPosibles, control_existente_fuente, control_existente_medio, control_existente_persona, evaluacion_riesgo_nivel_deficiencia, evaluacion_riesgo_nivel_exposicion, evaluacion_riesgo_nivel_probabilidad, evaluacion_riesgo_interpretacion_nivel_probabilidad, evaluacion_riesgo_nivel_consecuencia, evaluacion_riesgo_nivel_riesgo_intervencion, evaluacion_riesgo_interpretacion_nivel_riesgo, valoracion_riesgo, criterio_numero_expuestos, criterio_peor_consecuencia, criterio_requisito_legal, intervencion_eliminacion, intervencion_sustituacion, intervencion_control_ingenieria, intervencion_control_administrativo, intervencion_elementos_proteccion_personal', 'safe', 'on'=>'search'),
+			array('Id, proceso, zona, actividad, tarea, rutinaria, peligro_descripcion, peligro_clasificacion, peligro__efectosPosibles, control_existente_fuente, control_existente_medio, control_existente_persona, evaluacion_riesgo_nivel_deficiencia, evaluacion_riesgo_nivel_exposicion, evaluacion_riesgo_nivel_probabilidad, evaluacion_riesgo_interpretacion_nivel_probabilidad, evaluacion_riesgo_nivel_consecuencia, evaluacion_riesgo_nivel_riesgo_intervencion, evaluacion_riesgo_interpretacion_nivel_riesgo, valoracion_riesgo, criterio_peor_consecuencia, criterio_requisito_legal, intervencion_eliminacion, intervencion_sustituacion, intervencion_control_ingenieria, intervencion_control_administrativo, intervencion_elementos_proteccion_personal', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -78,7 +77,7 @@ class Trabajo extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'trabajadors' => array(self::HAS_MANY, 'Trabajador', 'trabajador_trabajo'),
+			'trabajadors' => array(self::HAS_MANY, 'Trabajador', 'IdTrabajo'),
 		);
 	}
 
@@ -108,7 +107,6 @@ class Trabajo extends CActiveRecord
 			'evaluacion_riesgo_nivel_riesgo_intervencion' => 'Evaluacion Riesgo Nivel Riesgo Intervencion',
 			'evaluacion_riesgo_interpretacion_nivel_riesgo' => 'Evaluacion Riesgo Interpretacion Nivel Riesgo',
 			'valoracion_riesgo' => 'Valoracion Riesgo',
-			'criterio_numero_expuestos' => 'Criterio Numero Expuestos',
 			'criterio_peor_consecuencia' => 'Criterio Peor Consecuencia',
 			'criterio_requisito_legal' => 'Criterio Requisito Legal',
 			'intervencion_eliminacion' => 'Intervencion Eliminacion',
@@ -157,7 +155,6 @@ class Trabajo extends CActiveRecord
 		$criteria->compare('evaluacion_riesgo_nivel_riesgo_intervencion',$this->evaluacion_riesgo_nivel_riesgo_intervencion);
 		$criteria->compare('evaluacion_riesgo_interpretacion_nivel_riesgo',$this->evaluacion_riesgo_interpretacion_nivel_riesgo,true);
 		$criteria->compare('valoracion_riesgo',$this->valoracion_riesgo,true);
-		$criteria->compare('criterio_numero_expuestos',$this->criterio_numero_expuestos);
 		$criteria->compare('criterio_peor_consecuencia',$this->criterio_peor_consecuencia,true);
 		$criteria->compare('criterio_requisito_legal',$this->criterio_requisito_legal);
 		$criteria->compare('intervencion_eliminacion',$this->intervencion_eliminacion,true);

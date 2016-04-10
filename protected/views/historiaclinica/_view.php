@@ -13,8 +13,8 @@
 	<?php echo CHtml::encode($data->Descripcion); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('Examenes')); ?>:</b>
-	<?php echo CHtml::encode($data->Examenes); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('Cedula_trabajador')); ?>:</b>
+	<?php echo CHtml::encode($data->Cedula_trabajador); ?>
 	<br />
 
 

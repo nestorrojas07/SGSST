@@ -41,7 +41,6 @@ $this->menu=array(
 		'evaluacion_riesgo_nivel_riesgo_intervencion',
 		'evaluacion_riesgo_interpretacion_nivel_riesgo',
 		'valoracion_riesgo',
-		'criterio_numero_expuestos',
 		'criterio_peor_consecuencia',
 		'criterio_requisito_legal',
 		'intervencion_eliminacion',

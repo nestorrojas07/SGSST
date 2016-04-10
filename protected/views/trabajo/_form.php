@@ -20,12 +20,6 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Id'); ?>
-		<?php echo $form->textField($model,'Id'); ?>
-		<?php echo $form->error($model,'Id'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->labelEx($model,'proceso'); ?>
 		<?php echo $form->textField($model,'proceso',array('size'=>60,'maxlength'=>60)); ?>
 		<?php echo $form->error($model,'proceso'); ?>
@@ -137,12 +131,6 @@
 		<?php echo $form->labelEx($model,'valoracion_riesgo'); ?>
 		<?php echo $form->textField($model,'valoracion_riesgo',array('size'=>60,'maxlength'=>80)); ?>
 		<?php echo $form->error($model,'valoracion_riesgo'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'criterio_numero_expuestos'); ?>
-		<?php echo $form->textField($model,'criterio_numero_expuestos'); ?>
-		<?php echo $form->error($model,'criterio_numero_expuestos'); ?>
 	</div>
 
 	<div class="row">

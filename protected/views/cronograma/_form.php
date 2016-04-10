@@ -44,13 +44,12 @@
 				)))
 		?>
 	</div>
-	<!--
+
 	<div >
 		<?php echo $form->labelEx($model,'estado'); ?>
 		<?php echo $form->textField($model,'estado'); ?>
 		<?php echo $form->error($model,'estado'); ?>
 	</div>
-	-->
 
 	<div >
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save',array("class"=>"btn btn-primary btn-medium")); ?>

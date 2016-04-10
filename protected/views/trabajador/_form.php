@@ -1,5 +1,5 @@
 <?php
-/*	@var $this TrabajadorController */
+/* @var $this TrabajadorController */
 /* @var $model Trabajador */
 /* @var $form CActiveForm */
 ?>
@@ -17,7 +17,7 @@
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
-	<!--<?php echo $form->errorSummary($model); ?>-->
+	<?php echo $form->errorSummary($model); ?>
 
 	<div >
 		<?php echo $form->labelEx($model,'Cedula'); ?>
@@ -38,15 +38,21 @@
 	</div>
 
 	<div >
+		<?php echo $form->labelEx($model,'Foto_Link'); ?>
+		<?php echo $form->textField($model,'Foto_Link',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->error($model,'Foto_Link'); ?>
+	</div>
+
+	<div >
 		<?php echo $form->labelEx($model,'Correo'); ?>
 		<?php echo $form->textField($model,'Correo',array('size'=>30,'maxlength'=>30)); ?>
 		<?php echo $form->error($model,'Correo'); ?>
 	</div>
 
 	<div >
-		<?php echo $form->labelEx($model,'nivel_academico'); ?>
-		<?php echo $form->textField($model,'nivel_academico',array('size'=>60,'maxlength'=>100)); ?>
-		<?php echo $form->error($model,'nivel_academico'); ?>
+		<?php echo $form->labelEx($model,'Titulo_academico'); ?>
+		<?php echo $form->textField($model,'Titulo_academico',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->error($model,'Titulo_academico'); ?>
 	</div>
 
 	<div >
@@ -62,25 +68,19 @@
 	</div>
 
 	<div >
-		<?php echo $form->labelEx($model,'Trabajador_Afiliaciones'); ?>
-		<?php echo $form->dropDownList($model,'Trabajador_Afiliaciones',$model->getMenuAfiliaciones(),array("empty"=>"Seleccione una opción")); ?>
-		<?php echo $form->error($model,'Trabajador_Afiliaciones'); ?>
+		<?php echo $form->labelEx($model,'IdBrigada'); ?>
+		<?php echo $form->textField($model,'IdBrigada'); ?>
+		<?php echo $form->error($model,'IdBrigada'); ?>
 	</div>
 
 	<div >
-		<?php echo $form->labelEx($model,'Trabajador_HistoriaClinica'); ?>
-		<?php echo $form->dropDownList($model,'Trabajador_HistoriaClinica', $model->getMenuHistoriaClinica(),array("empty"=>"Seleccione una opción")); ?>
-		<?php echo $form->error($model,'Trabajador_HistoriaClinica'); ?>
+		<?php echo $form->labelEx($model,'IdTrabajo'); ?>
+		<?php echo $form->textField($model,'IdTrabajo'); ?>
+		<?php echo $form->error($model,'IdTrabajo'); ?>
 	</div>
 
-	<div >
-		<?php echo $form->labelEx($model,'trabajador_trabajo'); ?>
-		<?php echo $form->dropDownList($model,'trabajador_trabajo', $model->getMenuTrabajo(),array("empty"=>"Seleccione una opción")); ?>
-		<?php echo $form->error($model,'trabajador_trabajo'); ?>
-	</div>
-
-	<div >
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save',array("class"=>"btn btn-primary btn-medium")); ?>
+	<div>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save', array("class"=>"btn btn-primary btn-medium")); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

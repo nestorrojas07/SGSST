@@ -6,11 +6,11 @@
  * The followings are the available columns in table 'historiaclinica':
  * @property integer $Id
  * @property string $Descripcion
- * @property integer $Examenes
+ * @property string $Cedula_trabajador
  *
  * The followings are the available model relations:
- * @property Examenes $examenes
- * @property Trabajador[] $trabajadors
+ * @property Examenes[] $examenes
+ * @property Trabajador $cedulaTrabajador
  */
 class Historiaclinica extends CActiveRecord
 {
@@ -30,12 +30,12 @@ class Historiaclinica extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Id, Descripcion', 'required'),
-			array('Id, Examenes', 'numerical', 'integerOnly'=>true),
+			array('Descripcion', 'required'),
 			array('Descripcion', 'length', 'max'=>500),
+			array('Cedula_trabajador', 'length', 'max'=>20),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('Id, Descripcion, Examenes', 'safe', 'on'=>'search'),
+			array('Id, Descripcion, Cedula_trabajador', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -47,8 +47,8 @@ class Historiaclinica extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'examenes' => array(self::HAS_ONE, 'Examenes', 'id'),
-			'trabajadors' => array(self::HAS_MANY, 'Trabajador', 'Trabajador_HistoriaClinica'),
+			'examenes' => array(self::HAS_MANY, 'Examenes', 'IdHistoriaClinica'),
+			'cedulaTrabajador' => array(self::BELONGS_TO, 'Trabajador', 'Cedula_trabajador'),
 		);
 	}
 
@@ -60,7 +60,7 @@ class Historiaclinica extends CActiveRecord
 		return array(
 			'Id' => 'ID',
 			'Descripcion' => 'Descripcion',
-			'Examenes' => 'Examenes',
+			'Cedula_trabajador' => 'Cedula Trabajador',
 		);
 	}
 
@@ -84,7 +84,7 @@ class Historiaclinica extends CActiveRecord
 
 		$criteria->compare('Id',$this->Id);
 		$criteria->compare('Descripcion',$this->Descripcion,true);
-		$criteria->compare('Examenes',$this->Examenes);
+		$criteria->compare('Cedula_trabajador',$this->Cedula_trabajador,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

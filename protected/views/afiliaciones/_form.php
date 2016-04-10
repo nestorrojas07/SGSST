@@ -20,12 +20,6 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Id'); ?>
-		<?php echo $form->textField($model,'Id'); ?>
-		<?php echo $form->error($model,'Id'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->labelEx($model,'Nombre'); ?>
 		<?php echo $form->textField($model,'Nombre',array('size'=>30,'maxlength'=>30)); ?>
 		<?php echo $form->error($model,'Nombre'); ?>
@@ -35,6 +29,26 @@
 		<?php echo $form->labelEx($model,'Descripcion'); ?>
 		<?php echo $form->textField($model,'Descripcion',array('size'=>60,'maxlength'=>300)); ?>
 		<?php echo $form->error($model,'Descripcion'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'Fecha'); ?>
+		<?php 
+
+			$this->widget("zii.widgets.jui.CJuiDatePicker", array(
+			"attribute"=>"Fecha",
+			"model"=>$model,
+			"language"=>"es",
+			"options"=>array(
+				"dateFormat"=>"yy-mm-dd",
+				'showButtonPanel'=>true,
+				'changeYear'=>true,
+				'changeYear'=>true,
+				'yearRange'=>'0:+5',
+				'minDate'=>'0Y',
+				'maxDate'=>'+5Y',
+				)))
+		?>
 	</div>
 
 	<div class="row buttons">

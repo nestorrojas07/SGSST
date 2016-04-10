@@ -7,8 +7,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Crear Cronograma', 'url'=>array('create')),
-	array('label'=>'Administrar Cronogramas', 'url'=>array('admin')),
+	array('label'=>'Create Cronograma', 'url'=>array('create')),
+	array('label'=>'Manage Cronograma', 'url'=>array('admin')),
 );
 ?>
 

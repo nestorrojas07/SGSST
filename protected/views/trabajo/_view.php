@@ -86,10 +86,6 @@
 	<?php echo CHtml::encode($data->valoracion_riesgo); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('criterio_numero_expuestos')); ?>:</b>
-	<?php echo CHtml::encode($data->criterio_numero_expuestos); ?>
-	<br />
-
 	<b><?php echo CHtml::encode($data->getAttributeLabel('criterio_peor_consecuencia')); ?>:</b>
 	<?php echo CHtml::encode($data->criterio_peor_consecuencia); ?>
 	<br />

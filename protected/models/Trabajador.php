@@ -7,18 +7,20 @@
  * @property string $Cedula
  * @property string $Nombre
  * @property string $Telefono
+ * @property string $Foto_Link
  * @property string $Correo
- * @property string $nivel_academico
+ * @property string $Titulo_academico
  * @property string $experiencia
  * @property integer $ausencias
- * @property integer $Trabajador_Afiliaciones
- * @property integer $Trabajador_HistoriaClinica
- * @property integer $trabajador_trabajo
+ * @property integer $IdBrigada
+ * @property integer $IdTrabajo
  *
  * The followings are the available model relations:
- * @property Afiliaciones $trabajadorAfiliaciones
- * @property Historiaclinica $trabajadorHistoriaClinica
- * @property Trabajo $trabajadorTrabajo
+ * @property Historiaclinica[] $historiaclinicas
+ * @property Trabajo $idTrabajo
+ * @property Brigada $idBrigada
+ * @property Afiliaciones[] $afiliaciones
+ * @property Vencimientos[] $vencimientoses
  */
 class Trabajador extends CActiveRecord
 {
@@ -38,16 +40,17 @@ class Trabajador extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Cedula, Nombre, Telefono, Correo, nivel_academico, experiencia', 'required'),
-			array('ausencias, Trabajador_Afiliaciones, Trabajador_HistoriaClinica, trabajador_trabajo', 'numerical', 'integerOnly'=>true),
+			array('Cedula, Nombre, Telefono, Correo, Titulo_academico, experiencia', 'required'),
+			array('ausencias, IdBrigada, IdTrabajo', 'numerical', 'integerOnly'=>true),
 			array('Cedula, Telefono', 'length', 'max'=>20),
 			array('Nombre', 'length', 'max'=>45),
+			array('Foto_Link', 'length', 'max'=>255),
 			array('Correo', 'length', 'max'=>30),
-			array('nivel_academico', 'length', 'max'=>100),
+			array('Titulo_academico', 'length', 'max'=>100),
 			array('experiencia', 'length', 'max'=>500),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('Cedula, Nombre, Telefono, Correo, nivel_academico, experiencia, ausencias, Trabajador_Afiliaciones, Trabajador_HistoriaClinica, trabajador_trabajo', 'safe', 'on'=>'search'),
+			array('Cedula, Nombre, Telefono, Foto_Link, Correo, Titulo_academico, experiencia, ausencias, IdBrigada, IdTrabajo', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -59,9 +62,11 @@ class Trabajador extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'trabajadorAfiliaciones' => array(self::BELONGS_TO, 'Afiliaciones', 'Trabajador_Afiliaciones'),
-			'trabajadorHistoriaClinica' => array(self::BELONGS_TO, 'Historiaclinica', 'Trabajador_HistoriaClinica'),
-			'trabajadorTrabajo' => array(self::BELONGS_TO, 'Trabajo', 'trabajador_trabajo'),
+			'historiaclinicas' => array(self::HAS_MANY, 'Historiaclinica', 'Cedula_trabajador'),
+			'idTrabajo' => array(self::BELONGS_TO, 'Trabajo', 'IdTrabajo'),
+			'idBrigada' => array(self::BELONGS_TO, 'Brigada', 'IdBrigada'),
+			'afiliaciones' => array(self::MANY_MANY, 'Afiliaciones', 'trabajador_afiliaciones(Cedula, IdAfiliaciones)'),
+			'vencimientoses' => array(self::HAS_MANY, 'Vencimientos', 'Cedula_Trabajador'),
 		);
 	}
 
@@ -74,13 +79,13 @@ class Trabajador extends CActiveRecord
 			'Cedula' => 'Cedula',
 			'Nombre' => 'Nombre',
 			'Telefono' => 'Telefono',
+			'Foto_Link' => 'Foto Link',
 			'Correo' => 'Correo',
-			'nivel_academico' => 'Nivel Academico',
+			'Titulo_academico' => 'Titulo Academico',
 			'experiencia' => 'Experiencia',
 			'ausencias' => 'Ausencias',
-			'Trabajador_Afiliaciones' => 'Trabajador Afiliaciones',
-			'Trabajador_HistoriaClinica' => 'Trabajador Historia Clinica',
-			'trabajador_trabajo' => 'Trabajador Trabajo',
+			'IdBrigada' => 'Id Brigada',
+			'IdTrabajo' => 'Id Trabajo',
 		);
 	}
 
@@ -105,13 +110,13 @@ class Trabajador extends CActiveRecord
 		$criteria->compare('Cedula',$this->Cedula,true);
 		$criteria->compare('Nombre',$this->Nombre,true);
 		$criteria->compare('Telefono',$this->Telefono,true);
+		$criteria->compare('Foto_Link',$this->Foto_Link,true);
 		$criteria->compare('Correo',$this->Correo,true);
-		$criteria->compare('nivel_academico',$this->nivel_academico,true);
+		$criteria->compare('Titulo_academico',$this->Titulo_academico,true);
 		$criteria->compare('experiencia',$this->experiencia,true);
 		$criteria->compare('ausencias',$this->ausencias);
-		$criteria->compare('Trabajador_Afiliaciones',$this->Trabajador_Afiliaciones);
-		$criteria->compare('Trabajador_HistoriaClinica',$this->Trabajador_HistoriaClinica);
-		$criteria->compare('trabajador_trabajo',$this->trabajador_trabajo);
+		$criteria->compare('IdBrigada',$this->IdBrigada);
+		$criteria->compare('IdTrabajo',$this->IdTrabajo);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -129,18 +134,14 @@ class Trabajador extends CActiveRecord
 		return parent::model($className);
 	}
 
-		public function getMenuAfiliaciones()
-	{
-		return Chtml::listData(Afiliaciones::model()->findAll(),"Id","Nombre");
-	}
-
-	public function getMenuHistoriaClinica()
-	{
-		return Chtml::listData(Historiaclinica::model()->findAll(),"Id","Id");
-	}
-
 	public function getMenuTrabajo()
 	{
-		return Chtml::listData(Trabajo::model()->findAll(),"Id","proceso");
+		return CHtml::listData(Trabajo::Model()->findAll(),"id","tarea");
+	}	
+
+	public function getMenuBrigada()
+	{
+		return CHtml::listData(Brigada::Model()->findAll(),"idBrigada","Funcion");
 	}
+
 }

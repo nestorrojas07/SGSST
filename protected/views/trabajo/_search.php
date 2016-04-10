@@ -112,11 +112,6 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'criterio_numero_expuestos'); ?>
-		<?php echo $form->textField($model,'criterio_numero_expuestos'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->label($model,'criterio_peor_consecuencia'); ?>
 		<?php echo $form->textField($model,'criterio_peor_consecuencia',array('size'=>60,'maxlength'=>250)); ?>
 	</div>

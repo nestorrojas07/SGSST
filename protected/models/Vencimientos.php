@@ -5,9 +5,14 @@
  *
  * The followings are the available columns in table 'vencimientos':
  * @property integer $id
+ * @property string $Nombre
  * @property string $fecha
- * @property string $Insumo
+ * @property string $Instrucciones
  * @property integer $estado
+ * @property string $Cedula_Trabajador
+ *
+ * The followings are the available model relations:
+ * @property Trabajador $cedulaTrabajador
  */
 class Vencimientos extends CActiveRecord
 {
@@ -27,12 +32,14 @@ class Vencimientos extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id, fecha, Insumo, estado', 'required'),
-			array('id, estado', 'numerical', 'integerOnly'=>true),
-			array('Insumo', 'length', 'max'=>200),
+			array('Nombre, fecha, Instrucciones, estado', 'required'),
+			array('estado', 'numerical', 'integerOnly'=>true),
+			array('Nombre', 'length', 'max'=>45),
+			array('Instrucciones', 'length', 'max'=>255),
+			array('Cedula_Trabajador', 'length', 'max'=>20),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, fecha, Insumo, estado', 'safe', 'on'=>'search'),
+			array('id, Nombre, fecha, Instrucciones, estado, Cedula_Trabajador', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -44,6 +51,7 @@ class Vencimientos extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'cedulaTrabajador' => array(self::BELONGS_TO, 'Trabajador', 'Cedula_Trabajador'),
 		);
 	}
 
@@ -54,9 +62,11 @@ class Vencimientos extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
+			'Nombre' => 'Nombre',
 			'fecha' => 'Fecha',
-			'Insumo' => 'Insumo',
+			'Instrucciones' => 'Instrucciones',
 			'estado' => 'Estado',
+			'Cedula_Trabajador' => 'Cedula Trabajador',
 		);
 	}
 
@@ -79,9 +89,11 @@ class Vencimientos extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
+		$criteria->compare('Nombre',$this->Nombre,true);
 		$criteria->compare('fecha',$this->fecha,true);
-		$criteria->compare('Insumo',$this->Insumo,true);
+		$criteria->compare('Instrucciones',$this->Instrucciones,true);
 		$criteria->compare('estado',$this->estado);
+		$criteria->compare('Cedula_Trabajador',$this->Cedula_Trabajador,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

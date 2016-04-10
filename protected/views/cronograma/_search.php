@@ -40,14 +40,14 @@
 				)))
 		?>
 	</div>
-	<!--
+
 	<div >
 		<?php echo $form->label($model,'estado'); ?>
 		<?php echo $form->textField($model,'estado'); ?>
 	</div>
-	-->
+
 	<div >
-		<?php echo CHtml::submitButton('Search',array("class"=>"btn btn-primary btn-medium")); ?>
+		<?php echo CHtml::submitButton('Search', array("class"=>"btn btn-primary btn-medium")); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

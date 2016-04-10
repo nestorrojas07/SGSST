@@ -26,6 +26,26 @@
 		<?php echo $form->textField($model,'Descripcion',array('size'=>60,'maxlength'=>300)); ?>
 	</div>
 
+	<div class="row">
+		<?php echo $form->label($model,'Fecha'); ?>
+		<?php 
+
+			$this->widget("zii.widgets.jui.CJuiDatePicker", array(
+			"attribute"=>"Fecha",
+			"model"=>$model,
+			"language"=>"es",
+			"options"=>array(
+				"dateFormat"=>"yy-mm-dd",
+				'showButtonPanel'=>true,
+				'changeYear'=>true,
+				'changeYear'=>true,
+				'yearRange'=>'0:+5',
+				'minDate'=>'0Y',
+				'maxDate'=>'+5Y',
+				)))
+		?>
+	</div>
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Search'); ?>
 	</div>

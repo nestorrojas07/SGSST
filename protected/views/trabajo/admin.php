@@ -66,7 +66,6 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'evaluacion_riesgo_nivel_riesgo_intervencion',
 		'evaluacion_riesgo_interpretacion_nivel_riesgo',
 		'valoracion_riesgo',
-		'criterio_numero_expuestos',
 		'criterio_peor_consecuencia',
 		'criterio_requisito_legal',
 		'intervencion_eliminacion',
