@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 07, 2016 at 11:25 PM
+-- Generation Time: Apr 11, 2016 at 12:14 AM
 -- Server version: 10.1.10-MariaDB
 -- PHP Version: 5.6.19
 
@@ -29,15 +29,38 @@ SET time_zone = "+00:00";
 CREATE TABLE `afiliaciones` (
   `Id` int(10) NOT NULL,
   `Nombre` varchar(30) NOT NULL,
-  `Descripcion` varchar(300) NOT NULL
+  `Descripcion` varchar(300) NOT NULL,
+  `Fecha` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `afiliaciones`
 --
 
-INSERT INTO `afiliaciones` (`Id`, `Nombre`, `Descripcion`) VALUES
-(1, 'EPS', 'Asmed salud');
+INSERT INTO `afiliaciones` (`Id`, `Nombre`, `Descripcion`, `Fecha`) VALUES
+(1, 'EPS', 'Asmed salud', '0000-00-00'),
+(2, 'ARL', 'Proteccion', '0000-00-00'),
+(3, 'AFP', 'SURA', '0000-00-00');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `brigada`
+--
+
+CREATE TABLE `brigada` (
+  `IdBrigada` int(10) NOT NULL,
+  `Funcion` varchar(45) NOT NULL,
+  `Descripcion_funcion` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `brigada`
+--
+
+INSERT INTO `brigada` (`IdBrigada`, `Funcion`, `Descripcion_funcion`) VALUES
+(1, 'Evacuacion', 'Procurar sin que esto implique peligro para su integridad personal, condiciones de evacuación\r\napropiadas para que las personas puedan evacuar'),
+(2, 'Primeros Auxilios', 'Administrar primeros auxilios básicos, al nivel de una primera respuesta, el Soporte básico de vida,\r\nnecesario para estabilizar una víctima de Accidente o enfermedad súbita, que ocurra dentro de las\r\ninstalaciones');
 
 -- --------------------------------------------------------
 
@@ -48,8 +71,21 @@ INSERT INTO `afiliaciones` (`Id`, `Nombre`, `Descripcion`) VALUES
 CREATE TABLE `cronograma` (
   `id` int(10) NOT NULL,
   `Descripcion` varchar(100) NOT NULL,
-  `Fecha` date NOT NULL
+  `Fecha` date NOT NULL,
+  `estado` int(1) NOT NULL,
+  `PersonasProgramadas` int(10) DEFAULT NULL,
+  `PersonasAsistieron` int(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `cronograma`
+--
+
+INSERT INTO `cronograma` (`id`, `Descripcion`, `Fecha`, `estado`, `PersonasProgramadas`, `PersonasAsistieron`) VALUES
+(1, 'Reunión con los inversores', '2016-04-30', 0, 5, NULL),
+(2, 'Hacer trabajar a marlejo', '2016-04-12', 0, 1, NULL),
+(3, 'Entrega #2 del proyecto', '2016-04-12', 0, 2, NULL),
+(4, 'Prueba', '2016-04-08', 0, 5, NULL);
 
 -- --------------------------------------------------------
 
@@ -59,10 +95,21 @@ CREATE TABLE `cronograma` (
 
 CREATE TABLE `examenes` (
   `id` int(3) NOT NULL,
-  `Descripcion` varchar(200) NOT NULL,
+  `Tipo` varchar(45) NOT NULL,
   `Fecha` date NOT NULL,
-  `Diagnostico` varchar(500) NOT NULL
+  `Descripcion` varchar(200) NOT NULL,
+  `Diagnostico` varchar(500) NOT NULL,
+  `IdHistoriaClinica` int(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `examenes`
+--
+
+INSERT INTO `examenes` (`id`, `Tipo`, `Fecha`, `Descripcion`, `Diagnostico`, `IdHistoriaClinica`) VALUES
+(1, 'Examen Ingreso', '2016-01-18', 'Examen medico General', 'El paciente es apto para realizar las actividades requeridas por la empresa', 1),
+(2, 'Examen ingreso', '2016-02-01', 'Examen medico general', 'El paciente es apto para realizar la actividades que la empresa requiere', 2),
+(3, 'Examen Periodico', '2016-03-24', 'Examen Auditivo periodico', 'El paciente presenta normalidad en el funcionamiento de sus oidos', 3);
 
 -- --------------------------------------------------------
 
@@ -73,15 +120,17 @@ CREATE TABLE `examenes` (
 CREATE TABLE `historiaclinica` (
   `Id` int(10) NOT NULL,
   `Descripcion` varchar(500) NOT NULL,
-  `Examenes` int(3) DEFAULT NULL
+  `Cedula_trabajador` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `historiaclinica`
 --
 
-INSERT INTO `historiaclinica` (`Id`, `Descripcion`, `Examenes`) VALUES
-(1, 'No hay un historial presente', NULL);
+INSERT INTO `historiaclinica` (`Id`, `Descripcion`, `Cedula_trabajador`) VALUES
+(1, 'Se solicita examen medico general para realizar la contratacion', '1254698'),
+(2, 'Se solicita examen medico general para realizar la contratacion', '9773559'),
+(3, 'Se solicita examen auditivo', '1094899656');
 
 -- --------------------------------------------------------
 
@@ -93,20 +142,34 @@ CREATE TABLE `trabajador` (
   `Cedula` varchar(20) NOT NULL,
   `Nombre` varchar(45) NOT NULL,
   `Telefono` varchar(20) NOT NULL,
+  `Foto_Link` varchar(255) DEFAULT NULL,
   `Correo` varchar(30) NOT NULL,
-  `Trabajador_Afiliaciones` int(10) DEFAULT NULL,
-  `Trabajador_HistoriaClinica` int(10) DEFAULT NULL,
-  `trabajador_trabajo` int(11) DEFAULT NULL
+  `Titulo_academico` varchar(100) NOT NULL,
+  `experiencia` varchar(500) NOT NULL,
+  `ausencias` int(10) DEFAULT NULL,
+  `IdBrigada` int(10) DEFAULT NULL,
+  `IdTrabajo` int(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `trabajador`
 --
 
-INSERT INTO `trabajador` (`Cedula`, `Nombre`, `Telefono`, `Correo`, `Trabajador_Afiliaciones`, `Trabajador_HistoriaClinica`, `trabajador_trabajo`) VALUES
-('1094899656', 'Paola Alejandra Arevalo', '7408956', 'pao0509@hotmail.com', NULL, NULL, NULL),
-('1254698', 'Santiago Salazar', '7456321', 'santiago@hotmail.com', 1, 1, NULL),
-('9773559', 'Mauricio A. Ramirez', '7405678', 'marlejo@hotmail.com', 1, 1, NULL);
+INSERT INTO `trabajador` (`Cedula`, `Nombre`, `Telefono`, `Foto_Link`, `Correo`, `Titulo_academico`, `experiencia`, `ausencias`, `IdBrigada`, `IdTrabajo`) VALUES
+('1094899656', 'Paola Alejandra Arevalo', '7408956', NULL, 'pao0509@hotmail.com', 'universitario', 'ninguna', NULL, 2, 2),
+('1254698', 'Santiago Salazar', '7456321', NULL, 'santiago@hotmail.com', 'tecnológico', 'casinos', NULL, 2, 2),
+('9773559', 'Mauricio A. Ramirez', '7405678', NULL, 'marlejo@hotmail.com', 'universitario', 'mi industria', NULL, 1, 3);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `trabajador_afiliaciones`
+--
+
+CREATE TABLE `trabajador_afiliaciones` (
+  `Cedula` varchar(20) NOT NULL,
+  `IdAfiliaciones` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -115,7 +178,7 @@ INSERT INTO `trabajador` (`Cedula`, `Nombre`, `Telefono`, `Correo`, `Trabajador_
 --
 
 CREATE TABLE `trabajo` (
-  `Id` int(11) NOT NULL,
+  `Id` int(10) NOT NULL,
   `proceso` varchar(60) NOT NULL,
   `zona` varchar(50) NOT NULL,
   `actividad` varchar(50) NOT NULL,
@@ -129,13 +192,12 @@ CREATE TABLE `trabajo` (
   `control_existente_persona` varchar(80) DEFAULT NULL,
   `evaluacion_riesgo_nivel_deficiencia` int(3) NOT NULL,
   `evaluacion_riesgo_nivel_exposicion` int(3) NOT NULL,
-  `evaluacion_riesgo_nivel_probabilidad` int(3) NOT NULL,
-  `evaluacion_riesgo_interpretacion_nivel_probabilidad` varchar(9) NOT NULL,
+  `evaluacion_riesgo_nivel_probabilidad` int(3) DEFAULT NULL,
+  `evaluacion_riesgo_interpretacion_nivel_probabilidad` varchar(9) DEFAULT NULL,
   `evaluacion_riesgo_nivel_consecuencia` int(3) NOT NULL,
-  `evaluacion_riesgo_nivel_riesgo_intervencion` int(3) NOT NULL,
-  `evaluacion_riesgo_interpretacion_nivel_riesgo` varchar(300) NOT NULL,
+  `evaluacion_riesgo_nivel_riesgo_intervencion` int(3) DEFAULT NULL,
+  `evaluacion_riesgo_interpretacion_nivel_riesgo` varchar(300) DEFAULT NULL,
   `valoracion_riesgo` varchar(80) NOT NULL,
-  `criterio_numero_expuestos` int(3) NOT NULL,
   `criterio_peor_consecuencia` varchar(250) NOT NULL,
   `criterio_requisito_legal` tinyint(1) NOT NULL,
   `intervencion_eliminacion` varchar(20) DEFAULT NULL,
@@ -149,8 +211,9 @@ CREATE TABLE `trabajo` (
 -- Dumping data for table `trabajo`
 --
 
-INSERT INTO `trabajo` (`Id`, `proceso`, `zona`, `actividad`, `tarea`, `rutinaria`, `peligro_descripcion`, `peligro_clasificacion`, `peligro__efectosPosibles`, `control_existente_fuente`, `control_existente_medio`, `control_existente_persona`, `evaluacion_riesgo_nivel_deficiencia`, `evaluacion_riesgo_nivel_exposicion`, `evaluacion_riesgo_nivel_probabilidad`, `evaluacion_riesgo_interpretacion_nivel_probabilidad`, `evaluacion_riesgo_nivel_consecuencia`, `evaluacion_riesgo_nivel_riesgo_intervencion`, `evaluacion_riesgo_interpretacion_nivel_riesgo`, `valoracion_riesgo`, `criterio_numero_expuestos`, `criterio_peor_consecuencia`, `criterio_requisito_legal`, `intervencion_eliminacion`, `intervencion_sustituacion`, `intervencion_control_ingenieria`, `intervencion_control_administrativo`, `intervencion_elementos_proteccion_personal`) VALUES
-(2, 'Administrativo', 'Dirección Financiera', 'Facturación', 'Sistermatización de la información', 1, 'Postura prolongada', 'Biomecanicos', 'Lumbosacralgia', NULL, NULL, 'Pausas Activas', 2, 2, 4, 'Bajo', 25, 3, 'Mejorar si es posible, seria conveniente justificar la intervencion y su rentabilidad', 'Mejorable', 1, 'Lumbosacralgia cronica con incapacidad permanete parial', 1, NULL, NULL, NULL, 'Dotar al personal de sillas adecuadas para sus respectivos puestos de trabajo de acuerdo a la exigencia', NULL);
+INSERT INTO `trabajo` (`Id`, `proceso`, `zona`, `actividad`, `tarea`, `rutinaria`, `peligro_descripcion`, `peligro_clasificacion`, `peligro__efectosPosibles`, `control_existente_fuente`, `control_existente_medio`, `control_existente_persona`, `evaluacion_riesgo_nivel_deficiencia`, `evaluacion_riesgo_nivel_exposicion`, `evaluacion_riesgo_nivel_probabilidad`, `evaluacion_riesgo_interpretacion_nivel_probabilidad`, `evaluacion_riesgo_nivel_consecuencia`, `evaluacion_riesgo_nivel_riesgo_intervencion`, `evaluacion_riesgo_interpretacion_nivel_riesgo`, `valoracion_riesgo`, `criterio_peor_consecuencia`, `criterio_requisito_legal`, `intervencion_eliminacion`, `intervencion_sustituacion`, `intervencion_control_ingenieria`, `intervencion_control_administrativo`, `intervencion_elementos_proteccion_personal`) VALUES
+(2, 'Administrativo', 'Dirección Financiera', 'Facturación', 'Sistermatización de la información', 1, 'Postura prolongada', 'Biomecanicos', 'Lumbosacralgia', NULL, NULL, 'Pausas Activas', 2, 2, 4, 'Bajo', 25, 3, 'Mejorar si es posible, seria conveniente justificar la intervencion y su rentabilidad', 'Mejorable', 'Lumbosacralgia cronica con incapacidad permanete parial', 1, NULL, NULL, NULL, 'Dotar al personal de sillas adecuadas para sus respectivos puestos de trabajo de acuerdo a la exigencia', NULL),
+(3, 'Operativo', 'Area Medicamentos', 'Recepcion Medicamentos', 'Verificacion tecnica de medicamentos', 1, 'Postura(PROLONGADA, MANTENIDA, FORZADA, ANTIGRAVITACIONAL)', 'BIOMEDICOS', 'Cervicalgia', NULL, NULL, 'Pausas Activas', 2, 2, NULL, NULL, 25, NULL, NULL, 'MEJORABLE', 'PERDIDA DE LA CAPACIDAD LABORAL', 1, NULL, NULL, NULL, 'Establecer protocolo de seguridad para la recepcion tecnica de medicamentos en el cual se estipule un paso a paso. Capacitar al personal en mecanica corporal', NULL);
 
 -- --------------------------------------------------------
 
@@ -160,9 +223,20 @@ INSERT INTO `trabajo` (`Id`, `proceso`, `zona`, `actividad`, `tarea`, `rutinaria
 
 CREATE TABLE `vencimientos` (
   `id` int(10) NOT NULL,
-  `fecha` date NOT NULL,
-  `Insumo` varchar(200) NOT NULL
+  `Nombre` varchar(45) NOT NULL,
+  `fecha_Vencimiento` date NOT NULL,
+  `Instrucciones` varchar(255) NOT NULL,
+  `estado` int(1) NOT NULL,
+  `Cedula_Trabajador` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `vencimientos`
+--
+
+INSERT INTO `vencimientos` (`id`, `Nombre`, `fecha_Vencimiento`, `Instrucciones`, `estado`, `Cedula_Trabajador`) VALUES
+(1, 'Extintor', '2018-08-31', '1. Quitar el pasador de seguridad\r\n2. Apretar la maneta\r\n3. Dirigir el chorro a la base de las llamas \r\n', 1, '1094899656'),
+(2, 'Gel Desinfectante', '2018-01-31', 'Aplicar abundantemente en la zona a desinfectar', 1, '1094899656');
 
 --
 -- Indexes for dumped tables
@@ -175,6 +249,12 @@ ALTER TABLE `afiliaciones`
   ADD PRIMARY KEY (`Id`);
 
 --
+-- Indexes for table `brigada`
+--
+ALTER TABLE `brigada`
+  ADD PRIMARY KEY (`IdBrigada`);
+
+--
 -- Indexes for table `cronograma`
 --
 ALTER TABLE `cronograma`
@@ -184,23 +264,31 @@ ALTER TABLE `cronograma`
 -- Indexes for table `examenes`
 --
 ALTER TABLE `examenes`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `IdHistoriaClinica` (`IdHistoriaClinica`);
 
 --
 -- Indexes for table `historiaclinica`
 --
 ALTER TABLE `historiaclinica`
   ADD PRIMARY KEY (`Id`),
-  ADD KEY `Examenes` (`Examenes`);
+  ADD KEY `Cedula_trabajador` (`Cedula_trabajador`);
 
 --
 -- Indexes for table `trabajador`
 --
 ALTER TABLE `trabajador`
   ADD PRIMARY KEY (`Cedula`),
-  ADD KEY `Trabajador_Afiliaciones` (`Trabajador_Afiliaciones`),
-  ADD KEY `Trabajador_HistoriaClinica` (`Trabajador_HistoriaClinica`),
-  ADD KEY `trabajador_trabajo` (`trabajador_trabajo`);
+  ADD KEY `IdBrigada` (`IdBrigada`),
+  ADD KEY `IdTrabajo` (`IdTrabajo`);
+
+--
+-- Indexes for table `trabajador_afiliaciones`
+--
+ALTER TABLE `trabajador_afiliaciones`
+  ADD PRIMARY KEY (`Cedula`,`IdAfiliaciones`),
+  ADD KEY `Cedula` (`Cedula`),
+  ADD KEY `IdAfiliaciones` (`IdAfiliaciones`);
 
 --
 -- Indexes for table `trabajo`
@@ -212,8 +300,48 @@ ALTER TABLE `trabajo`
 -- Indexes for table `vencimientos`
 --
 ALTER TABLE `vencimientos`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `Cedula_Trabajador` (`Cedula_Trabajador`);
 
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `afiliaciones`
+--
+ALTER TABLE `afiliaciones`
+  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `brigada`
+--
+ALTER TABLE `brigada`
+  MODIFY `IdBrigada` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT for table `cronograma`
+--
+ALTER TABLE `cronograma`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT for table `examenes`
+--
+ALTER TABLE `examenes`
+  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `historiaclinica`
+--
+ALTER TABLE `historiaclinica`
+  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `trabajo`
+--
+ALTER TABLE `trabajo`
+  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `vencimientos`
+--
+ALTER TABLE `vencimientos`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- Constraints for dumped tables
 --
@@ -222,15 +350,33 @@ ALTER TABLE `vencimientos`
 -- Constraints for table `examenes`
 --
 ALTER TABLE `examenes`
-  ADD CONSTRAINT `examenes_ibfk_1` FOREIGN KEY (`id`) REFERENCES `historiaclinica` (`Examenes`) ON UPDATE CASCADE;
+  ADD CONSTRAINT `examenes_ibfk_1` FOREIGN KEY (`IdHistoriaClinica`) REFERENCES `historiaclinica` (`Id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `historiaclinica`
+--
+ALTER TABLE `historiaclinica`
+  ADD CONSTRAINT `historiaclinica_ibfk_1` FOREIGN KEY (`Cedula_trabajador`) REFERENCES `trabajador` (`Cedula`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `trabajador`
 --
 ALTER TABLE `trabajador`
-  ADD CONSTRAINT `trabajador_Afiliaciones` FOREIGN KEY (`Trabajador_Afiliaciones`) REFERENCES `afiliaciones` (`Id`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `trabajador_HistoriaClinica` FOREIGN KEY (`Trabajador_HistoriaClinica`) REFERENCES `historiaclinica` (`Id`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `trabajador_ibfk_1` FOREIGN KEY (`trabajador_trabajo`) REFERENCES `trabajo` (`Id`) ON UPDATE CASCADE;
+  ADD CONSTRAINT `trabajador_ibfk_1` FOREIGN KEY (`IdTrabajo`) REFERENCES `trabajo` (`Id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `trabajador_ibfk_2` FOREIGN KEY (`IdBrigada`) REFERENCES `brigada` (`IdBrigada`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `trabajador_afiliaciones`
+--
+ALTER TABLE `trabajador_afiliaciones`
+  ADD CONSTRAINT `trabajador_afiliaciones_ibfk_1` FOREIGN KEY (`Cedula`) REFERENCES `trabajador` (`Cedula`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `trabajador_afiliaciones_ibfk_2` FOREIGN KEY (`IdAfiliaciones`) REFERENCES `afiliaciones` (`Id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `vencimientos`
+--
+ALTER TABLE `vencimientos`
+  ADD CONSTRAINT `vencimientos_ibfk_1` FOREIGN KEY (`Cedula_Trabajador`) REFERENCES `trabajador` (`Cedula`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
