@@ -13,8 +13,10 @@
 			<b><strong><font color="#336699"><?php echo CHtml::encode($data->getAttributeLabel('Funcion')); ?>:</font></strong></b>
 			<small><?php echo CHtml::link(CHtml::encode($data->Funcion), array('view', 'id'=>$data->IdBrigada)); ?></small>
 			<br>
+			<!--
 			<b><strong><font color="#336699"><?php echo CHtml::encode($data->getAttributeLabel('IdBrigada')); ?>:</font></strong></b>
-			<font color="black"><?php echo CHtml::encode($data->IdBrigada); ?></font>			
+			<font color="black"><?php echo CHtml::encode($data->IdBrigada); ?></font>		
+			-->	
 			
 		</h4>
 	</div>

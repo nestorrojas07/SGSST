@@ -4,15 +4,15 @@
 
 $this->breadcrumbs=array(
 	'Cronogramas'=>array('index'),
-	'Create',
+	'Crear',
 );
 
 $this->menu=array(
-	array('label'=>'List Cronograma', 'url'=>array('index')),
-	array('label'=>'Manage Cronograma', 'url'=>array('admin')),
+	array('label'=>'Lista de Cronogramas', 'url'=>array('index')),
+	#array('label'=>'Manage Cronograma', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Cronograma</h1>
+<h1><font color="#336699">Crear Cronograma</font></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

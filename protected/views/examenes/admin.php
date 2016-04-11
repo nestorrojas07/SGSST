@@ -4,12 +4,12 @@
 
 $this->breadcrumbs=array(
 	'Examenes'=>array('index'),
-	'Manage',
+	'Administrar',
 );
 
 $this->menu=array(
-	array('label'=>'List Examenes', 'url'=>array('index')),
-	array('label'=>'Create Examenes', 'url'=>array('create')),
+	#array('label'=>'List Examenes', 'url'=>array('index')),
+	array('label'=>'Crear Examen', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -26,12 +26,14 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Examenes</h1>
+<h1><font color="#336699">Administrar Examenes</font></h1>
 
 <p>
-You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
+Usted puede ingresar operadores de comparación como (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
+or <b>=</b>)  en busquedas que incluyan caracteres numericos al comienzo de cada una de sus busquedas, seguido del valor a buscar. (<b>Ejemplo:</b> <b>&lt;2</b>)
 </p>
+
+<!--
 
 <?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
 <div class="search-form" style="display:none">
@@ -42,15 +44,17 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'examenes-grid',
+	'itemsCssClass'=>"table table-striped",
+	'pager'=>array("htmlOptions"=>array("class"=>"pagination")),
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
-		'id',
+		#'id',
 		'Tipo',
 		'Fecha',
 		'Descripcion',
 		'Diagnostico',
-		'IdHistoriaClinica',
+		#'IdHistoriaClinica',
 		array(
 			'class'=>'CButtonColumn',
 		),

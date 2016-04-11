@@ -71,7 +71,14 @@ class HistoriaclinicaController extends Controller
 		{
 			$model->attributes=$_POST['Historiaclinica'];
 			if($model->save())
+			{
+				Yii::app()->user->setFlash("success","La historia clinica se creó exitosamente");
 				$this->redirect(array('view','id'=>$model->Id));
+			}
+			else
+			{
+				Yii::app()->user->setFlash("error","La historia clinica no se creó exitosamente");
+			}
 		}
 
 		$this->render('create',array(
@@ -95,7 +102,14 @@ class HistoriaclinicaController extends Controller
 		{
 			$model->attributes=$_POST['Historiaclinica'];
 			if($model->save())
+			{
+				Yii::app()->user->setFlash("success","La historia clinica se actualizó exitosamente");
 				$this->redirect(array('view','id'=>$model->Id));
+			}
+			else
+			{
+				Yii::app()->user->setFlash("error","La historia clinica no se actualizó exitosamente");
+			}
 		}
 
 		$this->render('update',array(
@@ -114,7 +128,14 @@ class HistoriaclinicaController extends Controller
 
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		if(!isset($_GET['ajax']))
+		{
+			Yii::app()->user->setFlash("success","La historia clinica se eliminó exitosamente");
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+		}
+		else
+		{
+			Yii::app()->user->setFlash("error","La historia clinica no se eliminó exitosamente");
+		}
 	}
 
 	/**

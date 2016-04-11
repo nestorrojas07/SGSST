@@ -7,12 +7,12 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create Cronograma', 'url'=>array('create')),
-	array('label'=>'Manage Cronograma', 'url'=>array('admin')),
+	array('label'=>'Crear Cronograma', 'url'=>array('create')),
+	array('label'=>'Administrar Cronogramas', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Cronogramas</h1>
+<h1><font color="#336699">Cronogramas</font></h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

@@ -42,8 +42,32 @@
               <li><a href="#">Contact</a></li>
               <li><a href="#">Login</a></li>
             </ul>-->
+            <!--
+            <ul class="nav"> 
 
+              <li class="dropdown">
 
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                "Dropdown"
+                <b class="caret"></b>
+              </a>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">Uno</a>
+                </li>
+                <li>
+                  <a href="#">Dos</a>
+                </li>
+                <li class="divider"></li>
+                <li class="nav-header">Nav</li>
+                <li>
+                  <a href="#">Dos</a>
+                </li>
+              </ul>
+
+              </li>
+            </ul>-->
 
             
           
@@ -55,7 +79,9 @@
             array('label'=>'Afiliaciones', 'url'=>array('/afiliaciones/index')),
             array('label'=>'Insumos', 'url'=>array('/vencimientos/index')),
             array('label'=>'Brigadas', 'url'=>array('/brigada/index')),
-            #array('label'=>'Historia clinica', 'url'=>array('/historiaclinica/index')),
+            array('label'=>'Historias clinicas', 'url'=>array('/historiaclinica/index')),
+            array('label'=>'Examenes', 'url'=>array('/examenes/index')),
+            array('label'=>'Cronogramas', 'url'=>array('/cronograma/index')),
             array('label'=>'Acerca de', 'url'=>array('/site/page', 'view'=>'about')),
             #array('label'=>'Contact', 'url'=>array('/site/contact')),
             array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),

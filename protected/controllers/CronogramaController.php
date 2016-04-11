@@ -32,7 +32,7 @@ class CronogramaController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('create','update','enabled','update2'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -71,7 +71,14 @@ class CronogramaController extends Controller
 		{
 			$model->attributes=$_POST['Cronograma'];
 			if($model->save())
+			{
+				Yii::app()->user->setFlash("success","El cronograma se creó exitosamente");
 				$this->redirect(array('view','id'=>$model->id));
+			}
+			else
+			{
+				Yii::app()->user->setFlash("error","El cronograma no se creó exitosamente");
+			}
 		}
 
 		$this->render('create',array(
@@ -95,7 +102,14 @@ class CronogramaController extends Controller
 		{
 			$model->attributes=$_POST['Cronograma'];
 			if($model->save())
+			{
+				Yii::app()->user->setFlash("success","El cronograma se actualizó exitosamente");
 				$this->redirect(array('view','id'=>$model->id));
+			}
+			else
+			{
+				Yii::app()->user->setFlash("error","El cronograma no se actualizó exitosamente");
+			}
 		}
 
 		$this->render('update',array(
@@ -114,7 +128,14 @@ class CronogramaController extends Controller
 
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		if(!isset($_GET['ajax']))
+		{
+			Yii::app()->user->setFlash("success","El cronograma se eliminó exitosamente");
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+		}
+		else
+		{
+			Yii::app()->user->setFlash("success","El cronograma no se eliminó exitosamente");
+		}
 	}
 
 	/**
@@ -169,5 +190,63 @@ class CronogramaController extends Controller
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
+	}
+
+	public function actionEnabled($id)
+	{
+		$model=Cronograma::model()->findByPk($id);
+		
+		if($model->estado==0)
+		{
+			$model->estado=1;
+		}
+		else
+		{
+			$model->estado=0;
+		}
+		$model->save();
+		$this->redirect(array("index"));
+	}
+
+
+	public function actionUpdate2($id)
+	{
+		$model=$this->loadModel($id);
+
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
+
+		if(isset($_POST['Cronograma']))
+		{
+			$model->attributes=$_POST['Cronograma'];
+
+			if($model->estado==1)
+			{
+				if($model->PersonasProgramadas>=$model->PersonasAsistieron && $model->PersonasAsistieron>=0)
+				{
+					if($model->save())
+					{
+						Yii::app()->user->setFlash("success","Las personas que asisitieron se registraron exitosamente");
+						$this->redirect(array('view','id'=>$model->id));
+					}
+					else
+					{
+						Yii::app()->user->setFlash("error","Las personas que asisitieron no se registraron exitosamente");
+					}
+				}
+				else
+				{
+					Yii::app()->user->setFlash("error","El número de asistentes no es valido o es mayor al número de personas citadas");
+				}
+			}
+			else
+			{
+				Yii::app()->user->setFlash("error","El cronograma debe estar realizado para poder registrar las personas que asistieron");
+			}
+		}
+
+		$this->render('update2',array(
+			'model'=>$model,
+		));
 	}
 }

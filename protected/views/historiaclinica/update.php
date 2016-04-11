@@ -9,13 +9,13 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Historiaclinica', 'url'=>array('index')),
-	array('label'=>'Create Historiaclinica', 'url'=>array('create')),
-	array('label'=>'View Historiaclinica', 'url'=>array('view', 'id'=>$model->Id)),
-	array('label'=>'Manage Historiaclinica', 'url'=>array('admin')),
+	array('label'=>'Lista de Historias clinicas', 'url'=>array('index')),
+	#array('label'=>'Create Historiaclinica', 'url'=>array('create')),
+	array('label'=>'Ver Historia clinica', 'url'=>array('view', 'id'=>$model->Id)),
+	#array('label'=>'Manage Historiaclinica', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update Historiaclinica <?php echo $model->Id; ?></h1>
+<h1><font color="#336699">Actualizar Historia clinica de: </font><font color="black"> <?php echo $model->getNombreTrabajador($model->Cedula_trabajador); ?></font></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

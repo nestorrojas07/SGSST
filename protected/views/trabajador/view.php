@@ -11,7 +11,7 @@ $this->menu=array(
 	array('label'=>'Lista de Trabajadores', 'url'=>array('index')),
 	#array('label'=>'Crear Trabajador', 'url'=>array('create')),
 	array('label'=>'Actualizar Trabajador', 'url'=>array('update', 'id'=>$model->Cedula)),
-	array('label'=>'Eliminar Trabajador', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->Cedula),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Eliminar Trabajador', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->Cedula),'confirm'=>'Seguro qeu desea eliminar este trabajador?')),
 	#array('label'=>'Manage Trabajador', 'url'=>array('admin')),
 
 );

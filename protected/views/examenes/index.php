@@ -7,12 +7,12 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create Examenes', 'url'=>array('create')),
-	array('label'=>'Manage Examenes', 'url'=>array('admin')),
+	array('label'=>'Crear Examen', 'url'=>array('create')),
+	array('label'=>'Administrar Examenes', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Examenes</h1>
+<h1><font color="#336699">Examenes</font></h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

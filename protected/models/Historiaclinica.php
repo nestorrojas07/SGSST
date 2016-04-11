@@ -101,4 +101,15 @@ class Historiaclinica extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+	public function getMenuTrabajadores()
+	{
+		return CHtml::listData(Trabajador::model()->findAll(),"Cedula","Nombre");
+	}
+	public function getNombreTrabajador($id)
+	{
+		$modelo=Trabajador::model()->findByPk($id);
+		if($modelo!==null)
+			return $modelo->Nombre;
+	}
 }

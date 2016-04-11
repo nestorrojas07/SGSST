@@ -15,24 +15,24 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="note">Campos con <span class="required">*</span> son obligatorios.</p>
 
-	<?php echo $form->errorSummary($model); ?>
+	<!--<?php echo $form->errorSummary($model); ?>-->
 
-	<div class="row">
+	<div >
 		<?php echo $form->labelEx($model,'Descripcion'); ?>
-		<?php echo $form->textField($model,'Descripcion',array('size'=>60,'maxlength'=>500)); ?>
+		<?php echo $form->textArea($model,'Descripcion',array('size'=>60,'maxlength'=>500)); ?>
 		<?php echo $form->error($model,'Descripcion'); ?>
 	</div>
 
-	<div class="row">
+	<div >
 		<?php echo $form->labelEx($model,'Cedula_trabajador'); ?>
-		<?php echo $form->textField($model,'Cedula_trabajador',array('size'=>20,'maxlength'=>20)); ?>
+		<?php echo $form->dropDownList($model,'Cedula_trabajador',$model->getMenuTrabajadores(),array("empty"=>"Seleccione un trabajador")); ?>
 		<?php echo $form->error($model,'Cedula_trabajador'); ?>
 	</div>
 
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+	<div >
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Crear' : 'Guardar',array("class"=>"btn btn-primary btn-medium")); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

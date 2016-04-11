@@ -11,7 +11,7 @@ $this->menu=array(
 	array('label'=>'Lista de Brigadas', 'url'=>array('index')),
 	#array('label'=>'Create Brigada', 'url'=>array('create')),
 	array('label'=>'Actulizar Brigada', 'url'=>array('update', 'id'=>$model->IdBrigada)),
-	array('label'=>'Eliminar Brigada', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->IdBrigada),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Eliminar Brigada', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->IdBrigada),'confirm'=>'Seguro que desea eliminar esta brigada?')),
 	#array('label'=>'Manage Brigada', 'url'=>array('admin')),
 );
 ?>

@@ -3,16 +3,16 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Historiaclinicas',
+	'Historias clinicas',
 );
 
 $this->menu=array(
-	array('label'=>'Create Historiaclinica', 'url'=>array('create')),
-	array('label'=>'Manage Historiaclinica', 'url'=>array('admin')),
+	array('label'=>'Crear Historia clinica', 'url'=>array('create')),
+	array('label'=>'Administrar Historias clinicas', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Historiaclinicas</h1>
+<h1><font color="#336699">Historias clinicas</font></h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

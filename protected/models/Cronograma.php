@@ -104,4 +104,6 @@ class Cronograma extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+	
 }

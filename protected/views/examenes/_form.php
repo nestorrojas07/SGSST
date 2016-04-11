@@ -15,17 +15,17 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="note">Campos con <span class="required">*</span> son obligatorios.</p>
 
-	<?php echo $form->errorSummary($model); ?>
+	<!--<?php echo $form->errorSummary($model); ?>-->
 
-	<div class="row">
+	<div >
 		<?php echo $form->labelEx($model,'Tipo'); ?>
 		<?php echo $form->textField($model,'Tipo',array('size'=>45,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'Tipo'); ?>
 	</div>
 
-	<div class="row">
+	<div >
 		<?php echo $form->labelEx($model,'Fecha'); ?>
 		<?php 
 
@@ -45,26 +45,26 @@
 		?>
 	</div>
 
-	<div class="row">
+	<div >
 		<?php echo $form->labelEx($model,'Descripcion'); ?>
-		<?php echo $form->textField($model,'Descripcion',array('size'=>60,'maxlength'=>200)); ?>
+		<?php echo $form->textArea($model,'Descripcion',array('size'=>60,'maxlength'=>200)); ?>
 		<?php echo $form->error($model,'Descripcion'); ?>
 	</div>
 
-	<div class="row">
+	<div >
 		<?php echo $form->labelEx($model,'Diagnostico'); ?>
-		<?php echo $form->textField($model,'Diagnostico',array('size'=>60,'maxlength'=>500)); ?>
+		<?php echo $form->textArea($model,'Diagnostico',array('size'=>60,'maxlength'=>500)); ?>
 		<?php echo $form->error($model,'Diagnostico'); ?>
 	</div>
 
-	<div class="row">
+	<div >
 		<?php echo $form->labelEx($model,'IdHistoriaClinica'); ?>
-		<?php echo $form->textField($model,'IdHistoriaClinica'); ?>
+		<?php echo $form->dropDownList($model,'IdHistoriaClinica',$model->getMenuHistoriaClinica(),array("empty"=>"Seleccione una historia clinica")); ?>
 		<?php echo $form->error($model,'IdHistoriaClinica'); ?>
 	</div>
 
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+	<div >
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Crear' : 'Guardar',array("class"=>"btn btn-primary btn-medium")); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

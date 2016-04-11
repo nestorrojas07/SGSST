@@ -5,7 +5,7 @@
 $this->breadcrumbs=array(
 	'Cronogramas'=>array('index'),
 	$model->Descripcion=>array('view','id'=>$model->id),
-	'Actualizar',
+	'Registrar asistentes',
 );
 
 $this->menu=array(
@@ -16,6 +16,8 @@ $this->menu=array(
 );
 ?>
 
-<h1><font color="#336699">Actualizar Cronograma: </font><font color="black"><?php echo $model->Descripcion; ?></font></h1>
+<h1><font color="#336699">Registrar asistentes a: </font><font color="black"><?php echo $model->Descripcion; ?></font></h1>
 
-<?php $this->renderPartial('_form', array('model'=>$model)); ?>
+<br>
+
+<?php $this->renderPartial('_form2', array('model'=>$model)); ?>

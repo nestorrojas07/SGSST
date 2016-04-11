@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Historiaclinica', 'url'=>array('index')),
-	array('label'=>'Manage Historiaclinica', 'url'=>array('admin')),
+	array('label'=>'Lista de Historias clinicas', 'url'=>array('index')),
+	#array('label'=>'Manage Historiaclinica', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Historiaclinica</h1>
+<h1><font color="#336699">Crear Historia clinica</font></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
