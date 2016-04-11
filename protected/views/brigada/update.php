@@ -5,17 +5,17 @@
 $this->breadcrumbs=array(
 	'Brigadas'=>array('index'),
 	$model->IdBrigada=>array('view','id'=>$model->IdBrigada),
-	'Update',
+	'Actualizar',
 );
 
 $this->menu=array(
-	array('label'=>'List Brigada', 'url'=>array('index')),
-	array('label'=>'Create Brigada', 'url'=>array('create')),
-	array('label'=>'View Brigada', 'url'=>array('view', 'id'=>$model->IdBrigada)),
-	array('label'=>'Manage Brigada', 'url'=>array('admin')),
+	array('label'=>'Lista de Brigadas', 'url'=>array('index')),
+	#array('label'=>'Crear Brigada', 'url'=>array('create')),
+	array('label'=>'Ver Brigada', 'url'=>array('view', 'id'=>$model->IdBrigada)),
+	#array('label'=>'Manage Brigada', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update Brigada <?php echo $model->IdBrigada; ?></h1>
+<h1><font color="#336699">Actualizar brigada: </font> <font color="black"><?php echo $model->Funcion; ?></font></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

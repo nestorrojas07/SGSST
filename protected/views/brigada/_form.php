@@ -15,30 +15,24 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="note">Campos con <span class="required">*</span> son obligatorios.</p>
 
-	<?php echo $form->errorSummary($model); ?>
+	<!--<?php echo $form->errorSummary($model); ?>-->
 
-	<div class="row">
+	<div >
 		<?php echo $form->labelEx($model,'Funcion'); ?>
 		<?php echo $form->textField($model,'Funcion',array('size'=>45,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'Funcion'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'Descripcion_funcion'); ?>
-		<?php echo $form->textField($model,'Descripcion_funcion',array('size'=>60,'maxlength'=>255)); ?>
+	<div >
+		<?php echo $form->labelEx($model,'Responsabilidades'); ?>
+		<?php echo $form->textArea($model,'Descripcion_funcion',array('size'=>60,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'Descripcion_funcion'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'IdPlanEmergencias'); ?>
-		<?php echo $form->textField($model,'IdPlanEmergencias'); ?>
-		<?php echo $form->error($model,'IdPlanEmergencias'); ?>
-	</div>
-
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+	<div >
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Crear' : 'Guardar',array("class"=>"btn btn-primary btn-medium")); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

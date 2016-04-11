@@ -9,7 +9,7 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'Lista de Trabajadores', 'url'=>array('index')),
-	array('label'=>'Crear Trabajador', 'url'=>array('create')),
+	#array('label'=>'Crear Trabajador', 'url'=>array('create')),
 	array('label'=>'Actualizar Trabajador', 'url'=>array('update', 'id'=>$model->Cedula)),
 	array('label'=>'Eliminar Trabajador', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->Cedula),'confirm'=>'Are you sure you want to delete this item?')),
 	#array('label'=>'Manage Trabajador', 'url'=>array('admin')),
@@ -115,3 +115,22 @@ $this->menu=array(
 	<?php  endforeach; ?>
 	
 </table>	
+
+<h2><font color="#336699">Es responsable de los siguientes insumos</font></h2>
+<table class="table table-bordered table-striped">
+	
+	<tr>
+		<td> <strong><font color="#336699">Nombre</font></strong></td>
+		<td><strong><font color="#336699">Fecha de vencimiento</font></strong></td>
+	</tr>
+	<?php foreach ($model->vencimientoses as $insumo)	: ?>
+
+		<tr>		
+			<td> <?php  echo $insumo->Nombre ?></td>
+			<td><?php echo $insumo->fecha_Vencimiento ?></td>
+		</tr>
+
+	<?php  endforeach; ?>
+	
+</table>	
+

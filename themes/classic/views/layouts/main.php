@@ -33,7 +33,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">S.G.S.S.T</a>
+          <a class="brand" href="http://localhost/yii/SGSST/index.php?r=site/index">S.G.S.S.T</a>
 
           <div class="nav-collapse collapse pull-right">
            <!-- <ul class="nav">
@@ -50,9 +50,12 @@
           <?php $this->widget('zii.widgets.CMenu',array(
           'htmlOptions'=> array("class"=>"nav"),
           'items'=>array(
-            array('label'=>'Inicio', 'url'=>array('/site/index')),
+            #array('label'=>'Inicio', 'url'=>array('/site/index')),
             array('label'=>'Trabajadores', 'url'=>array('/trabajador/index')),
-            array('label'=>'Cronogramas', 'url'=>array('/cronograma/index')),
+            array('label'=>'Afiliaciones', 'url'=>array('/afiliaciones/index')),
+            array('label'=>'Insumos', 'url'=>array('/vencimientos/index')),
+            array('label'=>'Brigadas', 'url'=>array('/brigada/index')),
+            #array('label'=>'Historia clinica', 'url'=>array('/historiaclinica/index')),
             array('label'=>'Acerca de', 'url'=>array('/site/page', 'view'=>'about')),
             #array('label'=>'Contact', 'url'=>array('/site/contact')),
             array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),

@@ -3,19 +3,19 @@
 /* @var $model Vencimientos */
 
 $this->breadcrumbs=array(
-	'Vencimientoses'=>array('index'),
+	'Insumos'=>array('index'),
 	$model->id=>array('view','id'=>$model->id),
-	'Update',
+	'Actualizar',
 );
 
 $this->menu=array(
-	array('label'=>'List Vencimientos', 'url'=>array('index')),
-	array('label'=>'Create Vencimientos', 'url'=>array('create')),
-	array('label'=>'View Vencimientos', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage Vencimientos', 'url'=>array('admin')),
+	array('label'=>'Lista de insumos', 'url'=>array('index')),
+	#array('label'=>'Crear insumo', 'url'=>array('create')),
+	array('label'=>'Ver insumo', 'url'=>array('view', 'id'=>$model->id)),
+	#array('label'=>'Administrar insumos', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update Vencimientos <?php echo $model->id; ?></h1>
+<h1><font color="#336699">Actualizar insumo: </font><font color="black"> <?php echo $model->Nombre; ?></font></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

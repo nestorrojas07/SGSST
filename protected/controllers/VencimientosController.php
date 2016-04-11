@@ -32,7 +32,7 @@ class VencimientosController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('create','update','enabled'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -71,7 +71,14 @@ class VencimientosController extends Controller
 		{
 			$model->attributes=$_POST['Vencimientos'];
 			if($model->save())
+			{
+				Yii::app()->user->setFlash("success","El insumo se creó exitosamente");
 				$this->redirect(array('view','id'=>$model->id));
+			}
+			else
+			{
+				Yii::app()->user->setFlash("error","El insumo no se creó exitosamente");
+			}
 		}
 
 		$this->render('create',array(
@@ -95,7 +102,14 @@ class VencimientosController extends Controller
 		{
 			$model->attributes=$_POST['Vencimientos'];
 			if($model->save())
+			{
+				Yii::app()->user->setFlash("success","El insumo se actualizó exitosamente");
 				$this->redirect(array('view','id'=>$model->id));
+			}
+			else
+			{
+				Yii::app()->user->setFlash("error","El insumo no se actualizó exitosamente");
+			}
 		}
 
 		$this->render('update',array(
@@ -114,7 +128,14 @@ class VencimientosController extends Controller
 
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		if(!isset($_GET['ajax']))
+		{
+			Yii::app()->user->setFlash("success","El insumo se eliminó exitosamente");
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+		}
+		else
+		{
+			Yii::app()->user->setFlash("success","El insumo no se eliminó exitosamente");
+		}
 	}
 
 	/**
@@ -170,4 +191,23 @@ class VencimientosController extends Controller
 			Yii::app()->end();
 		}
 	}
+
+	public function actionEnabled($id)
+	{
+
+		$model=Vencimientos::model()->findByPk($id);
+		
+		if($model->estado==0)
+		{
+			$model->estado=1;
+		}
+		else
+		{
+			$model->estado=0;
+		}
+		$model->save();
+		$this->redirect(array("index"));
+	}
+
+	
 }

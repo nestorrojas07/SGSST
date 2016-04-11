@@ -15,22 +15,22 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="note">Campos con <span class="required">*</span> son requeridos.</p>
 
-	<?php echo $form->errorSummary($model); ?>
+	<!--<?php echo $form->errorSummary($model); ?>-->
 
-	<div class="row">
+	<div >
 		<?php echo $form->labelEx($model,'Nombre'); ?>
 		<?php echo $form->textField($model,'Nombre',array('size'=>45,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'Nombre'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'fecha'); ?>
+	<div >
+		<?php echo $form->labelEx($model,'fecha_Vencimiento'); ?>
 		<?php 
 
 			$this->widget("zii.widgets.jui.CJuiDatePicker", array(
-			"attribute"=>"Fecha",
+			"attribute"=>"fecha_Vencimiento",
 			"model"=>$model,
 			"language"=>"es",
 			"options"=>array(
@@ -45,26 +45,26 @@
 		?>
 	</div>
 
-	<div class="row">
+	<div >
 		<?php echo $form->labelEx($model,'Instrucciones'); ?>
-		<?php echo $form->textField($model,'Instrucciones',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->textArea($model,'Instrucciones',array('size'=>200,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'Instrucciones'); ?>
 	</div>
-
-	<div class="row">
+	<!--
+	<div >
 		<?php echo $form->labelEx($model,'estado'); ?>
 		<?php echo $form->textField($model,'estado'); ?>
 		<?php echo $form->error($model,'estado'); ?>
-	</div>
+	</div>-->
 
-	<div class="row">
+	<div >
 		<?php echo $form->labelEx($model,'Cedula_Trabajador'); ?>
-		<?php echo $form->textField($model,'Cedula_Trabajador',array('size'=>20,'maxlength'=>20)); ?>
+		<?php echo $form->dropDownList($model,'Cedula_Trabajador', $model->getMenuTrabajadores(),array("empty"=>"Seleccione un trabajador")); ?>
 		<?php echo $form->error($model,'Cedula_Trabajador'); ?>
 	</div>
 
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+	<div >
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Crear' : 'Guardar',array("class"=>"btn btn-primary btn-medium")); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

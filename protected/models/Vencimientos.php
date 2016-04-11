@@ -6,7 +6,7 @@
  * The followings are the available columns in table 'vencimientos':
  * @property integer $id
  * @property string $Nombre
- * @property string $fecha
+ * @property string $fecha_Vencimiento
  * @property string $Instrucciones
  * @property integer $estado
  * @property string $Cedula_Trabajador
@@ -32,14 +32,14 @@ class Vencimientos extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Nombre, fecha, Instrucciones, estado', 'required'),
+			array('Nombre, fecha_Vencimiento, Instrucciones, estado', 'required'),
 			array('estado', 'numerical', 'integerOnly'=>true),
 			array('Nombre', 'length', 'max'=>45),
 			array('Instrucciones', 'length', 'max'=>255),
 			array('Cedula_Trabajador', 'length', 'max'=>20),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, Nombre, fecha, Instrucciones, estado, Cedula_Trabajador', 'safe', 'on'=>'search'),
+			array('id, Nombre, fecha_Vencimiento, Instrucciones, estado, Cedula_Trabajador', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -63,7 +63,7 @@ class Vencimientos extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'Nombre' => 'Nombre',
-			'fecha' => 'Fecha',
+			'fecha_Vencimiento' => 'Fecha Vencimiento',
 			'Instrucciones' => 'Instrucciones',
 			'estado' => 'Estado',
 			'Cedula_Trabajador' => 'Cedula Trabajador',
@@ -90,7 +90,7 @@ class Vencimientos extends CActiveRecord
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('Nombre',$this->Nombre,true);
-		$criteria->compare('fecha',$this->fecha,true);
+		$criteria->compare('fecha_Vencimiento',$this->fecha_Vencimiento,true);
 		$criteria->compare('Instrucciones',$this->Instrucciones,true);
 		$criteria->compare('estado',$this->estado);
 		$criteria->compare('Cedula_Trabajador',$this->Cedula_Trabajador,true);
@@ -109,5 +109,17 @@ class Vencimientos extends CActiveRecord
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
+	}
+
+	public function getNombreTrabajador($id)
+	{
+		$modelo=Trabajador::model()->findByPk($id);
+		if($modelo!==null)
+			return $modelo->Nombre;
+	}
+
+	public function getMenuTrabajadores()
+	{
+		return CHtml::listData(Trabajador::model()->findAll(),"Cedula","Nombre");
 	}
 }

@@ -22,23 +22,8 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'fecha'); ?>
-		<?php 
-
-			$this->widget("zii.widgets.jui.CJuiDatePicker", array(
-			"attribute"=>"Fecha",
-			"model"=>$model,
-			"language"=>"es",
-			"options"=>array(
-				"dateFormat"=>"yy-mm-dd",
-				'showButtonPanel'=>true,
-				'changeYear'=>true,
-				'changeYear'=>true,
-				'yearRange'=>'0:+5',
-				'minDate'=>'0Y',
-				'maxDate'=>'+5Y',
-				)))
-		?>
+		<?php echo $form->label($model,'fecha_Vencimiento'); ?>
+		<?php echo $form->textField($model,'fecha_Vencimiento'); ?>
 	</div>
 
 	<div class="row">

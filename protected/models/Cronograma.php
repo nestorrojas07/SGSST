@@ -8,6 +8,8 @@
  * @property string $Descripcion
  * @property string $Fecha
  * @property integer $estado
+ * @property integer $PersonasProgramadas
+ * @property integer $PersonasAsistieron
  */
 class Cronograma extends CActiveRecord
 {
@@ -28,11 +30,11 @@ class Cronograma extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('Descripcion, Fecha, estado', 'required'),
-			array('estado', 'numerical', 'integerOnly'=>true),
+			array('estado, PersonasProgramadas, PersonasAsistieron', 'numerical', 'integerOnly'=>true),
 			array('Descripcion', 'length', 'max'=>100),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, Descripcion, Fecha, estado', 'safe', 'on'=>'search'),
+			array('id, Descripcion, Fecha, estado, PersonasProgramadas, PersonasAsistieron', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -57,6 +59,8 @@ class Cronograma extends CActiveRecord
 			'Descripcion' => 'Descripcion',
 			'Fecha' => 'Fecha',
 			'estado' => 'Estado',
+			'PersonasProgramadas' => 'Personas Programadas',
+			'PersonasAsistieron' => 'Personas Asistieron',
 		);
 	}
 
@@ -82,6 +86,8 @@ class Cronograma extends CActiveRecord
 		$criteria->compare('Descripcion',$this->Descripcion,true);
 		$criteria->compare('Fecha',$this->Fecha,true);
 		$criteria->compare('estado',$this->estado);
+		$criteria->compare('PersonasProgramadas',$this->PersonasProgramadas);
+		$criteria->compare('PersonasAsistieron',$this->PersonasAsistieron);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

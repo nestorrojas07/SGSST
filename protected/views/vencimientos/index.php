@@ -3,16 +3,16 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Vencimientoses',
+	'Insumos',
 );
 
 $this->menu=array(
-	array('label'=>'Create Vencimientos', 'url'=>array('create')),
-	array('label'=>'Manage Vencimientos', 'url'=>array('admin')),
+	array('label'=>'Crear insumo', 'url'=>array('create')),
+	array('label'=>'Administrar insumos', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Vencimientoses</h1>
+<h1><font color="#336699">Insumos</font></h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

@@ -26,11 +26,6 @@
 		<?php echo $form->textField($model,'Descripcion_funcion',array('size'=>60,'maxlength'=>255)); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'IdPlanEmergencias'); ?>
-		<?php echo $form->textField($model,'IdPlanEmergencias'); ?>
-	</div>
-
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Search'); ?>
 	</div>

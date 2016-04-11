@@ -7,12 +7,12 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create Brigada', 'url'=>array('create')),
-	array('label'=>'Manage Brigada', 'url'=>array('admin')),
+	array('label'=>'Crear Brigada', 'url'=>array('create')),
+	array('label'=>'Administrar Brigadas', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Brigadas</h1>
+<h1><font color="#336699">Brigadas</font></h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

@@ -19,40 +19,38 @@
 
 	<?php echo $form->errorSummary($model); ?>
 
-	<div >
+	<div class="row">
 		<?php echo $form->labelEx($model,'Descripcion'); ?>
 		<?php echo $form->textField($model,'Descripcion',array('size'=>60,'maxlength'=>100)); ?>
 		<?php echo $form->error($model,'Descripcion'); ?>
 	</div>
 
-	<div >
+	<div class="row">
 		<?php echo $form->labelEx($model,'Fecha'); ?>
-		<?php 
-
-			$this->widget("zii.widgets.jui.CJuiDatePicker", array(
-			"attribute"=>"Fecha",
-			"model"=>$model,
-			"language"=>"es",
-			"options"=>array(
-				"dateFormat"=>"yy-mm-dd",
-				'showButtonPanel'=>true,
-				'changeYear'=>true,
-				'changeYear'=>true,
-				'yearRange'=>'0:+5',
-				'minDate'=>'0Y',
-				'maxDate'=>'+5Y',
-				)))
-		?>
+		<?php echo $form->textField($model,'Fecha'); ?>
+		<?php echo $form->error($model,'Fecha'); ?>
 	</div>
 
-	<div >
+	<div class="row">
 		<?php echo $form->labelEx($model,'estado'); ?>
 		<?php echo $form->textField($model,'estado'); ?>
 		<?php echo $form->error($model,'estado'); ?>
 	</div>
 
-	<div >
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save',array("class"=>"btn btn-primary btn-medium")); ?>
+	<div class="row">
+		<?php echo $form->labelEx($model,'PersonasProgramadas'); ?>
+		<?php echo $form->textField($model,'PersonasProgramadas'); ?>
+		<?php echo $form->error($model,'PersonasProgramadas'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'PersonasAsistieron'); ?>
+		<?php echo $form->textField($model,'PersonasAsistieron'); ?>
+		<?php echo $form->error($model,'PersonasAsistieron'); ?>
+	</div>
+
+	<div class="row buttons">
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

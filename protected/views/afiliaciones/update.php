@@ -9,13 +9,13 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Afiliaciones', 'url'=>array('index')),
-	array('label'=>'Create Afiliaciones', 'url'=>array('create')),
-	array('label'=>'View Afiliaciones', 'url'=>array('view', 'id'=>$model->Id)),
-	array('label'=>'Manage Afiliaciones', 'url'=>array('admin')),
+	array('label'=>'Lista de Afiliaciones', 'url'=>array('index')),
+	#array('label'=>'Crear Afiliaciones', 'url'=>array('create')),
+	array('label'=>'Ver Afiliación', 'url'=>array('view', 'id'=>$model->Id)),
+	#array('label'=>'Manage Afiliaciones', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update Afiliaciones <?php echo $model->Id; ?></h1>
+<h1><font color="#336699">Actualizar afiliación: </font><font color="black"> <?php echo $model->Descripcion; ?></font></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

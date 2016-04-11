@@ -30,9 +30,10 @@ class Afiliaciones extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Nombre, Descripcion, Fecha', 'required'),
+			array('Nombre, Descripcion', 'required'),
 			array('Nombre', 'length', 'max'=>30),
 			array('Descripcion', 'length', 'max'=>300),
+			array('Fecha', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('Id, Nombre, Descripcion, Fecha', 'safe', 'on'=>'search'),
@@ -101,5 +102,10 @@ class Afiliaciones extends CActiveRecord
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
+	}
+
+	public function getMenuTrabajadores()
+	{
+		return CHtml::listData(Trabajador::model()->findAll(),"Cedula","Cedula");
 	}
 }

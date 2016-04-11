@@ -7,12 +7,12 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create Afiliaciones', 'url'=>array('create')),
-	array('label'=>'Manage Afiliaciones', 'url'=>array('admin')),
+	array('label'=>'Crear Afiliación', 'url'=>array('create')),
+	array('label'=>'Administrar Afiliación', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Afiliaciones</h1>
+<h1><font color="#336699">Afiliaciones</font></h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

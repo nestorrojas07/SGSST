@@ -4,15 +4,15 @@
 
 $this->breadcrumbs=array(
 	'Afiliaciones'=>array('index'),
-	'Create',
+	'Crear',
 );
 
 $this->menu=array(
-	array('label'=>'List Afiliaciones', 'url'=>array('index')),
-	array('label'=>'Manage Afiliaciones', 'url'=>array('admin')),
+	array('label'=>'Lista de Afiliaciones', 'url'=>array('index')),
+	#array('label'=>'Manage Afiliaciones', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Afiliaciones</h1>
+<h1><font color="#336699">Crear Afiliación</font></h1></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

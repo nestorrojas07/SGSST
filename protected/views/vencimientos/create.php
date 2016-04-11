@@ -3,16 +3,16 @@
 /* @var $model Vencimientos */
 
 $this->breadcrumbs=array(
-	'Vencimientoses'=>array('index'),
-	'Create',
+	'Insumos'=>array('index'),
+	'Crear',
 );
 
 $this->menu=array(
-	array('label'=>'List Vencimientos', 'url'=>array('index')),
-	array('label'=>'Manage Vencimientos', 'url'=>array('admin')),
+	array('label'=>'Lista de insumos', 'url'=>array('index')),
+	#array('label'=>'Administrar insumos', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Vencimientos</h1>
+<h1><font color="#336699">Crear Insumo</font></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

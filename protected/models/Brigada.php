@@ -7,10 +7,8 @@
  * @property integer $IdBrigada
  * @property string $Funcion
  * @property string $Descripcion_funcion
- * @property integer $IdPlanEmergencias
  *
  * The followings are the available model relations:
- * @property Planemergencias $idPlanEmergencias
  * @property Trabajador[] $trabajadors
  */
 class Brigada extends CActiveRecord
@@ -32,12 +30,11 @@ class Brigada extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('Funcion, Descripcion_funcion', 'required'),
-			array('IdPlanEmergencias', 'numerical', 'integerOnly'=>true),
 			array('Funcion', 'length', 'max'=>45),
 			array('Descripcion_funcion', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('IdBrigada, Funcion, Descripcion_funcion, IdPlanEmergencias', 'safe', 'on'=>'search'),
+			array('IdBrigada, Funcion, Descripcion_funcion', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -49,7 +46,6 @@ class Brigada extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'idPlanEmergencias' => array(self::BELONGS_TO, 'Planemergencias', 'IdPlanEmergencias'),
 			'trabajadors' => array(self::HAS_MANY, 'Trabajador', 'IdBrigada'),
 		);
 	}
@@ -63,7 +59,6 @@ class Brigada extends CActiveRecord
 			'IdBrigada' => 'Id Brigada',
 			'Funcion' => 'Funcion',
 			'Descripcion_funcion' => 'Descripcion Funcion',
-			'IdPlanEmergencias' => 'Id Plan Emergencias',
 		);
 	}
 
@@ -88,7 +83,6 @@ class Brigada extends CActiveRecord
 		$criteria->compare('IdBrigada',$this->IdBrigada);
 		$criteria->compare('Funcion',$this->Funcion,true);
 		$criteria->compare('Descripcion_funcion',$this->Descripcion_funcion,true);
-		$criteria->compare('IdPlanEmergencias',$this->IdPlanEmergencias);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

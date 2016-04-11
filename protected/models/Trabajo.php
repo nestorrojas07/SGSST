@@ -53,7 +53,7 @@ class Trabajo extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('proceso, zona, actividad, tarea, rutinaria, peligro_descripcion, peligro_clasificacion, peligro__efectosPosibles, evaluacion_riesgo_nivel_deficiencia, evaluacion_riesgo_nivel_exposicion, evaluacion_riesgo_nivel_probabilidad, evaluacion_riesgo_interpretacion_nivel_probabilidad, evaluacion_riesgo_nivel_consecuencia, evaluacion_riesgo_nivel_riesgo_intervencion, evaluacion_riesgo_interpretacion_nivel_riesgo, valoracion_riesgo, criterio_peor_consecuencia, criterio_requisito_legal', 'required'),
+			array('proceso, zona, actividad, tarea, rutinaria, peligro_descripcion, peligro_clasificacion, peligro__efectosPosibles, evaluacion_riesgo_nivel_deficiencia, evaluacion_riesgo_nivel_exposicion, evaluacion_riesgo_nivel_consecuencia, valoracion_riesgo, criterio_peor_consecuencia, criterio_requisito_legal', 'required'),
 			array('rutinaria, evaluacion_riesgo_nivel_deficiencia, evaluacion_riesgo_nivel_exposicion, evaluacion_riesgo_nivel_probabilidad, evaluacion_riesgo_nivel_consecuencia, evaluacion_riesgo_nivel_riesgo_intervencion, criterio_requisito_legal', 'numerical', 'integerOnly'=>true),
 			array('proceso', 'length', 'max'=>60),
 			array('zona, actividad, tarea', 'length', 'max'=>50),

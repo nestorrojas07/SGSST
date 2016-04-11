@@ -15,7 +15,7 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="note">Campos con <span class="required">*</span> son obligatorios.</p>
 
 	<!--<?php echo $form->errorSummary($model); ?>-->
 
@@ -57,7 +57,7 @@
 
 	<div >
 		<?php echo $form->labelEx($model,'experiencia'); ?>
-		<?php echo $form->textField($model,'experiencia',array('size'=>60,'maxlength'=>500)); ?>
+		<?php echo $form->textArea($model,'experiencia',array('size'=>60,'maxlength'=>500)); ?>
 		<?php echo $form->error($model,'experiencia'); ?>
 	</div>
 
