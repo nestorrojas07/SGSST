@@ -8,12 +8,12 @@
 	<div class="media body">
 		<h4 class="media heading">
 			
-			<b><strong><font color="#336699"><?php echo CHtml::encode($data->getAttributeLabel('Descripción')); ?>:</font></strong></b>
+			<b><strong><font color="#336699"><?php echo CHtml::encode($data->getAttributeLabel('Descripcion')); ?>:</font></strong></b>
 			<small><?php echo CHtml::link(CHtml::encode($data->Descripcion), array('view', 'id'=>$data->id)); ?></small>
 		
 
 			<a href="<?php echo $this->createUrl("enabled",array("id"=>$data->id));?>"> 
-				<span class="label label-<?php echo $data->estado==0?"success":"warning";?>"><?php echo $data->estado==0?"Pendiente":"Realizado" ?></span>
+				<span class="label label-<?php echo $data->estado==0?"warning":"success";?>"><?php echo $data->estado==0?"Pendiente":"Realizado" ?></span>
 			</a>
 			<br>
 			<b><strong><font color="#336699"><?php echo CHtml::encode($data->getAttributeLabel('Fecha')); ?>:</font></strong></b>

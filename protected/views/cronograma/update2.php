@@ -18,6 +18,9 @@ $this->menu=array(
 
 <h1><font color="#336699">Registrar asistentes a: </font><font color="black"><?php echo $model->Descripcion; ?></font></h1>
 
+
+<?php Yii::app()->user->setFlash("info","Se citaron a ".$model->PersonasProgramadas." personas para este cronograma"); ?>
+
 <br>
 
 <?php $this->renderPartial('_form2', array('model'=>$model)); ?>

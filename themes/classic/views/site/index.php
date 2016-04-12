@@ -3,7 +3,7 @@
   <div class="row-fluid">
     <div class="span12">
 
-    <h1>Sistema de gestión para la salud y la seguridad en el trabajo</h1>
+    <h1><font color="#336699">Sistema de gestión para la salud y la seguridad en el trabajo</font></h1>
 
       <div class="well">
 
@@ -17,7 +17,7 @@
                 <div class="span4" style="text-align:center;">
                   <!--<div style="font-size: 40px;margin:20px 0 20px 0;"><i class="icon-shopping-cart"></i></div>-->
                   <img src="http://www.jvsa.com.ar/images/icons/services.png">
-                  <h3>Servicios</h3>
+                  <h3><font color="#336699">Servicios</font></h3>
                   <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, sit voluptates  ad quos!.</p>-->
                   
                   <a href="http://directoriomedico.com.co/categorias/buscar-por/etiquetas?value=atención%20domiciliaria">Atención domiciliaria</a><br>
@@ -27,13 +27,13 @@
                 <div class="span4" style="text-align:center;">
                   <!--<div style="font-size: 40px;margin:20px 0 20px 0;"><i class="icon-credit-card"></i></div>-->
                   <img src="http://enzomoto.es/wp-content/uploads/2015/06/map.png">
-                  <h3>Dirección</h3>
+                  <h3><font color="#336699">Dirección</font></h3>
                   <p>Calle 3 Norte #12-50, Armenia, Quindío, Colombia</p>
                 </div>
                 <div class="span4" style="text-align:center;">
                   <!--<div style="font-size: 40px;margin:20px 0 20px 0;"><i class="icon-phone"></i></div>-->
                   <img src="http://www.abogadotrabajador.cl/images/icono-telefono.png">
-                  <h3>Telefono</h3>
+                  <h3><font color="#336699">Telefono</font></h3>
                   <p>7469182</p>
                 </div>
         </div>

@@ -44,7 +44,7 @@
 	</div>-->
 	
 	<div >
-		<?php echo $form->labelEx($model,'Número de personas que asistieron'); ?>
+		<?php echo $form->labelEx($model,'Numero de personas que asistieron'); ?>
 		<?php echo $form->textField($model,'PersonasAsistieron'); ?>
 		<?php echo $form->error($model,'PersonasAsistieron'); ?>
 	</div>

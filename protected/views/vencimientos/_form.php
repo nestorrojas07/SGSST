@@ -38,9 +38,9 @@
 				'showButtonPanel'=>true,
 				'changeYear'=>true,
 				'changeYear'=>true,
-				'yearRange'=>'0:+5',
+				'yearRange'=>'0:+10',
 				'minDate'=>'0Y',
-				'maxDate'=>'+5Y',
+				'maxDate'=>'+10Y',
 				)))
 		?>
 	</div>
@@ -58,7 +58,7 @@
 	</div>-->
 
 	<div >
-		<?php echo $form->labelEx($model,'Cedula_Trabajador'); ?>
+		<?php echo $form->labelEx($model,'Responsable'); ?>
 		<?php echo $form->dropDownList($model,'Cedula_Trabajador', $model->getMenuTrabajadores(),array("empty"=>"Seleccione un trabajador")); ?>
 		<?php echo $form->error($model,'Cedula_Trabajador'); ?>
 	</div>

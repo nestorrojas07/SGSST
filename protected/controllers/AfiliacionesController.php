@@ -51,10 +51,26 @@ class AfiliacionesController extends Controller
 	 */
 	public function actionView($id)
 	{
+		$role= new AfiliacionTrabajadorForm;
+		if(isset($_POST["AfiliacionTrabajadorForm"]))
+		{
+			$role->attributes=$POST["AfiliacionTrabajadorForm"];
+			if($role->validate())
+			{
+				$role->trabajador;
+				$role->descripcion;
+				Yii::app()->authManager->createAfiliacionTrabajador($role->trabajador,$role->afiliacion);
+				$this->redirect(array("view","id"=>$id));
+			}
+		}
+		
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),
+			"role"=>$role,
 		));
 	}
+
+	
 
 	/**
 	 * Creates a new model.

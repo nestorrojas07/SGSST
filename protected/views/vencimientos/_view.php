@@ -13,9 +13,9 @@
 			<small><?php echo CHtml::link(CHtml::encode($data->Nombre), array('view', 'id'=>$data->id)); ?></small>
 
 
-			<a href="<?php echo $this->createUrl("enabled",array("id"=>$data->id));?>"> 
+			<!--<a href="<?php echo $this->createUrl("enabled",array("id"=>$data->id));?>"> -->
 				<span class="label label-<?php echo $data->estado==0?"success":"warning";?>"><?php echo $data->estado==0?"En orden":"Vencido" ?></span>
-			</a>
+			<!--</a>-->
 
 			<br>
 			<b><strong><font color="#336699"><?php echo CHtml::encode($data->getAttributeLabel('fecha_Vencimiento')); ?>:</font></strong></b>

@@ -32,6 +32,21 @@ $this->menu=array(
 
 -->
 
+<?php 
+$date1=date('Y-m-d');
+#echo "----".strtotime($date1);
+#echo "<br>";
+$date2=$model->fecha_Vencimiento;
+#echo "----".strtotime($date2);
+#echo "<br>";
+
+if(strtotime($date1)>=strtotime($date2))
+{
+	Yii::app()->user->setFlash("warning","Este insumo esta vencido");
+	$model->cambiarEstado($model->id);
+}
+ ?>
+
 <table class="table table-bordered table-striped">
 	<tr>
 		<td><strong><font color="#336699">Id</font></strong></td>

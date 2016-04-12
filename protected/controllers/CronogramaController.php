@@ -70,6 +70,7 @@ class CronogramaController extends Controller
 		if(isset($_POST['Cronograma']))
 		{
 			$model->attributes=$_POST['Cronograma'];
+			$model->estado=0;
 			if($model->save())
 			{
 				Yii::app()->user->setFlash("success","El cronograma se creó exitosamente");

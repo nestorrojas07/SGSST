@@ -5619,3 +5619,918 @@ Stack trace:
 REQUEST_URI=/yii/SGSST/index.php?r=cronograma/update2&id=1
 HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=cronograma/view&id=1
 ---
+2016/04/12 00:46:59 [error] [exception.ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' in C:\xampp\htdocs\yii\SGSST\protected\views\trabajador\view.php:94
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#3 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorController.php(55): CController->render('view', Array)
+#4 [internal function]: TrabajadorController->actionView('1094899656')
+#5 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(TrabajadorController), Array)
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(TrabajadorController), Object(ReflectionMethod), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajador/view')
+#17 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajador/view&id=1094899656
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajador/index
+---
+2016/04/12 00:47:21 [error] [exception.ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' in C:\xampp\htdocs\yii\SGSST\protected\views\trabajador\view.php:94
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#3 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorController.php(55): CController->render('view', Array)
+#4 [internal function]: TrabajadorController->actionView('1094899656')
+#5 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(TrabajadorController), Array)
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(TrabajadorController), Object(ReflectionMethod), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajador/view')
+#17 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajador/view&id=1094899656
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajador/index
+---
+2016/04/12 00:48:07 [error] [exception.ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' in C:\xampp\htdocs\yii\SGSST\protected\views\trabajador\view.php:94
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#3 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorController.php(55): CController->render('view', Array)
+#4 [internal function]: TrabajadorController->actionView('1094899656')
+#5 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(TrabajadorController), Array)
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(TrabajadorController), Object(ReflectionMethod), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajador/view')
+#17 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajador/view&id=1094899656
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajador/index
+---
+2016/04/12 00:48:08 [error] [exception.ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' in C:\xampp\htdocs\yii\SGSST\protected\views\trabajador\view.php:94
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#3 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorController.php(55): CController->render('view', Array)
+#4 [internal function]: TrabajadorController->actionView('1094899656')
+#5 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(TrabajadorController), Array)
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(TrabajadorController), Object(ReflectionMethod), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajador/view')
+#17 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajador/view&id=1094899656
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajador/index
+---
+2016/04/12 00:48:08 [error] [exception.ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' in C:\xampp\htdocs\yii\SGSST\protected\views\trabajador\view.php:94
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#3 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorController.php(55): CController->render('view', Array)
+#4 [internal function]: TrabajadorController->actionView('1094899656')
+#5 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(TrabajadorController), Array)
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(TrabajadorController), Object(ReflectionMethod), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajador/view')
+#17 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajador/view&id=1094899656
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajador/index
+---
+2016/04/12 01:19:12 [error] [php] include(AfiliacionesControllerForm.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php(54): spl_autoload_call()
+#1 unknown(0): AfiliacionesController->actionView()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): AfiliacionesController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): AfiliacionesController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): AfiliacionesController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): AfiliacionesController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\SGSST\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/SGSST/index.php?r=afiliaciones/view&id=1
+in C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php (54)
+in C:\xampp\htdocs\yii\SGSST\index.php (13)
+2016/04/12 01:21:06 [error] [exception.ParseError] ParseError: syntax error, unexpected '}', expecting ';' in C:\xampp\htdocs\yii\SGSST\protected\models\AfiliacionTrabajadorForm.php:12
+Stack trace:
+#0 [internal function]: YiiBase::autoload('AfiliacionTraba...')
+#1 C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php(54): spl_autoload_call('AfiliacionTraba...')
+#2 [internal function]: AfiliacionesController->actionView('1')
+#3 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AfiliacionesController), Array)
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AfiliacionesController), Object(ReflectionMethod), Array)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('afiliaciones/vi...')
+#15 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=afiliaciones/view&id=1
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=afiliaciones/index
+---
+2016/04/12 01:21:41 [error] [php] include(CActiveform.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:432)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\xampp\htdocs\yii\framework\YiiBase.php(303): class_exists()
+#2 C:\xampp\htdocs\yii\framework\web\CWidgetFactory.php(146): import()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget()
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(197): AfiliacionesController->createWidget()
+#5 C:\xampp\htdocs\yii\SGSST\protected\views\afiliaciones\view.php(68): AfiliacionesController->beginWidget()
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): AfiliacionesController->renderInternal()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(869): AfiliacionesController->renderFile()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(782): AfiliacionesController->renderPartial()
+#10 C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php(57): AfiliacionesController->render()
+#11 unknown(0): AfiliacionesController->actionView()
+#12 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#13 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): AfiliacionesController->runAction()
+#16 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#18 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): AfiliacionesController->filterAccessControl()
+#19 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#20 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\xampp\htdocs\yii\framework\web\CController.php(265): AfiliacionesController->runActionWithFilters()
+#22 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): AfiliacionesController->run()
+#23 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#24 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#25 C:\xampp\htdocs\yii\SGSST\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/SGSST/index.php?r=afiliaciones/view&id=1
+in C:\xampp\htdocs\yii\SGSST\protected\views\afiliaciones\view.php (68)
+in C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php (57)
+in C:\xampp\htdocs\yii\SGSST\index.php (13)
+2016/04/12 02:02:10 [error] [exception.ParseError] ParseError: syntax error, unexpected '$modelo' (T_VARIABLE) in C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php:61
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('index/')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('afiliaciones/in...')
+#2 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=afiliaciones/index
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=afiliaciones/view&id=1
+---
+2016/04/12 02:04:37 [error] [php] Undefined variable: POST (C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php:57)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): AfiliacionesController->runAction()
+#3 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): AfiliacionesController->filterAccessControl()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): AfiliacionesController->runActionWithFilters()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): AfiliacionesController->run()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\yii\SGSST\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/SGSST/index.php?r=afiliaciones/view&id=1
+in C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php (57)
+in C:\xampp\htdocs\yii\SGSST\index.php (13)
+2016/04/12 02:08:46 [error] [php] Undefined index: Afiliaciones (C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php:62)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): AfiliacionesController->runAction()
+#3 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): AfiliacionesController->filterAccessControl()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): AfiliacionesController->runActionWithFilters()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): AfiliacionesController->run()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\yii\SGSST\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/SGSST/index.php?r=afiliaciones/view&id=2
+in C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php (62)
+in C:\xampp\htdocs\yii\SGSST\index.php (13)
+2016/04/12 02:09:53 [error] [php] Undefined index: Afiliaciones (C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php:62)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): AfiliacionesController->runAction()
+#3 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): AfiliacionesController->filterAccessControl()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): AfiliacionesController->runActionWithFilters()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): AfiliacionesController->run()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\yii\SGSST\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/SGSST/index.php?r=afiliaciones/view&id=2
+in C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php (62)
+in C:\xampp\htdocs\yii\SGSST\index.php (13)
+2016/04/12 02:09:54 [error] [php] Undefined index: Afiliaciones (C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php:62)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): AfiliacionesController->runAction()
+#3 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): AfiliacionesController->filterAccessControl()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): AfiliacionesController->runActionWithFilters()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): AfiliacionesController->run()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\yii\SGSST\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/SGSST/index.php?r=afiliaciones/view&id=2
+in C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php (62)
+in C:\xampp\htdocs\yii\SGSST\index.php (13)
+2016/04/12 02:09:56 [error] [php] Undefined index: Afiliaciones (C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php:62)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): AfiliacionesController->runAction()
+#3 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): AfiliacionesController->filterAccessControl()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): AfiliacionesController->runActionWithFilters()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): AfiliacionesController->run()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\yii\SGSST\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/SGSST/index.php?r=afiliaciones/view&id=2
+in C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php (62)
+in C:\xampp\htdocs\yii\SGSST\index.php (13)
+2016/04/12 02:11:52 [error] [php] Undefined variable: POST (C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php:57)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): AfiliacionesController->runAction()
+#3 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): AfiliacionesController->filterAccessControl()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): AfiliacionesController->runActionWithFilters()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): AfiliacionesController->run()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\yii\SGSST\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/SGSST/index.php?r=afiliaciones/view&id=2
+in C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php (57)
+in C:\xampp\htdocs\yii\SGSST\index.php (13)
+2016/04/12 02:13:11 [error] [exception.CException] CException: Afiliaciones y sus behaviors no tienen un método o closure llamado "getTrabajadores". in C:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(227): CComponent->__call('getTrabajadores', Array)
+#1 C:\xampp\htdocs\yii\SGSST\protected\views\afiliaciones\view.php(73): CActiveRecord->__call('getTrabajadores', Array)
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#6 C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php(69): CController->render('view', Array)
+#7 [internal function]: AfiliacionesController->actionView('2')
+#8 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AfiliacionesController), Array)
+#9 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AfiliacionesController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('afiliaciones/vi...')
+#20 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=afiliaciones/view&id=2
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=afiliaciones/index
+---
+2016/04/12 02:13:42 [error] [exception.CException] CException: CActiveForm y sus behaviors no tienen un método o closure llamado "dropDowunList". in C:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\yii\SGSST\protected\views\afiliaciones\view.php(73): CComponent->__call('dropDowunList', Array)
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#5 C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php(69): CController->render('view', Array)
+#6 [internal function]: AfiliacionesController->actionView('2')
+#7 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AfiliacionesController), Array)
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AfiliacionesController), Object(ReflectionMethod), Array)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('afiliaciones/vi...')
+#19 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=afiliaciones/view&id=2
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=afiliaciones/index
+---
+2016/04/12 02:17:43 [error] [exception.ParseError] ParseError: syntax error, unexpected ';', expecting ',' or ')' in C:\xampp\htdocs\yii\SGSST\protected\views\afiliaciones\view.php:78
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#3 C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php(69): CController->render('view', Array)
+#4 [internal function]: AfiliacionesController->actionView('2')
+#5 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AfiliacionesController), Array)
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AfiliacionesController), Object(ReflectionMethod), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('afiliaciones/vi...')
+#17 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=afiliaciones/view&id=2
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=afiliaciones/index
+---
+2016/04/12 02:18:30 [error] [exception.ParseError] ParseError: syntax error, unexpected ';', expecting ',' or ')' in C:\xampp\htdocs\yii\SGSST\protected\views\afiliaciones\view.php:78
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#3 C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php(69): CController->render('view', Array)
+#4 [internal function]: AfiliacionesController->actionView('2')
+#5 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AfiliacionesController), Array)
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AfiliacionesController), Object(ReflectionMethod), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('afiliaciones/vi...')
+#17 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=afiliaciones/view&id=2
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=afiliaciones/index
+---
+2016/04/12 02:19:01 [error] [exception.ParseError] ParseError: syntax error, unexpected '?>', expecting ',' or ')' in C:\xampp\htdocs\yii\SGSST\protected\views\afiliaciones\view.php:78
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#3 C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php(69): CController->render('view', Array)
+#4 [internal function]: AfiliacionesController->actionView('2')
+#5 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AfiliacionesController), Array)
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AfiliacionesController), Object(ReflectionMethod), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('afiliaciones/vi...')
+#17 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=afiliaciones/view&id=2
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=afiliaciones/index
+---
+2016/04/12 02:19:01 [error] [exception.ParseError] ParseError: syntax error, unexpected '?>', expecting ',' or ')' in C:\xampp\htdocs\yii\SGSST\protected\views\afiliaciones\view.php:78
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#3 C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php(69): CController->render('view', Array)
+#4 [internal function]: AfiliacionesController->actionView('2')
+#5 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AfiliacionesController), Array)
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AfiliacionesController), Object(ReflectionMethod), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('afiliaciones/vi...')
+#17 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=afiliaciones/view&id=2
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=afiliaciones/index
+---
+2016/04/12 02:19:58 [error] [exception.CException] CException: Afiliaciones y sus behaviors no tienen un método o closure llamado "getMenuAfiliaciones". in C:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(227): CComponent->__call('getMenuAfiliaci...', Array)
+#1 C:\xampp\htdocs\yii\SGSST\protected\views\afiliaciones\view.php(78): CActiveRecord->__call('getMenuAfiliaci...', Array)
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#6 C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php(69): CController->render('view', Array)
+#7 [internal function]: AfiliacionesController->actionView('2')
+#8 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AfiliacionesController), Array)
+#9 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AfiliacionesController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('afiliaciones/vi...')
+#20 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=afiliaciones/view&id=2
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=afiliaciones/index
+---
+2016/04/12 02:20:12 [error] [php] Invalid argument supplied for foreach() (C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php:2525)
+Stack trace:
+#0 C:\xampp\htdocs\yii\SGSST\protected\views\afiliaciones\view.php(78): CActiveForm->dropDownList()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): AfiliacionesController->renderInternal()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(869): AfiliacionesController->renderFile()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(782): AfiliacionesController->renderPartial()
+#5 C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php(69): AfiliacionesController->render()
+#6 unknown(0): AfiliacionesController->actionView()
+#7 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): AfiliacionesController->runAction()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#13 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): AfiliacionesController->filterAccessControl()
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(265): AfiliacionesController->runActionWithFilters()
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): AfiliacionesController->run()
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yii\SGSST\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/SGSST/index.php?r=afiliaciones/view&id=2
+in C:\xampp\htdocs\yii\SGSST\protected\views\afiliaciones\view.php (78)
+in C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php (69)
+in C:\xampp\htdocs\yii\SGSST\index.php (13)
+2016/04/12 02:20:39 [error] [php] Invalid argument supplied for foreach() (C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php:2525)
+Stack trace:
+#0 C:\xampp\htdocs\yii\SGSST\protected\views\afiliaciones\view.php(78): CActiveForm->dropDownList()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): AfiliacionesController->renderInternal()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(869): AfiliacionesController->renderFile()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(782): AfiliacionesController->renderPartial()
+#5 C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php(69): AfiliacionesController->render()
+#6 unknown(0): AfiliacionesController->actionView()
+#7 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): AfiliacionesController->runAction()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#13 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): AfiliacionesController->filterAccessControl()
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(265): AfiliacionesController->runActionWithFilters()
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): AfiliacionesController->run()
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\yii\SGSST\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/SGSST/index.php?r=afiliaciones/view&id=2
+in C:\xampp\htdocs\yii\SGSST\protected\views\afiliaciones\view.php (78)
+in C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php (69)
+in C:\xampp\htdocs\yii\SGSST\index.php (13)
+2016/04/12 02:21:27 [error] [php] include(Afiliacion.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\xampp\htdocs\yii\SGSST\protected\models\Afiliaciones.php(114): spl_autoload_call()
+#1 C:\xampp\htdocs\yii\SGSST\protected\views\afiliaciones\view.php(78): Afiliaciones->getMenuAfiliacion()
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): AfiliacionesController->renderInternal()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(869): AfiliacionesController->renderFile()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(782): AfiliacionesController->renderPartial()
+#6 C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php(69): AfiliacionesController->render()
+#7 unknown(0): AfiliacionesController->actionView()
+#8 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#9 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): AfiliacionesController->runAction()
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): AfiliacionesController->filterAccessControl()
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(265): AfiliacionesController->runActionWithFilters()
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): AfiliacionesController->run()
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\yii\SGSST\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/SGSST/index.php?r=afiliaciones/view&id=2
+in C:\xampp\htdocs\yii\SGSST\protected\models\Afiliaciones.php (114)
+in C:\xampp\htdocs\yii\SGSST\protected\views\afiliaciones\view.php (78)
+in C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php (69)
+2016/04/12 02:45:27 [error] [exception.ParseError] ParseError: syntax error, unexpected '$fecha' (T_VARIABLE) in C:\xampp\htdocs\yii\SGSST\themes\classic\views\site\index.php:9
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', NULL, true)
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', NULL, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#3 C:\xampp\htdocs\yii\SGSST\protected\controllers\SiteController.php(33): CController->render('index')
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=site/index
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=brigada/index
+---
+2016/04/12 02:46:40 [error] [exception.ParseError] ParseError: syntax error, unexpected '$fecha' (T_VARIABLE) in C:\xampp\htdocs\yii\SGSST\themes\classic\views\site\index.php:9
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', NULL, true)
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', NULL, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#3 C:\xampp\htdocs\yii\SGSST\protected\controllers\SiteController.php(33): CController->render('index')
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=site/index
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=brigada/index
+---
+2016/04/12 02:46:41 [error] [exception.ParseError] ParseError: syntax error, unexpected '$fecha' (T_VARIABLE) in C:\xampp\htdocs\yii\SGSST\themes\classic\views\site\index.php:9
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', NULL, true)
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', NULL, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#3 C:\xampp\htdocs\yii\SGSST\protected\controllers\SiteController.php(33): CController->render('index')
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=site/index
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=brigada/index
+---
+2016/04/12 02:46:41 [error] [exception.ParseError] ParseError: syntax error, unexpected '$fecha' (T_VARIABLE) in C:\xampp\htdocs\yii\SGSST\themes\classic\views\site\index.php:9
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', NULL, true)
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', NULL, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#3 C:\xampp\htdocs\yii\SGSST\protected\controllers\SiteController.php(33): CController->render('index')
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=site/index
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=brigada/index
+---
+2016/04/12 02:46:48 [error] [exception.ParseError] ParseError: syntax error, unexpected '$fecha' (T_VARIABLE) in C:\xampp\htdocs\yii\SGSST\themes\classic\views\site\index.php:9
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', NULL, true)
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', NULL, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#3 C:\xampp\htdocs\yii\SGSST\protected\controllers\SiteController.php(33): CController->render('index')
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=site/index
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=brigada/index
+---
+2016/04/12 02:46:48 [error] [exception.ParseError] ParseError: syntax error, unexpected '$fecha' (T_VARIABLE) in C:\xampp\htdocs\yii\SGSST\themes\classic\views\site\index.php:9
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', NULL, true)
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', NULL, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#3 C:\xampp\htdocs\yii\SGSST\protected\controllers\SiteController.php(33): CController->render('index')
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=site/index
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=brigada/index
+---
+2016/04/12 02:48:11 [error] [php] Use of undefined constant f - assumed 'f' (C:\xampp\htdocs\yii\SGSST\themes\classic\views\site\index.php:10)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\yii\SGSST\protected\controllers\SiteController.php(33): SiteController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii\SGSST\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/SGSST/index.php?r=site/index
+in C:\xampp\htdocs\yii\SGSST\themes\classic\views\site\index.php (10)
+in C:\xampp\htdocs\yii\SGSST\protected\controllers\SiteController.php (33)
+in C:\xampp\htdocs\yii\SGSST\index.php (13)
+2016/04/12 03:03:08 [error] [exception.ParseError] ParseError: syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in C:\xampp\htdocs\yii\SGSST\protected\views\cronograma\view.php:29
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#3 C:\xampp\htdocs\yii\SGSST\protected\controllers\CronogramaController.php(55): CController->render('view', Array)
+#4 [internal function]: CronogramaController->actionView('1')
+#5 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(CronogramaController), Array)
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CronogramaController), Object(ReflectionMethod), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('cronograma/view')
+#17 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=cronograma/view&id=1
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=cronograma/update&id=1
+---
+2016/04/12 03:04:44 [error] [exception.ParseError] ParseError: syntax error, unexpected '"es menor que"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in C:\xampp\htdocs\yii\SGSST\protected\views\cronograma\view.php:32
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#3 C:\xampp\htdocs\yii\SGSST\protected\controllers\CronogramaController.php(55): CController->render('view', Array)
+#4 [internal function]: CronogramaController->actionView('1')
+#5 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(CronogramaController), Array)
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CronogramaController), Object(ReflectionMethod), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('cronograma/view')
+#17 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=cronograma/view&id=1
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=cronograma/update&id=1
+---
+2016/04/12 03:17:07 [error] [exception.Error] Error: Call to undefined function strototime() in C:\xampp\htdocs\yii\SGSST\protected\views\cronograma\view.php:28
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#4 C:\xampp\htdocs\yii\SGSST\protected\controllers\CronogramaController.php(55): CController->render('view', Array)
+#5 [internal function]: CronogramaController->actionView('1')
+#6 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(CronogramaController), Array)
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CronogramaController), Object(ReflectionMethod), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('cronograma/view')
+#18 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=cronograma/view&id=1
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=cronograma/update&id=1
+---
+2016/04/12 03:24:18 [error] [php] Undefined variable: date1 (C:\xampp\htdocs\yii\SGSST\protected\views\cronograma\view.php:32)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): CronogramaController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): CronogramaController->renderPartial()
+#2 C:\xampp\htdocs\yii\SGSST\protected\controllers\CronogramaController.php(55): CronogramaController->render()
+#3 unknown(0): CronogramaController->actionView()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CronogramaController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CronogramaController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): CronogramaController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CronogramaController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\yii\SGSST\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/SGSST/index.php?r=cronograma/view&id=1
+in C:\xampp\htdocs\yii\SGSST\protected\views\cronograma\view.php (32)
+in C:\xampp\htdocs\yii\SGSST\protected\controllers\CronogramaController.php (55)
+in C:\xampp\htdocs\yii\SGSST\index.php (13)
+2016/04/12 03:29:09 [error] [exception.CException] CException: Vencimientos y sus behaviors no tienen un método o closure llamado "cambiarEstado". in C:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(227): CComponent->__call('cambiarEstado', Array)
+#1 C:\xampp\htdocs\yii\SGSST\protected\views\vencimientos\view.php(46): CActiveRecord->__call('cambiarEstado', Array)
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#6 C:\xampp\htdocs\yii\SGSST\protected\controllers\VencimientosController.php(55): CController->render('view', Array)
+#7 [internal function]: VencimientosController->actionView('1')
+#8 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(VencimientosController), Array)
+#9 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(VencimientosController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('vencimientos/vi...')
+#20 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=vencimientos/view&id=1
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=vencimientos/update&id=1
+---
+2016/04/12 03:29:44 [error] [php] Undefined variable: model (C:\xampp\htdocs\yii\SGSST\protected\models\Vencimientos.php:128)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): VencimientosController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): VencimientosController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): VencimientosController->renderPartial()
+#3 C:\xampp\htdocs\yii\SGSST\protected\controllers\VencimientosController.php(55): VencimientosController->render()
+#4 unknown(0): VencimientosController->actionView()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): VencimientosController->runAction()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): VencimientosController->filterAccessControl()
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(265): VencimientosController->runActionWithFilters()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): VencimientosController->run()
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\SGSST\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/SGSST/index.php?r=vencimientos/view&id=1
+in C:\xampp\htdocs\yii\SGSST\protected\models\Vencimientos.php (128)
+in C:\xampp\htdocs\yii\SGSST\protected\views\vencimientos\view.php (46)
+in C:\xampp\htdocs\yii\SGSST\protected\controllers\VencimientosController.php (55)
+2016/04/12 03:30:23 [error] [exception.CException] CException: Vencimientos y sus behaviors no tienen un método o closure llamado "redirect". in C:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(227): CComponent->__call('redirect', Array)
+#1 C:\xampp\htdocs\yii\SGSST\protected\models\Vencimientos.php(138): CActiveRecord->__call('redirect', Array)
+#2 C:\xampp\htdocs\yii\SGSST\protected\views\vencimientos\view.php(46): Vencimientos->cambiarEstado('1')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#7 C:\xampp\htdocs\yii\SGSST\protected\controllers\VencimientosController.php(55): CController->render('view', Array)
+#8 [internal function]: VencimientosController->actionView('1')
+#9 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(VencimientosController), Array)
+#10 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(VencimientosController), Object(ReflectionMethod), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('vencimientos/vi...')
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=vencimientos/view&id=1
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=vencimientos/update&id=1
+---
+2016/04/12 04:10:16 [error] [php] Undefined variable: moel (C:\xampp\htdocs\yii\SGSST\protected\views\cronograma\update2.php:22)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): CronogramaController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): CronogramaController->renderPartial()
+#2 C:\xampp\htdocs\yii\SGSST\protected\controllers\CronogramaController.php(250): CronogramaController->render()
+#3 unknown(0): CronogramaController->actionUpdate2()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CronogramaController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CronogramaController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): CronogramaController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CronogramaController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\yii\SGSST\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/SGSST/index.php?r=cronograma/update2&id=3
+in C:\xampp\htdocs\yii\SGSST\protected\views\cronograma\update2.php (22)
+in C:\xampp\htdocs\yii\SGSST\protected\controllers\CronogramaController.php (250)
+in C:\xampp\htdocs\yii\SGSST\index.php (13)

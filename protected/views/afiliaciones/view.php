@@ -64,3 +64,23 @@ $this->menu=array(
 	<?php  endforeach; ?>
 	
 </table>	
+
+<h2><font color="#336699">Afiliar trabajador</font></h2> 
+
+<?php $form=$this->beginWidget("CActiveForm"); ?>
+
+	<?php echo $form->label($role,"trabajador") ?>
+	<?php echo $form->dropDownList($role,"trabajador", $model->getMenuTrabajadores(),array("empty"=>"Seleccione un trabajador")) ;?>
+	<?php echo $form->error($role,"trabajador") ?>
+	<br>
+
+	<?php echo $form->label($role,"afiliacion") ?>
+	<?php echo $form->dropDownList($role,"afiliacion", $model->getMenuAfiliacion(),array("empty"=> "Seleccione una afiliación") );?>
+	<?php echo $form->error($role,"afiliacion") ?>
+
+	<br>
+
+
+	<?php echo CHtml::submitButton("Afiliar",array("class"=>"btn btn-primary btn-medium")) ?>
+
+<?php $this->endWidget() ?>

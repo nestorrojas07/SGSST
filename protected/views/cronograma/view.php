@@ -18,6 +18,23 @@ $this->menu=array(
 ?>
 
 <h1><font color="#336699">Cronograma: </font> <font color="black"><?php echo $model->Descripcion; ?></font></h1>
+
+<br>
+
+<?php 
+$date1=date('Y-m-d');
+#echo "----".strtotime($date1);
+#echo "<br>";
+$date2=$model->Fecha;
+#echo "----".strtotime($date2);
+#echo "<br>";
+
+if(strtotime($date1)>=strtotime($date2)&&$model->estado==0)
+{
+	Yii::app()->user->setFlash("warning","Debe realizarse este cronograma");
+}
+ ?>
+
 <!--
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,

@@ -70,6 +70,7 @@ class VencimientosController extends Controller
 		if(isset($_POST['Vencimientos']))
 		{
 			$model->attributes=$_POST['Vencimientos'];
+			$model->estado=0;
 			if($model->save())
 			{
 				Yii::app()->user->setFlash("success","El insumo se creó exitosamente");
@@ -208,6 +209,8 @@ class VencimientosController extends Controller
 		$model->save();
 		$this->redirect(array("index"));
 	}
+
+	
 
 	
 }
