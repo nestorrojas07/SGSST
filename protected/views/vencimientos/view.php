@@ -43,7 +43,7 @@ $date2=$model->fecha_Vencimiento;
 if(strtotime($date1)>=strtotime($date2))
 {
 	Yii::app()->user->setFlash("warning","Este insumo esta vencido");
-	$model->cambiarEstado($model->id);
+	$model->cambiarEstado($model->id,1);
 }
  ?>
 

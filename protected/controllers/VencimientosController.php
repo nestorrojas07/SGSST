@@ -32,7 +32,7 @@ class VencimientosController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update','enabled'),
+				'actions'=>array('create','update','enabled','delete','admin'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -69,8 +69,21 @@ class VencimientosController extends Controller
 
 		if(isset($_POST['Vencimientos']))
 		{
+
+			$date1=date('Y-m-d');
+			$date2=$model->fecha_Vencimiento;
+
+			if(strtotime($date1)>=strtotime($date2) )
+			{
+				$model->estado=1;
+			}
+			else
+			{
+				$model->estado=0;
+			}
 			$model->attributes=$_POST['Vencimientos'];
-			$model->estado=0;
+
+			
 			if($model->save())
 			{
 				Yii::app()->user->setFlash("success","El insumo se creó exitosamente");
