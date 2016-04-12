@@ -123,17 +123,10 @@ class Vencimientos extends CActiveRecord
 		return CHtml::listData(Trabajador::model()->findAll(),"Cedula","Nombre");
 	}
 
-	public function cambiarEstado($id)
+	public function cambiarEstado($id,$state)
 	{
 		$model=Vencimientos::model()->findByPk($id);
-		if($model->estado==0)
-		{
-			$model->estado=1;
-		}
-		else
-		{
-			$model->estado=0;
-		}
+		$model->estado=$state;
 		$model->save();
 	}
 }
