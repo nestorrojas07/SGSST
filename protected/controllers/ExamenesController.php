@@ -191,4 +191,6 @@ class ExamenesController extends Controller
 			Yii::app()->end();
 		}
 	}
+
+	
 }

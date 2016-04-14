@@ -57,7 +57,7 @@ $this->menu=array(
 	<?php foreach ($model->trabajadors as $trabajador)	: ?>
 
 		<tr>			
-			<td> <?php  echo $trabajador->Cedula?></td>
+			<td> <?php  echo CHtml::link($trabajador->Cedula, array('trabajador/view&id='.$trabajador->Cedula))?></td>
 			<td><?php echo $trabajador->Nombre ?></td>
 		</tr>
 

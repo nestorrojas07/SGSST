@@ -3,7 +3,7 @@
   <div class="row-fluid">
     <div class="span12">
 
-    <h1><font color="#336699">Sistema de gestión para la salud y la seguridad en el trabajo</font></h1>
+    <h1><font color="#336699">Sistema de gestión para la seguridad y la salud en el trabajo</font></h1>
 
       <div class="well">
 

@@ -113,12 +113,19 @@ class Examenes extends CActiveRecord
 
 	public function getMenuHistoriaClinica()
 	{
-		return CHtml::listData(Historiaclinica::Model()->findAll(),"Id","Descripcion");
+		return CHtml::listData(Historiaclinica::Model()->findAll(),"Id","concatened");
 	}
+
+
+
+
 	public function getNombreHistoriaClinica($id)
 	{
 		$modelo=Historiaclinica::model()->findByPk($id);
 		if($modelo!==null)
 			return $modelo->Descripcion;
 	}
+
+	
+	
 }

@@ -90,7 +90,7 @@ $this->menu=array(
 
 		<tr>			
 			<!--<td> <?php  echo $afiliacion->Id ?></td>-->
-			<td> <?php  echo $afiliacion->Nombre ?></td>
+			<td> <?php  echo CHtml::link($afiliacion->Nombre, array('afiliaciones/view&id='.$afiliacion->Id)) ?></td>
 			<td><?php echo $afiliacion->Descripcion ?></td>
 		</tr>
 
@@ -102,14 +102,14 @@ $this->menu=array(
 <table class="table table-bordered table-striped">
 	
 	<tr>
-		<td> <strong><font color="#336699">Id</font></strong></td>
+		<!--<td> <strong><font color="#336699">Id</font></strong></td>-->
 		<td><strong><font color="#336699">Descripción</font></strong></td>
 	</tr>
 	<?php foreach ($model->historiaclinicas as $historiaClinica)	: ?>
 
 		<tr>		
-			<td> <?php  echo $historiaClinica->Id ?></td>
-			<td><?php echo $historiaClinica->Descripcion ?></td>
+			<!--<td><?php  echo  $historiaClinica->Id ?></td>-->
+			<td><?php echo CHtml::link($historiaClinica->Descripcion, array('historiaclinica/view&id='.$historiaClinica->Id))?></td>
 		</tr>
 
 	<?php  endforeach; ?>
@@ -126,7 +126,7 @@ $this->menu=array(
 	<?php foreach ($model->vencimientoses as $insumo)	: ?>
 
 		<tr>		
-			<td> <?php  echo $insumo->Nombre ?></td>
+			<td> <?php  echo CHtml::link($insumo->Nombre, array('vencimientos/view&id='.$insumo->id)) ?></td>
 			<td><?php echo $insumo->fecha_Vencimiento ?></td>
 		</tr>
 

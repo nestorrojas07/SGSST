@@ -53,7 +53,7 @@ $this->menu=array(
 	<?php foreach ($model->examenes as $examen)	: ?>
 
 		<tr>			
-			<td> <?php  echo $examen->Tipo ?></td>
+			<td> <?php  echo CHtml::link($examen->Tipo, array('examenes/view&id='.$examen->id)) ?></td>
 			<td> <?php  echo $examen->Fecha ?></td>
 			<td> <?php  echo $examen->Descripcion ?></td>
 			<td> <?php  echo $examen->Diagnostico ?></td>

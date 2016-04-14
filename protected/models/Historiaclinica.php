@@ -17,6 +17,8 @@ class Historiaclinica extends CActiveRecord
 	/**
 	 * @return string the associated database table name
 	 */
+
+
 	public function tableName()
 	{
 		return 'historiaclinica';
@@ -112,4 +114,13 @@ class Historiaclinica extends CActiveRecord
 		if($modelo!==null)
 			return $modelo->Nombre;
 	}
+
+	
+	public function getConcatened()
+	{
+		return $this->Cedula_trabajador.' - '.$this->Descripcion;
+	}
+
+
+
 }

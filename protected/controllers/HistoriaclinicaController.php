@@ -191,4 +191,6 @@ class HistoriaclinicaController extends Controller
 			Yii::app()->end();
 		}
 	}
+
+	
 }

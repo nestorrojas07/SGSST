@@ -33,7 +33,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="http://localhost/yii/SGSST/index.php?r=site/index">S.G.S.S.T</a>
+          <a class="brand" href="/yii/SGSST/index.php?r=site/index">S.G.S.S.T</a>
+
 
           <div class="nav-collapse collapse pull-right">
            <!-- <ul class="nav">

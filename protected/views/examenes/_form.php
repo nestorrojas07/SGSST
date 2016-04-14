@@ -58,8 +58,8 @@
 	</div>
 
 	<div >
-		<?php echo $form->labelEx($model,'IdHistoriaClinica'); ?>
-		<?php echo $form->dropDownList($model,'IdHistoriaClinica',$model->getMenuHistoriaClinica(),array("empty"=>"Seleccione una historia clinica")); ?>
+		<?php echo $form->labelEx($model,'Seleccione la historia clinica'); ?>
+		<?php echo $form->dropDownList($model,'IdHistoriaClinica',$model->getMenuHistoriaClinica(),array("empty"=>"Seleccione un trabajador - Historia clinica")); ?>
 		<?php echo $form->error($model,'IdHistoriaClinica'); ?>
 	</div>
 
