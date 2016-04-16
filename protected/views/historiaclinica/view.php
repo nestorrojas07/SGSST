@@ -3,7 +3,7 @@
 /* @var $model Historiaclinica */
 
 $this->breadcrumbs=array(
-	'Historiaclinicas'=>array('index'),
+	'Historias clinicas'=>array('index'),
 	$model->Id,
 );
 
@@ -13,6 +13,7 @@ $this->menu=array(
 	array('label'=>'Actualizar Historia clinica', 'url'=>array('update', 'id'=>$model->Id)),
 	array('label'=>'Eliminar Historia clinica', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->Id),'confirm'=>'Seguro que desea eliminar esta historia clinica?')),
 	#array('label'=>'Manage Historiaclinica', 'url'=>array('admin')),
+	array('label'=>'Examen de ingreso vs Examen de egreso', 'url'=>array('view2','id'=>$model->Id)),
 	
 );
 ?>
@@ -36,7 +37,7 @@ $this->menu=array(
 	</tr>
 	<tr>
 		<td><strong><font color="#336699">Cedula del trabajador</font></strong></td>
-		<td><?php echo $model->Cedula_trabajador ?></td>
+		<td><?php echo CHtml::link($model->Cedula_trabajador,array('trabajador/view&id='.$model->Cedula_trabajador)) ?></td>
 		
 	</tr>
 </table>

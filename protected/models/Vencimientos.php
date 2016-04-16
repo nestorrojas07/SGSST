@@ -129,4 +129,15 @@ class Vencimientos extends CActiveRecord
 		$model->estado=$state;
 		$model->save();
 	}
+
+	public function getVencido()
+	{
+		$date1=date('Y-m-d');
+		$date2=$this->fecha_Vencimiento;
+		if(strtotime($date1)>=strtotime($date2))
+		{
+			return true;
+		}
+		return false;
+	}
 }

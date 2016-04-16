@@ -125,7 +125,22 @@ class Examenes extends CActiveRecord
 		if($modelo!==null)
 			return $modelo->Descripcion;
 	}
+	public function getCedulaTrabajador($id)
+	{
+		$modelo=Historiaclinica::model()->findByPk($id);
+		if($modelo!==null)
+			return $modelo->Cedula_trabajador;
+	}
+	public function getNombreTrabajador($id)
+	{
+		$modelo=Trabajador::model()->findByPk($id);
+		if($modelo!==null)
+			return $modelo->Nombre;
+	}
 
-	
+	public function getMenuTipos()
+	{
+		return array("Seleccione un tipo de examen","Examen de ingreso","Examen periodico","Examen de egreso");
+	}
 	
 }

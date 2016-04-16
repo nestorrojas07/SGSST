@@ -21,7 +21,7 @@
 
 	<div >
 		<?php echo $form->labelEx($model,'Tipo'); ?>
-		<?php echo $form->textField($model,'Tipo',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->dropDownList($model,'Tipo',$model->getMenuTipos()); ?>
 		<?php echo $form->error($model,'Tipo'); ?>
 	</div>
 

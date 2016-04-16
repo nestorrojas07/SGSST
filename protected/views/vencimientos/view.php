@@ -73,7 +73,7 @@ else
 	</tr>
 	<tr>
 		<td><strong><font color="#336699">Responsable</font></strong></td>
-		<td><?php echo $model->getNombreTrabajador($model->Cedula_Trabajador) ?></td>
+		<td><?php echo CHtml::link($model->getNombreTrabajador($model->Cedula_Trabajador),array('trabajador/view&id='.$model->Cedula_Trabajador)) ?></td>
 	</tr>
 
 </table>

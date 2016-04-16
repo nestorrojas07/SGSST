@@ -223,6 +223,41 @@ class VencimientosController extends Controller
 		$this->redirect(array("index"));
 	}
 
+	public function getVencidos()
+	{
+		$insumos= Vencimientos::model()->findAll();
+
+		foreach ($insumos as $insumo)
+		{
+			if($insumo->vencido)
+			{
+				return true;
+			}
+			# code...
+		}
+		return false;
+	}
+
+
+	public function getMetricaGeneral()
+	{
+		$insumos= Vencimientos::model()->findAll();
+		$metricaRealizacion=0;
+		$numeroInsumos=0;
+		$insumosVencidos=0;
+
+		foreach ($insumos as $insumo)
+		 {
+		 	$numeroInsumos++;
+			if($insumo->estado == 1)
+			{
+				$insumosVencidos++;
+			}
+		}
+		$metricaRealizacion=($insumosVencidos*100)/$numeroInsumos;
+		return $metricaRealizacion;
+	}
+
 	
 
 	

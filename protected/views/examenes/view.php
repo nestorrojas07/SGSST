@@ -52,7 +52,11 @@ $this->menu=array(
 	</tr>
 	<tr>
 		<td><strong><font color="#336699">Historia clinica</font></strong></td>
-		<td><?php echo $model->getNombreHistoriaClinica($model->IdHistoriaClinica) ?></td>
+		<td><?php echo CHtml::link($model->getNombreHistoriaClinica($model->IdHistoriaClinica) ,array('historiaclinica/view&id='.$model->IdHistoriaClinica))?></td>
+	</tr>
+	<tr>
+		<td><strong><font color="#336699">Trabajador</font></strong></td>
+		<td><?php  echo CHtml::link($model->getNombreTrabajador($model->getCedulaTrabajador($model->IdHistoriaClinica)) , array('trabajador/view&id='.$model->getCedulaTrabajador($model->IdHistoriaClinica))) ?></td>
 	</tr>
 
 

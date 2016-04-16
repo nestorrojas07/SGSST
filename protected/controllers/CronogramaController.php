@@ -250,4 +250,38 @@ class CronogramaController extends Controller
 			'model'=>$model,
 		));
 	}
+
+	public function getMetricaGeneral()
+	{
+		$cronogramas= Cronograma::model()->findAll();
+		$metricaRealizacion=0;
+		$numeroCronogramas=0;
+		$cronogramasPendientes=0;
+
+		foreach ($cronogramas as $cronograma)
+		 {
+		 	$numeroCronogramas++;
+			if($cronograma->estado == 0)
+			{
+				$cronogramasPendientes++;
+			}
+		}
+		$metricaRealizacion=($cronogramasPendientes*100)/$numeroCronogramas;
+		return $metricaRealizacion;
+	}
+
+	public function getVencidos()
+	{
+		$cronogramas= Cronograma::model()->findAll();
+
+		foreach ($cronogramas as $cronograma)
+		{
+			if($cronograma->vencido)
+			{
+				return true;
+			}
+			# code...
+		}
+		return false;
+	}
 }

@@ -70,15 +70,35 @@ class ExamenesController extends Controller
 		if(isset($_POST['Examenes']))
 		{
 			$model->attributes=$_POST['Examenes'];
-			if($model->save())
+			if($model->Tipo==0)
 			{
-				Yii::app()->user->setFlash("success","El examen se creó exitosamente");
-				$this->redirect(array('view','id'=>$model->id));
+				Yii::app()->user->setFlash("error","Debe elegir un tipo de examen");
 			}
 			else
 			{
-				Yii::app()->user->setFlash("error","El examen no se creó exitosamente");
+				if($model->Tipo==1)
+				{
+					$model->Tipo="Examen de ingreso";
+				}
+				if($model->Tipo==2)
+				{
+					$model->Tipo="Examen periodico";
+				}
+				if($model->Tipo==3)
+				{
+					$model->Tipo="Examen de egreso";
+				}
+				if($model->save())
+				{
+					Yii::app()->user->setFlash("success","El examen se creó exitosamente");
+					$this->redirect(array('view','id'=>$model->id));
+				}
+				else
+				{
+					Yii::app()->user->setFlash("error","El examen no se creó exitosamente");
+				}
 			}
+			
 		}
 
 		$this->render('create',array(
@@ -94,6 +114,7 @@ class ExamenesController extends Controller
 	public function actionUpdate($id)
 	{
 		$model=$this->loadModel($id);
+		$backUp=$model->Tipo;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -101,6 +122,26 @@ class ExamenesController extends Controller
 		if(isset($_POST['Examenes']))
 		{
 			$model->attributes=$_POST['Examenes'];
+			
+			if($model->Tipo==0)
+			{
+				$model->Tipo=$backUp;
+			}
+			else
+			{
+					if($model->Tipo==1)
+					{
+						$model->Tipo="Examen de ingreso";
+					}
+					if($model->Tipo==2)
+					{
+						$model->Tipo="Examen periodico";
+					}
+					if($model->Tipo==3)
+					{
+						$model->Tipo="Examen de egreso";
+					}
+			}
 			if($model->save())
 			{
 				Yii::app()->user->setFlash("success","El examen se actualizó exitosamente");
@@ -110,6 +151,7 @@ class ExamenesController extends Controller
 			{
 				Yii::app()->user->setFlash("error","El examen no se actualizó exitosamente");
 			}
+		
 		}
 
 		$this->render('update',array(

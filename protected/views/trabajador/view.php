@@ -69,11 +69,11 @@ $this->menu=array(
 	</tr>
 	<tr>
 		<td><strong><font color="#336699">Brigada</font></strong></td>
-		<td><?php echo $model->getFuncionBrigada($model->IdBrigada) ?></td>
+		<td><?php echo CHtml::link($model->getFuncionBrigada($model->IdBrigada),array('brigada/view&id='.$model->IdBrigada)) ?></td>
 	</tr>
 	<tr>
 		<td><strong><font color="#336699">Tarea</font></strong></td>
-		<td><?php echo $model->getTareaTrabajo($model->IdTrabajo) ?></td>
+		<td><?php echo CHtml::link($model->getTareaTrabajo($model->IdTrabajo),array('trabajo/view&id='.$model->IdTrabajo)) ?></td>
 	</tr>	
 
 </table>

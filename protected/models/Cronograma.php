@@ -105,5 +105,33 @@ class Cronograma extends CActiveRecord
 		return parent::model($className);
 	}
 
+	public function getMetrica()
+	{
+		$metrica=0; 
+		$citados=$this->PersonasProgramadas; 
+		$asistentes=$this->PersonasAsistieron; 
+		$state=$this->estado; 
+		if($asistentes!==null && $asistentes!==0 && $state == 1 )
+		{
+			$metrica=($asistentes*100)/$citados;		
+		}
+
+		return $metrica;
+
+	}
+
+
+	public function getVencido()
+	{
+		$date1=date('Y-m-d');
+		$date2=$this->Fecha;
+		if(strtotime($date1)>=strtotime($date2)&&$this->estado==0)
+		{
+			return true;
+		}
+		return false;
+	}
+
+
 	
 }
