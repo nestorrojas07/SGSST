@@ -8,17 +8,29 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Lista de Historias clinicas', 'url'=>array('index')),
+	#array('label'=>'Lista de Historias clinicas', 'url'=>array('index')),
 	#array('label'=>'Create Historiaclinica', 'url'=>array('create')),
 	array('label'=>'Actualizar Historia clinica', 'url'=>array('update', 'id'=>$model->Id)),
 	array('label'=>'Eliminar Historia clinica', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->Id),'confirm'=>'Seguro que desea eliminar esta historia clinica?')),
 	#array('label'=>'Manage Historiaclinica', 'url'=>array('admin')),
-	array('label'=>'Examen de ingreso vs Examen de egreso', 'url'=>array('view2','id'=>$model->Id)),
+	#array('label'=>'Examen de ingreso vs Examen de egreso', 'url'=>array('view2','id'=>$model->Id)),
 	
 );
 ?>
 
 <h1><font color="#336699">Historia clinica de:</font><font color="black"> <?php echo $model->getNombreTrabajador($model->Cedula_trabajador); ?></font></h1>
+
+<?php 
+		if ($this->getExamenIngreso($model->Id) == true) 
+		{
+			Yii::app()->user->setFlash("warning","Se debe realizar un examen de ingreso");
+		}
+		if($this->getExamenRealizacionEspecifico($model->Id) == true)
+		{
+			Yii::app()->user->setFlash("warning","Se debe realizar un examen periodico");
+		} 
+	?>
+
 
 <!--
 <?php $this->widget('zii.widgets.CDetailView', array(
@@ -42,7 +54,14 @@ $this->menu=array(
 	</tr>
 </table>
 
+
 <h2><font color="#336699">Lista de examenes</font></h2>
+
+<?php echo CHtml::submitButton('Crear examen', array('submit'=>array('examenes/create'),"class"=>"btn btn-inverse btn-medium")); ?>   
+<?php echo CHtml::submitButton('Examen ingreso Vs Examen egreso', array('submit'=>array('historiaclinica/view2&id='.$model->Id),"class"=>"btn btn-inverse btn-medium")); ?>
+<br> 
+<br>
+
 <table class="table table-bordered table-striped">
 	
 	<tr>

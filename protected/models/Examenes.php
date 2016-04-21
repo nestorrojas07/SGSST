@@ -143,4 +143,28 @@ class Examenes extends CActiveRecord
 		return array("Seleccione un tipo de examen","Examen de ingreso","Examen periodico","Examen de egreso");
 	}
 	
+	
+	public function getFechaRealizacion()
+	{
+		$fecha = date('Y-m-d');
+		$fechaRealizacion = strtotime ( '-1 year' , strtotime ( $fecha ) ) ;
+		$fechaRealizacion = date ( 'Y-m-d' , $fechaRealizacion );
+
+		if($this->getEsMayor($fechaRealizacion,$this->Fecha)==true)
+		{		 
+			return true;
+		}
+		return false;
+	}
+	
+	public function getEsMayor($date2,$date1)
+	{
+		
+		if(strtotime($date1)<=strtotime($date2))
+		{
+			return true;
+		}
+		return false;
+	}
+
 }

@@ -65,6 +65,8 @@ $this->menu=array(
 	
 </table>	
 
+<!--
+
 <h2><font color="#336699">Afiliar trabajador</font></h2> 
 
 <?php $form=$this->beginWidget("CActiveForm"); ?>
@@ -84,3 +86,5 @@ $this->menu=array(
 	<?php echo CHtml::submitButton("Afiliar",array("class"=>"btn btn-primary btn-medium")) ?>
 
 <?php $this->endWidget() ?>
+
+-->

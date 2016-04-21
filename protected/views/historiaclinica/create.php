@@ -4,7 +4,7 @@
 
 $this->breadcrumbs=array(
 	'Historiaclinicas'=>array('index'),
-	'Create',
+	'Crear',
 );
 
 $this->menu=array(

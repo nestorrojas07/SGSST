@@ -13,7 +13,7 @@ $this->menu=array(
 	array('label'=>'Actualizar Cronograma', 'url'=>array('update', 'id'=>$model->id)),
 	array('label'=>'Eliminar Cronograma', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Seguro que desea eliminar este cronograma?')),
 	#array('label'=>'Manage Cronograma', 'url'=>array('admin')),
-	array('label'=>'Registrar personas que asistieron', 'url'=>array('update2', 'id'=>$model->id)),
+	#array('label'=>'Registrar personas que asistieron', 'url'=>array('update2', 'id'=>$model->id)),
 );
 ?>
 
@@ -33,7 +33,12 @@ if(strtotime($date1)>=strtotime($date2)&&$model->estado==0)
 {
 	Yii::app()->user->setFlash("warning","Debe realizarse este cronograma");
 }
- ?>
+ ?> 
+
+ <?php echo CHtml::submitButton('Registrar personas que asistieron', array('submit'=>array('cronograma/update2&id='.$model->id),"class"=>"btn btn-inverse btn-medium")); ?>
+
+ <br>
+ <br>
 
 <!--
 <?php $this->widget('zii.widgets.CDetailView', array(

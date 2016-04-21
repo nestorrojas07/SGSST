@@ -8,7 +8,7 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Lista de Examenes', 'url'=>array('index')),
+	#array('label'=>'Lista de Examenes', 'url'=>array('index')),
 	#array('label'=>'Create Examenes', 'url'=>array('create')),
 	array('label'=>'Actualizar Examen', 'url'=>array('update', 'id'=>$model->id)),
 	array('label'=>'Eliminar Examen', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Seguro que desea eliminar este examen?')),

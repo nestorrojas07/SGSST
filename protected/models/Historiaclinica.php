@@ -120,6 +120,75 @@ class Historiaclinica extends CActiveRecord
 	{
 		return $this->Cedula_trabajador.' - '.$this->Descripcion;
 	}
+	
+	public function getExamenIngreso()
+	{
+		foreach ($this->examenes as $examen) 
+		{
+			if (strcmp ($examen->Tipo , "Examen de ingreso" ) == 0)
+			{
+				return $examen;
+			}
+		}
+		return null;
+	}
+
+	public function getExamenPeriodico()
+	{
+		$ultimoExamen=null;
+		foreach ($this->examenes as $examen)
+		{
+			if($ultimoExamen==null)
+			{
+				$ultimoExamen=$examen;
+			}
+			elseif(strcmp ($examen->Tipo , "Examen de ingreso" ) == 0)
+			{
+				if($this->existenPeriodicos == false)
+				{
+					$ultimoExamen=$examen;
+				}			
+			}
+			if(strcmp ($examen->Tipo , "Examen periodico" ) == 0)
+			{
+				if($this->getEsMayor($ultimoExamen->Fecha,$examen->Fecha))
+				{
+					$ultimoExamen=$examen;
+				}
+			}						
+			if (strcmp ($examen->Tipo , "Examen de egreso" ) == 0)
+			{
+				return false;
+			}			
+		}
+		if($ultimoExamen->fechaRealizacion == true)
+		{
+			return true;
+		}
+		return false;
+	}
+
+	public function getExistenPeriodicos()
+	{
+		foreach ($this->examenes as $examen)
+		{
+			if(strcmp ($examen->Tipo , "Examen periodico" ) == 0)
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+
+	public function getEsMayor($date1,$date2)
+	{
+		
+		if(strtotime($date1)<=strtotime($date2))
+		{
+			return true;
+		}
+		return false;
+	}
 
 
 

@@ -52,7 +52,7 @@
 	</div>-->
 
 	<div >
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Crear' : 'Guardar',array("class"=>"btn btn-primary btn-medium")); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Crear' : 'Guardar',array("class"=>"btn btn-inverse btn-medium")); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

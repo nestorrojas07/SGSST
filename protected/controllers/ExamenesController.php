@@ -91,7 +91,7 @@ class ExamenesController extends Controller
 				if($model->save())
 				{
 					Yii::app()->user->setFlash("success","El examen se creó exitosamente");
-					$this->redirect(array('view','id'=>$model->id));
+					$this->redirect(array('historiaclinica/view','id'=>$model->IdHistoriaClinica));
 				}
 				else
 				{
@@ -145,7 +145,7 @@ class ExamenesController extends Controller
 			if($model->save())
 			{
 				Yii::app()->user->setFlash("success","El examen se actualizó exitosamente");
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('historiaclinica/view','id'=>$model->IdHistoriaClinica));
 			}
 			else
 			{

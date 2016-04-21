@@ -25,7 +25,7 @@
   </head>
   <body>
 
-    <div class="navbar navbar-static-top">
+    <div class="navbar navbar-static-top navbar-inverse">
       <div class="navbar-inner">
         <div class="container">
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -80,10 +80,11 @@
             array('label'=>'Afiliaciones', 'url'=>array('/afiliaciones/index')),
             array('label'=>'Insumos', 'url'=>array('/vencimientos/index')),
             array('label'=>'Brigadas', 'url'=>array('/brigada/index')),
-            array('label'=>'Historias clinicas', 'url'=>array('/historiaclinica/index')),
-            array('label'=>'Examenes', 'url'=>array('/examenes/index')),
+            #array('label'=>'Historias clinicas', 'url'=>array('/historiaclinica/index')),
+            #array('label'=>'Examenes', 'url'=>array('/examenes/index')),
             array('label'=>'Cronogramas', 'url'=>array('/cronograma/index')),
-            array('label'=>'Acerca de', 'url'=>array('/site/page', 'view'=>'about')),
+             array('label'=>'MIPECR', 'url'=>array('/trabajo/index')),
+            #array('label'=>'Acerca de', 'url'=>array('/site/page', 'view'=>'about')),
             #array('label'=>'Contact', 'url'=>array('/site/contact')),
             array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
             array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
@@ -97,7 +98,8 @@
         </div>
       </div>
     </div>
-          
+
+     
        
     <?php if(isset($this->breadcrumbs) and $this->breadcrumbs!==array()):?>
       <div class="container">
@@ -119,7 +121,7 @@
           <div class="span12">
             <?php foreach ($msgs as $type => $message):?>
               <div class="alert alert-<?php echo $type?>">
-                <buttom type="buttom" class"close" data-dismiss="alert">&times;</buttom>
+                <!--<buttom type="buttom" class"close" data-dismiss="alert">&times;</buttom>-->
                 <h4><?php echo ucfirst($type) ?>!</h4>
                 <?php echo $message ?>
 
@@ -137,6 +139,7 @@
         <div class="container">
             <ul class="clearfix">
                 <li>© 2016 <a href="http://www.uniquindio.edu.co">Universidad del Quindío.</a> Todos los derechos reservados.</li>
+                <li><a href="/yii/SGSST/index.php?r=site/page&view=about">Acerca de</a></li>
                 <li>ISIII</li>
                 <li>Santiago Salazar Osorno - Mauricio Ramirez</li>
                 

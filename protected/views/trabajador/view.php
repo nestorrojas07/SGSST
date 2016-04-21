@@ -11,13 +11,21 @@ $this->menu=array(
 	array('label'=>'Lista de Trabajadores', 'url'=>array('index')),
 	#array('label'=>'Crear Trabajador', 'url'=>array('create')),
 	array('label'=>'Actualizar Trabajador', 'url'=>array('update', 'id'=>$model->Cedula)),
-	array('label'=>'Eliminar Trabajador', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->Cedula),'confirm'=>'Seguro qeu desea eliminar este trabajador?')),
-	#array('label'=>'Manage Trabajador', 'url'=>array('admin')),
+	array('label'=>'Eliminar Trabajador', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->Cedula),'confirm'=>'Seguro que desea eliminar este trabajador?')),
+	#array('label'=>'Manage Trabajador', 'url'=>array('admin')),	
 
 );
 ?>
 
+
+
 <h1><font color="#336699">Trabajador: </font><font color="black"> <?php echo $model->Cedula; ?></font></h1>
+
+
+
+
+
+
 <!--
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
@@ -99,6 +107,11 @@ $this->menu=array(
 </table>	
 
 <h2><font color="#336699">Lista de historias clínicas</font></h2>
+
+<?php echo CHtml::submitButton('Crear historia clinica', array('submit'=>array('historiaclinica/create'),"class"=>"btn btn-inverse btn-medium")); ?>
+<br> 
+<br>
+
 <table class="table table-bordered table-striped">
 	
 	<tr>
@@ -115,6 +128,8 @@ $this->menu=array(
 	<?php  endforeach; ?>
 	
 </table>	
+
+
 
 <h2><font color="#336699">Es responsable de los siguientes insumos</font></h2>
 <table class="table table-bordered table-striped">

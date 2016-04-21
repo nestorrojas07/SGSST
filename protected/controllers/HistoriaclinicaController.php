@@ -80,7 +80,7 @@ class HistoriaclinicaController extends Controller
 			if($model->save())
 			{
 				Yii::app()->user->setFlash("success","La historia clinica se creó exitosamente");
-				$this->redirect(array('view','id'=>$model->Id));
+				$this->redirect(array('trabajador/view','id'=>$model->Cedula_trabajador));
 			}
 			else
 			{
@@ -111,7 +111,7 @@ class HistoriaclinicaController extends Controller
 			if($model->save())
 			{
 				Yii::app()->user->setFlash("success","La historia clinica se actualizó exitosamente");
-				$this->redirect(array('view','id'=>$model->Id));
+				$this->redirect(array('trabajador/view','id'=>$model->Cedula_trabajador));
 			}
 			else
 			{
@@ -199,5 +199,41 @@ class HistoriaclinicaController extends Controller
 		}
 	}
 
+	public function getExamenRealizacionGeneral()
+	{
+		$historiasClinicas=Historiaclinica::model()->findAll();
+		foreach ($historiasClinicas as $historia)
+		{
+			if($historia->examenIngreso == null)
+			{
+				return true;
+			}
+			if($historia->examenPeriodico == true)
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+
+	public function getExamenRealizacionEspecifico($id)
+	{
+		$historia=$this->loadModel($id);		
+		if($historia->examenPeriodico == true)
+		{
+			return true;
+		}
+		return false;
+	}
+
+	public function getExamenIngreso($id)
+	{
+		$historia=$this->loadModel($id);
+		if($historia->examenIngreso == null)
+		{
+			return true;
+		}
+		return false;
+	}
 	
 }

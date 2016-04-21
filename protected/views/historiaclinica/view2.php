@@ -10,7 +10,7 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Lista de Historias clinicas', 'url'=>array('index')),
+	#array('label'=>'Lista de Historias clinicas', 'url'=>array('index')),
 	#array('label'=>'Create Historiaclinica', 'url'=>array('create')),
 	#array('label'=>'Actualizar Historia clinica', 'url'=>array('update', 'id'=>$model->Id)),
 	#array('label'=>'Eliminar Historia clinica', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->Id),'confirm'=>'Seguro que desea eliminar esta historia clinica?')),
