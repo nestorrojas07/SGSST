@@ -32,7 +32,7 @@ class TrabajoController extends Controller
 				'users'=>array('*'),
 			),*/
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update','peligro','controlesExistentes','medidasIntervencion','criteriosControles','evaluacionRiesgo','index','view'),
+				'actions'=>array('create','update','peligro','controlesExistentes','medidasIntervencion','criteriosControles','evaluacionRiesgo','index','view','admin','delete'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -109,7 +109,7 @@ class TrabajoController extends Controller
 				if($model->save())
 				{
 					Yii::app()->user->setFlash("success","El segmento en la MIPECR se creó exitosamente");
-					$this->redirect(array('view','id'=>$model->Id));
+					$this->redirect(array('index'));
 				}
 				else
 				{
@@ -180,7 +180,7 @@ class TrabajoController extends Controller
 		if(!isset($_GET['ajax']))
 		{
 			Yii::app()->user->setFlash("success","El segmento en la MIPECR se eliminó exitosamente");
-			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('index'));
 		}
 		else
 		{

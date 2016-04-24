@@ -12203,3 +12203,125 @@ Stack trace:
 REQUEST_URI=/yii/SGSST/index.php?r=afiliaciones/index
 HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajador/index
 ---
+2016/04/24 05:13:53 [error] [exception.ParseError] ParseError: syntax error, unexpected '<', expecting end of file in C:\xampp\htdocs\yii\SGSST\protected\views\trabajo\_view.php:64
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, false)
+#1 C:\xampp\htdocs\yii\framework\zii\widgets\CListView.php(291): CBaseController->renderFile('C:\\xampp\\htdocs...', Array)
+#2 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(181): CListView->renderItems()
+#3 [internal function]: CBaseListView->renderSection(Array)
+#4 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#5 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(149): CBaseListView->renderContent()
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(181): CBaseListView->run()
+#7 C:\xampp\htdocs\yii\SGSST\protected\views\trabajo\index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#12 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajoController.php(198): CController->render('index', Array)
+#13 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TrabajoController->actionIndex()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#23 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajo/index')
+#24 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#25 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajo/index
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajo/admin
+---
+2016/04/24 05:16:11 [error] [exception.ParseError] ParseError: syntax error, unexpected 'var' (T_VAR) in C:\xampp\htdocs\yii\SGSST\protected\views\trabajo\_view.php:2
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, false)
+#1 C:\xampp\htdocs\yii\framework\zii\widgets\CListView.php(291): CBaseController->renderFile('C:\\xampp\\htdocs...', Array)
+#2 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(181): CListView->renderItems()
+#3 [internal function]: CBaseListView->renderSection(Array)
+#4 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#5 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(149): CBaseListView->renderContent()
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(181): CBaseListView->run()
+#7 C:\xampp\htdocs\yii\SGSST\protected\views\trabajo\index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#12 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajoController.php(198): CController->render('index', Array)
+#13 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TrabajoController->actionIndex()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#23 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajo/index')
+#24 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#25 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajo/index
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajo/admin
+---
+2016/04/24 05:21:30 [error] [exception.CHttpException.400] CHttpException: Su solicitud es inválida. in C:\xampp\htdocs\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajo/view')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajo/view
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajo/view&id=7
+---
+2016/04/24 05:21:56 [error] [exception.CHttpException.400] CHttpException: Su solicitud es inválida. in C:\xampp\htdocs\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajo/view')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajo/view
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajo/view&id=7
+---
+2016/04/24 05:21:57 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajoController.php:228
+Stack trace:
+#0 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajoController.php(55): TrabajoController->loadModel('7')
+#1 [internal function]: TrabajoController->actionView('7')
+#2 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(TrabajoController), Array)
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(TrabajoController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajo/view')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajo/view&id=7
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajo/create
+---

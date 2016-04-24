@@ -130,14 +130,14 @@
 		<?php echo $form->textField($model,'evaluacion_riesgo_interpretacion_nivel_riesgo',array('size'=>60,'maxlength'=>300)); ?>
 		<?php echo $form->error($model,'evaluacion_riesgo_interpretacion_nivel_riesgo'); ?>
 	</div>
-	-->
+	
 
 	<div >
 		<?php echo $form->labelEx($model,'valoracion_riesgo'); ?>
 		<?php echo $form->textField($model,'valoracion_riesgo',array('size'=>60,'maxlength'=>80)); ?>
 		<?php echo $form->error($model,'valoracion_riesgo'); ?>
 	</div>
-	<!--
+	
 	<div >
 		<?php echo $form->labelEx($model,'criterio_numero_expuestos'); ?>
 		<?php echo $form->textField($model,'criterio_numero_expuestos',array('size'=>20,'maxlength'=>10)); ?>

@@ -5,29 +5,7 @@
 
 <div class="view">
 
-	<table class="table table-bordered table-striped">
-
-		<tr>
-			<td> <strong><font color="#336699">Proceso</font></strong></td>
-			<td><strong><font color="#336699">Zona</font></strong></td>
-			<td><strong><font color="#336699">Actividad</font></strong></td>
-			<td><strong><font color="#336699">Tarea</font></strong></td>
-			<td><strong><font color="#336699">Rutinaria</font></strong></td>
-		</tr>
-		<?php $mipecrs=$this->listaMipecr; ?>
-		<?php foreach ($mipecrs as $mipecr)	: ?>
-
-			<tr>			
-				<td> <?php  echo CHtml::link($mipecr->proceso, array('trabajo/view&id='.$mipecr->Id)) ?></td>
-				<td> <?php  echo $mipecr->zona ?></td>
-				<td> <?php  echo $mipecr->actividad ?></td>
-				<td> <?php  echo $mipecr->tarea ?></td>
-				<td> <?php  echo $mipecr->cambiarRutinaria ?></td>
-			</tr>
-
-		<?php  endforeach; ?>
-		
-	</table>	
+	
 	
 	<!--
 	<b><?php echo CHtml::encode($data->getAttributeLabel('Id')); ?>:</b>
@@ -53,12 +31,12 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('rutinaria')); ?>:</b>
 	<?php echo CHtml::encode($data->rutinaria); ?>
 	<br />
-
+		<!--
 	<b><?php echo CHtml::encode($data->getAttributeLabel('peligro_descripcion')); ?>:</b>
 	<?php echo CHtml::encode($data->peligro_descripcion); ?>
 	<br />
 
-	<?php /*
+	
 	<b><?php echo CHtml::encode($data->getAttributeLabel('peligro_clasificacion')); ?>:</b>
 	<?php echo CHtml::encode($data->peligro_clasificacion); ?>
 	<br />
@@ -139,6 +117,5 @@
 	<?php echo CHtml::encode($data->intervencion_elementos_proteccion_personal); ?>
 	<br />
 
-	*/ ?> -->
-
+	 ?> -->
 </div>
