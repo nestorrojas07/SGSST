@@ -21,7 +21,9 @@ $this->menu=array(
 
 <h1><font color="#336699">Trabajador: </font><font color="black"> <?php echo $model->Cedula; ?></font></h1>
 
-
+<?php 
+	$this->tieneExamenes($model->Cedula);
+ ?>
 
 
 

@@ -3,18 +3,19 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Trabajos',
+	'MIPECR',
 );
 
 $this->menu=array(
-	array('label'=>'Create Trabajo', 'url'=>array('create')),
-	array('label'=>'Manage Trabajo', 'url'=>array('admin')),
+	array('label'=>'Crear', 'url'=>array('create')),
+	array('label'=>'Administrar MIPECR', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Trabajos</h1>
-
+<h1><font color="#336699">MIPECR</font></h1>
+<br>
+<!--
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
 	'itemView'=>'_view',
-)); ?>
+)); ?>-->

@@ -25,7 +25,7 @@ $this->menu=array(
 		{
 			Yii::app()->user->setFlash("warning","Se debe realizar un examen de ingreso");
 		}
-		if($this->getExamenRealizacionEspecifico($model->Id) == true)
+		elseif($this->getExamenRealizacionEspecifico($model->Id) == true)
 		{
 			Yii::app()->user->setFlash("warning","Se debe realizar un examen periodico");
 		} 

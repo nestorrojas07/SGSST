@@ -27,12 +27,12 @@ class TrabajoController extends Controller
 	public function accessRules()
 	{
 		return array(
-			array('allow',  // allow all users to perform 'index' and 'view' actions
+			/*array('allow',  // allow all users to perform 'index' and 'view' actions
 				'actions'=>array('index','view'),
 				'users'=>array('*'),
-			),
+			),*/
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('create','update','peligro','controlesExistentes','medidasIntervencion','criteriosControles','evaluacionRiesgo','index','view'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -56,6 +56,38 @@ class TrabajoController extends Controller
 		));
 	}
 
+	public function actionControlesExistentes($id)
+	{
+		$this->render('controlesExistentes',array(
+			'model'=>$this->loadModel($id),
+		));
+	}
+	public function actionCriteriosControles($id)
+	{
+		$this->render('criteriosControles',array(
+			'model'=>$this->loadModel($id),
+		));
+	}
+	public function actionEvaluacionRiesgo($id)
+	{
+		$this->render('evaluacionRiesgo',array(
+			'model'=>$this->loadModel($id),
+		));
+	}
+	public function actionMedidasIntervencion($id)
+	{
+		$this->render('medidasIntervencion',array(
+			'model'=>$this->loadModel($id),
+		));
+	}
+	public function actionPeligro($id)
+	{
+		$this->render('peligro',array(
+			'model'=>$this->loadModel($id),
+		));
+	}
+
+
 	/**
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
@@ -70,8 +102,24 @@ class TrabajoController extends Controller
 		if(isset($_POST['Trabajo']))
 		{
 			$model->attributes=$_POST['Trabajo'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->Id));
+			if($model->verificarDatos()==true)
+			{
+				$model->asignarDatos();
+				$model->calcularNivelesRiesgo();
+				if($model->save())
+				{
+					Yii::app()->user->setFlash("success","El segmento en la MIPECR se creó exitosamente");
+					$this->redirect(array('view','id'=>$model->Id));
+				}
+				else
+				{
+					Yii::app()->user->setFlash("error","El segmento en la MIPECR no se creó exitosamente");
+				}
+			}			
+			else
+			{
+				Yii::app()->user->setFlash("error","Debe elegir una opcion en las listas desplegables");
+			}
 		}
 
 		$this->render('create',array(
@@ -94,8 +142,24 @@ class TrabajoController extends Controller
 		if(isset($_POST['Trabajo']))
 		{
 			$model->attributes=$_POST['Trabajo'];
-			if($model->save())
+			if($model->verificarDatos()==true)
+			{
+				$model->asignarDatos();
+				$model->calcularNivelesRiesgo();
+				if($model->save())
+				{
+				Yii::app()->user->setFlash("success","El segmento en la MIPECR se actualizó exitosamente");
 				$this->redirect(array('view','id'=>$model->Id));
+				}	
+				else
+				{
+					Yii::app()->user->setFlash("error","El segmento en la MIPECR no se actualizó exitosamente");
+				}
+			}			
+			else
+			{
+				Yii::app()->user->setFlash("error","Debe elegir una opcion en las listas desplegables");
+			}
 		}
 
 		$this->render('update',array(
@@ -114,7 +178,14 @@ class TrabajoController extends Controller
 
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		if(!isset($_GET['ajax']))
+		{
+			Yii::app()->user->setFlash("success","El segmento en la MIPECR se eliminó exitosamente");
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+		}
+		else
+		{
+			Yii::app()->user->setFlash("error","El segmento en la MIPECR no se eliminó exitosamente");
+		}
 	}
 
 	/**
@@ -169,5 +240,10 @@ class TrabajoController extends Controller
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
+	}
+
+	public function getListaMipecr()
+	{
+		return Trabajo::model()->findAll();
 	}
 }

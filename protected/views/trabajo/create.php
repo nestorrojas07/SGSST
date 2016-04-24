@@ -3,16 +3,16 @@
 /* @var $model Trabajo */
 
 $this->breadcrumbs=array(
-	'Trabajos'=>array('index'),
-	'Create',
+	'MIPECR'=>array('index'),
+	'Crear',
 );
 
 $this->menu=array(
-	array('label'=>'List Trabajo', 'url'=>array('index')),
-	array('label'=>'Manage Trabajo', 'url'=>array('admin')),
+	array('label'=>'MIPECR', 'url'=>array('index')),
+	#array('label'=>'Manage Trabajo', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Trabajo</h1>
+<h1><font color="#336699">Crear</font></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

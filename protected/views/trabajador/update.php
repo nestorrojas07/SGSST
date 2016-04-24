@@ -16,6 +16,6 @@ $this->menu=array(
 );
 ?>
 
-<h1><strong><font color="#336699">Actualizar Trabajador: <?php echo $model->Cedula; ?></font></strong></h1>
+<h1><font color="#336699">Actualizar Trabajador: <?php echo $model->Cedula; ?></font></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

@@ -160,5 +160,20 @@ class Trabajador extends CActiveRecord
 	{
 		return CHtml::listData(Afiliaciones::model()->findAll(),"Id","Descripcion");
 	}	
+	public function getMensaje()
+	{
+		foreach ($this->historiaclinicas as $historia)
+		{
+			if($historia->examenIngreso == null)
+			{
+				Yii::app()->user->setFlash("warning","Se debe realizar un examen de ingreso");
+			}	
+			elseif($historia->examenPeriodico == true)
+			{
+				Yii::app()->user->setFlash("warning","Se debe realizar un examen periodico");
+			}
+				
+		}
+	}
 
 }

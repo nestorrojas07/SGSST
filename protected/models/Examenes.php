@@ -167,4 +167,29 @@ class Examenes extends CActiveRecord
 		return false;
 	}
 
+	public function validarDatos()
+	{
+		if($this->Tipo==0)
+		{
+			return false;
+		}
+		return true;
+	}
+
+	public function asignarDatos()
+	{
+		if($this->Tipo==1)
+		{
+			$this->Tipo="Examen de ingreso";
+		}
+		if($this->Tipo==2)
+		{
+			$this->Tipo="Examen periodico";
+		}
+		if($this->Tipo==3)
+		{
+			$this->Tipo="Examen de egreso";
+		}
+	}
+
 }

@@ -11,6 +11,8 @@
 	<div class="media body">
 		<h4 class="media heading">
 			
+		
+
 			<b><strong><font color="#336699"><?php echo CHtml::encode($data->getAttributeLabel('Descripcion')); ?>:</font></strong></b>
 			<small><?php echo CHtml::link(CHtml::encode($data->Descripcion), array('view', 'id'=>$data->id)); ?></small>
 		

@@ -13,6 +13,6 @@ $this->menu=array(
 );
 ?>
 
-<h1><strong><font color="#336699">Crear Trabajador</font></strong></h1>
+<h1><font color="#336699">Crear Trabajador</font></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

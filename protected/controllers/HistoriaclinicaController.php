@@ -27,12 +27,12 @@ class HistoriaclinicaController extends Controller
 	public function accessRules()
 	{
 		return array(
-			array('allow',  // allow all users to perform 'index' and 'view' actions
+			/*array('allow',  // allow all users to perform 'index' and 'view' actions
 				'actions'=>array('index','view','view2'),
 				'users'=>array('*'),
-			),
+			),*/
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update','admin','delete'),
+				'actions'=>array('create','update','admin','delete','index','view','view2'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -229,6 +229,7 @@ class HistoriaclinicaController extends Controller
 	public function getExamenIngreso($id)
 	{
 		$historia=$this->loadModel($id);
+	
 		if($historia->examenIngreso == null)
 		{
 			return true;
