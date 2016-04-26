@@ -113,4 +113,9 @@ class Afiliaciones extends CActiveRecord
 	{
 		return CHtml::listData(Afiliaciones::model()->findAll(),"Id","Descripcion");
 	}
+
+	public function getUno($prueba)
+	{
+		return $prueba;
+	}
 }

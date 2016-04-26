@@ -92,4 +92,19 @@ class TrabajadorAfiliaciones extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+	public function getMenuTrabajadores()
+	{
+		return CHtml::listData(Trabajador::model()->findAll(),"Cedula","Cedula");
+	}
+
+	public function getMenuAfiliacion()
+	{
+		return CHtml::listData(Afiliaciones::model()->findAll(),"Id","Descripcion");
+	}
+	public function getNombreAfiliacion()
+	{
+		$afiliacion= Afiliaciones::model()->findByPk($this->IdAfiliaciones);
+		return $afiliacion->Descripcion;
+	}
 }

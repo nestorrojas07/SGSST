@@ -12325,3 +12325,1695 @@ Stack trace:
 REQUEST_URI=/yii/SGSST/index.php?r=trabajo/view&id=7
 HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajo/create
 ---
+2016/04/25 22:49:42 [error] [exception.ParseError] ParseError: syntax error, unexpected 'echo' (T_ECHO) in C:\xampp\htdocs\yii\SGSST\protected\views\afiliaciones\view.php:79
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#3 C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php(69): CController->render('view', Array)
+#4 [internal function]: AfiliacionesController->actionView('1')
+#5 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AfiliacionesController), Array)
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AfiliacionesController), Object(ReflectionMethod), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('afiliaciones/vi...')
+#17 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=afiliaciones/view&id=1
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=afiliaciones/index
+---
+2016/04/25 22:49:56 [error] [exception.ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' in C:\xampp\htdocs\yii\SGSST\protected\views\afiliaciones\view.php:79
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#3 C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php(69): CController->render('view', Array)
+#4 [internal function]: AfiliacionesController->actionView('1')
+#5 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AfiliacionesController), Array)
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AfiliacionesController), Object(ReflectionMethod), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('afiliaciones/vi...')
+#17 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=afiliaciones/view&id=1
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=afiliaciones/index
+---
+2016/04/25 22:50:03 [error] [exception.ParseError] ParseError: syntax error, unexpected ';', expecting ',' or ')' in C:\xampp\htdocs\yii\SGSST\protected\views\afiliaciones\view.php:79
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#3 C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php(69): CController->render('view', Array)
+#4 [internal function]: AfiliacionesController->actionView('1')
+#5 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AfiliacionesController), Array)
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AfiliacionesController), Object(ReflectionMethod), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('afiliaciones/vi...')
+#17 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=afiliaciones/view&id=1
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=afiliaciones/index
+---
+2016/04/25 22:50:15 [error] [exception.ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' in C:\xampp\htdocs\yii\SGSST\protected\views\afiliaciones\view.php:79
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#3 C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php(69): CController->render('view', Array)
+#4 [internal function]: AfiliacionesController->actionView('1')
+#5 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AfiliacionesController), Array)
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AfiliacionesController), Object(ReflectionMethod), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('afiliaciones/vi...')
+#17 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=afiliaciones/view&id=1
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=afiliaciones/index
+---
+2016/04/25 22:50:37 [error] [exception.ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' in C:\xampp\htdocs\yii\SGSST\protected\views\afiliaciones\view.php:79
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#3 C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php(69): CController->render('view', Array)
+#4 [internal function]: AfiliacionesController->actionView('1')
+#5 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AfiliacionesController), Array)
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AfiliacionesController), Object(ReflectionMethod), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('afiliaciones/vi...')
+#17 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=afiliaciones/view&id=1
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=afiliaciones/index
+---
+2016/04/25 22:51:11 [error] [exception.ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' in C:\xampp\htdocs\yii\SGSST\protected\views\afiliaciones\view.php:79
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#3 C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php(69): CController->render('view', Array)
+#4 [internal function]: AfiliacionesController->actionView('1')
+#5 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AfiliacionesController), Array)
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AfiliacionesController), Object(ReflectionMethod), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('afiliaciones/vi...')
+#17 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=afiliaciones/view&id=1
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=afiliaciones/index
+---
+2016/04/25 22:52:43 [error] [exception.ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' in C:\xampp\htdocs\yii\SGSST\protected\views\afiliaciones\view.php:79
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#3 C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php(69): CController->render('view', Array)
+#4 [internal function]: AfiliacionesController->actionView('1')
+#5 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AfiliacionesController), Array)
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AfiliacionesController), Object(ReflectionMethod), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('afiliaciones/vi...')
+#17 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=afiliaciones/view&id=1
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=afiliaciones/index
+---
+2016/04/25 23:02:36 [error] [php] Use of undefined constant CedulaTrabajador - assumed 'CedulaTrabajador' (C:\xampp\htdocs\yii\SGSST\protected\views\afiliaciones\view.php:76)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): AfiliacionesController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): AfiliacionesController->renderPartial()
+#2 C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php(69): AfiliacionesController->render()
+#3 unknown(0): AfiliacionesController->actionView()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): AfiliacionesController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): AfiliacionesController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): AfiliacionesController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): AfiliacionesController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\yii\SGSST\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/SGSST/index.php?r=afiliaciones/view&id=3
+in C:\xampp\htdocs\yii\SGSST\protected\views\afiliaciones\view.php (76)
+in C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php (69)
+in C:\xampp\htdocs\yii\SGSST\index.php (13)
+2016/04/25 23:02:45 [error] [php] Undefined variable: CedulaTrabajador (C:\xampp\htdocs\yii\SGSST\protected\views\afiliaciones\view.php:76)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): AfiliacionesController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): AfiliacionesController->renderPartial()
+#2 C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php(69): AfiliacionesController->render()
+#3 unknown(0): AfiliacionesController->actionView()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): AfiliacionesController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): AfiliacionesController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): AfiliacionesController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): AfiliacionesController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\yii\SGSST\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/SGSST/index.php?r=afiliaciones/view&id=3
+in C:\xampp\htdocs\yii\SGSST\protected\views\afiliaciones\view.php (76)
+in C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php (69)
+in C:\xampp\htdocs\yii\SGSST\index.php (13)
+2016/04/25 23:03:45 [error] [php] Use of undefined constant input - assumed 'input' (C:\xampp\htdocs\yii\SGSST\protected\views\afiliaciones\view.php:76)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): AfiliacionesController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): AfiliacionesController->renderPartial()
+#2 C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php(69): AfiliacionesController->render()
+#3 unknown(0): AfiliacionesController->actionView()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): AfiliacionesController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): AfiliacionesController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): AfiliacionesController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): AfiliacionesController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\yii\SGSST\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/SGSST/index.php?r=afiliaciones/view&id=3
+in C:\xampp\htdocs\yii\SGSST\protected\views\afiliaciones\view.php (76)
+in C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php (69)
+in C:\xampp\htdocs\yii\SGSST\index.php (13)
+2016/04/25 23:32:55 [error] [php] Undefined variable: TrabajadorAfiliaciones (C:\xampp\htdocs\yii\SGSST\protected\views\afiliaciones\view.php:74)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): AfiliacionesController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): AfiliacionesController->renderPartial()
+#2 C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php(69): AfiliacionesController->render()
+#3 unknown(0): AfiliacionesController->actionView()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): AfiliacionesController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): AfiliacionesController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): AfiliacionesController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): AfiliacionesController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\yii\SGSST\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/SGSST/index.php?r=afiliaciones/view&id=1
+in C:\xampp\htdocs\yii\SGSST\protected\views\afiliaciones\view.php (74)
+in C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php (69)
+in C:\xampp\htdocs\yii\SGSST\index.php (13)
+2016/04/25 23:33:06 [error] [php] Undefined variable: trabajadorAfiliaciones (C:\xampp\htdocs\yii\SGSST\protected\views\afiliaciones\view.php:74)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): AfiliacionesController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): AfiliacionesController->renderPartial()
+#2 C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php(69): AfiliacionesController->render()
+#3 unknown(0): AfiliacionesController->actionView()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): AfiliacionesController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): AfiliacionesController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): AfiliacionesController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): AfiliacionesController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\yii\SGSST\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/SGSST/index.php?r=afiliaciones/view&id=1
+in C:\xampp\htdocs\yii\SGSST\protected\views\afiliaciones\view.php (74)
+in C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php (69)
+in C:\xampp\htdocs\yii\SGSST\index.php (13)
+2016/04/25 23:33:07 [error] [php] Undefined variable: trabajadorAfiliaciones (C:\xampp\htdocs\yii\SGSST\protected\views\afiliaciones\view.php:74)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): AfiliacionesController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): AfiliacionesController->renderPartial()
+#2 C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php(69): AfiliacionesController->render()
+#3 unknown(0): AfiliacionesController->actionView()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): AfiliacionesController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): AfiliacionesController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): AfiliacionesController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): AfiliacionesController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\yii\SGSST\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/SGSST/index.php?r=afiliaciones/view&id=1
+in C:\xampp\htdocs\yii\SGSST\protected\views\afiliaciones\view.php (74)
+in C:\xampp\htdocs\yii\SGSST\protected\controllers\AfiliacionesController.php (69)
+in C:\xampp\htdocs\yii\SGSST\index.php (13)
+2016/04/25 23:38:39 [error] [exception.CException] CException: TrabajadorAfiliaciones y sus behaviors no tienen un método o closure llamado "getMenuTrabajadores". in C:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(227): CComponent->__call('getMenuTrabajad...', Array)
+#1 C:\xampp\htdocs\yii\SGSST\protected\views\trabajadorAfiliaciones\create.php(6): CActiveRecord->__call('getMenuTrabajad...', Array)
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#6 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(66): CController->render('create', Array)
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TrabajadorAfiliacionesController->actionCreate()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#18 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/create
+---
+2016/04/25 23:39:16 [error] [php] Undefined variable: TrabajadorAfiliaciones (C:\xampp\htdocs\yii\SGSST\protected\views\trabajadorAfiliaciones\create.php:11)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): TrabajadorAfiliacionesController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): TrabajadorAfiliacionesController->renderPartial()
+#2 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(66): TrabajadorAfiliacionesController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TrabajadorAfiliacionesController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): TrabajadorAfiliacionesController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): TrabajadorAfiliacionesController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): TrabajadorAfiliacionesController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): TrabajadorAfiliacionesController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\SGSST\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/create
+in C:\xampp\htdocs\yii\SGSST\protected\views\trabajadorAfiliaciones\create.php (11)
+in C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php (66)
+in C:\xampp\htdocs\yii\SGSST\index.php (13)
+2016/04/25 23:42:37 [error] [exception.CException] CException: La propiedad "TrabajadorAfiliaciones"."Cedula_trabajador" no se encuentra definida. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('Cedula_trabajad...')
+#1 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(57): CActiveRecord->__get('Cedula_trabajad...')
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TrabajadorAfiliacionesController->actionCreate()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/create
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajadorAfiliaciones/create
+---
+2016/04/25 23:45:39 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1094899656-3' for key 'PRIMARY'. La sentencia SQL ejecutada fue: INSERT INTO `trabajador_afiliaciones` (`Cedula`, `IdAfiliaciones`) VALUES (:yp0, :yp1).
+in C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php (54)
+in C:\xampp\htdocs\yii\SGSST\index.php (13)
+2016/04/25 23:45:39 [error] [exception.CDbException] CDbException: CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1094899656-3' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `trabajador_afiliaciones` (`Cedula`, `IdAfiliaciones`) VALUES (:yp0, :yp1) in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1080): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(54): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TrabajadorAfiliacionesController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/create
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajadorAfiliaciones/create
+---
+2016/04/26 00:18:51 [error] [php] Undefined variable: afiliacion (C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php:62)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): TrabajadorAfiliacionesController->runAction()
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): TrabajadorAfiliacionesController->filterAccessControl()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): TrabajadorAfiliacionesController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): TrabajadorAfiliacionesController->run()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii\SGSST\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/create
+in C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php (62)
+in C:\xampp\htdocs\yii\SGSST\index.php (13)
+2016/04/26 00:45:25 [error] [exception.CHttpException.403] CHttpException: Usted no se encuentra autorizado a realizar esta acción. in C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=afiliaciones/index
+---
+2016/04/26 00:46:12 [error] [php] require(): Filename cannot be empty (C:\xampp\htdocs\yii\framework\web\CBaseController.php:130)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\zii\widgets\CListView.php(291): TrabajadorAfiliacionesController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(181): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#4 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(149): CListView->renderContent()
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(181): CListView->run()
+#6 C:\xampp\htdocs\yii\SGSST\protected\views\trabajadorAfiliaciones\index.php(23): TrabajadorAfiliacionesController->widget()
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): TrabajadorAfiliacionesController->renderInternal()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(869): TrabajadorAfiliacionesController->renderFile()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(782): TrabajadorAfiliacionesController->renderPartial()
+#11 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(73): TrabajadorAfiliacionesController->render()
+#12 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TrabajadorAfiliacionesController->actionIndex()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): TrabajadorAfiliacionesController->runAction()
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#17 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): TrabajadorAfiliacionesController->filterAccessControl()
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\xampp\htdocs\yii\framework\web\CController.php(265): TrabajadorAfiliacionesController->runActionWithFilters()
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): TrabajadorAfiliacionesController->run()
+#22 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#24 C:\xampp\htdocs\yii\SGSST\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+in C:\xampp\htdocs\yii\SGSST\protected\views\trabajadorAfiliaciones\index.php (23)
+in C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php (73)
+in C:\xampp\htdocs\yii\SGSST\index.php (13)
+2016/04/26 00:50:13 [error] [exception.CException] CException: La propiedad "TrabajadorAfiliaciones"."IdAfiliacion" no se encuentra definida. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('IdAfiliacion')
+#1 C:\xampp\htdocs\yii\SGSST\protected\views\trabajadorAfiliaciones\_view.php(11): CActiveRecord->__get('IdAfiliacion')
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(130): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, false)
+#4 C:\xampp\htdocs\yii\framework\zii\widgets\CListView.php(291): CBaseController->renderFile('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#8 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(149): CBaseListView->renderContent()
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(181): CBaseListView->run()
+#10 C:\xampp\htdocs\yii\SGSST\protected\views\trabajadorAfiliaciones\index.php(23): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#15 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(73): CController->render('index', Array)
+#16 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TrabajadorAfiliacionesController->actionIndex()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#26 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#27 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#28 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=afiliaciones/index
+---
+2016/04/26 01:19:25 [error] [exception.CException] CException: La propiedad "TrabajadorAfiliaciones"."getNombreAfiliacion" no se encuentra definida. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('getNombreAfilia...')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2729): CActiveRecord->__get('getNombreAfilia...')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2452): CHtml::resolveValue(Object(TrabajadorAfiliaciones), 'getNombreAfilia...')
+#3 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1534): CHtml::activeInputField('text', Object(TrabajadorAfiliaciones), 'getNombreAfilia...', Array)
+#4 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CDataColumn.php(104): CHtml::activeTextField(Object(TrabajadorAfiliaciones), 'getNombreAfilia...', Array)
+#5 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridColumn.php(253): CDataColumn->getFilterCellContent()
+#6 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridColumn.php(119): CGridColumn->renderFilterCellContent()
+#7 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(538): CGridColumn->renderFilterCell()
+#8 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(516): CGridView->renderFilter()
+#9 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(486): CGridView->renderTableHeader()
+#10 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#11 [internal function]: CBaseListView->renderSection(Array)
+#12 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{item...')
+#13 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(149): CBaseListView->renderContent()
+#14 C:\xampp\htdocs\yii\framework\web\CBaseController.php(181): CBaseListView->run()
+#15 C:\xampp\htdocs\yii\SGSST\protected\views\trabajadorAfiliaciones\admin.php(12): CBaseController->widget('zii.widgets.gri...', Array)
+#16 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#17 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#20 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(88): CController->render('admin', Array)
+#21 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TrabajadorAfiliacionesController->actionAdmin()
+#22 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#23 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#24 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#25 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#26 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#27 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#28 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#29 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#30 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#31 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#32 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#33 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#34 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/admin
+---
+2016/04/26 01:19:32 [error] [exception.CException] CException: La columna debe especificarse en el formato "Nombre:Tipo:Etiqueta", donde "Tipo" y "Etiqueta" son opcionales. in C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php:412
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(383): CGridView->createDataColumn('getNombreAfilia...')
+#1 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(359): CGridView->initColumns()
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(147): CGridView->init()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.gri...', Array)
+#4 C:\xampp\htdocs\yii\SGSST\protected\views\trabajadorAfiliaciones\admin.php(12): CBaseController->widget('zii.widgets.gri...', Array)
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#9 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(88): CController->render('admin', Array)
+#10 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TrabajadorAfiliacionesController->actionAdmin()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/admin
+---
+2016/04/26 01:19:53 [error] [exception.CHttpException.400] CHttpException: Su solicitud es inválida. in C:\xampp\htdocs\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/view&id%5BCedula%5D=1094899656&id%5BIdAfiliaciones%5D=1
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajadorAfiliaciones/admin
+---
+2016/04/26 01:20:04 [error] [exception.CHttpException.400] CHttpException: Su solicitud es inválida. in C:\xampp\htdocs\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/update&id%5BCedula%5D=1094899656&id%5BIdAfiliaciones%5D=1
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajadorAfiliaciones/admin
+---
+2016/04/26 01:21:34 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\yii\SGSST\protected\models\TrabajadorAfiliaciones.php:108)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): TrabajadorAfiliacionesController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): TrabajadorAfiliacionesController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): TrabajadorAfiliacionesController->renderPartial()
+#3 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(88): TrabajadorAfiliacionesController->render()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TrabajadorAfiliacionesController->actionAdmin()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): TrabajadorAfiliacionesController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): TrabajadorAfiliacionesController->filterAccessControl()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(265): TrabajadorAfiliacionesController->runActionWithFilters()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): TrabajadorAfiliacionesController->run()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yii\SGSST\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/admin
+in C:\xampp\htdocs\yii\SGSST\protected\models\TrabajadorAfiliaciones.php (108)
+in C:\xampp\htdocs\yii\SGSST\protected\views\trabajadorAfiliaciones\admin.php (19)
+in C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php (88)
+2016/04/26 01:22:29 [error] [exception.CException] CException: La columna debe especificarse en el formato "Nombre:Tipo:Etiqueta", donde "Tipo" y "Etiqueta" son opcionales. in C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php:412
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(383): CGridView->createDataColumn('$model->getNomb...')
+#1 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(359): CGridView->initColumns()
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(147): CGridView->init()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.gri...', Array)
+#4 C:\xampp\htdocs\yii\SGSST\protected\views\trabajadorAfiliaciones\admin.php(12): CBaseController->widget('zii.widgets.gri...', Array)
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#9 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(88): CController->render('admin', Array)
+#10 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TrabajadorAfiliacionesController->actionAdmin()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/admin
+---
+2016/04/26 01:23:55 [error] [exception.CDbException] CDbException: El valor para la columna "Cedula" no es suministrado cuando se consulta la tabla "trabajador_afiliaciones". in C:\xampp\htdocs\yii\framework\db\schema\CDbCommandBuilder.php:816
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\schema\CDbCommandBuilder.php(624): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), Array, Array, '`t`.')
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1490): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#2 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(49): CActiveRecord->findByPk('1')
+#3 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(62): TrabajadorAfiliacionesController->loadModel('1')
+#4 [internal function]: TrabajadorAfiliacionesController->actionView('1')
+#5 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(TrabajadorAfiliacionesController), Array)
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(TrabajadorAfiliacionesController), Object(ReflectionMethod), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#17 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/view&id=1
+---
+2016/04/26 01:24:20 [error] [exception.CDbException] CDbException: El valor para la columna "Cedula" no es suministrado cuando se consulta la tabla "trabajador_afiliaciones". in C:\xampp\htdocs\yii\framework\db\schema\CDbCommandBuilder.php:816
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\schema\CDbCommandBuilder.php(624): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), Array, Array, '`t`.')
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1490): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#2 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(49): CActiveRecord->findByPk('165511')
+#3 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(62): TrabajadorAfiliacionesController->loadModel('165511')
+#4 [internal function]: TrabajadorAfiliacionesController->actionView('165511')
+#5 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(TrabajadorAfiliacionesController), Array)
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(TrabajadorAfiliacionesController), Object(ReflectionMethod), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#17 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/view&id=165511
+---
+2016/04/26 01:24:32 [error] [exception.CDbException] CDbException: El valor para la columna "Cedula" no es suministrado cuando se consulta la tabla "trabajador_afiliaciones". in C:\xampp\htdocs\yii\framework\db\schema\CDbCommandBuilder.php:816
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\schema\CDbCommandBuilder.php(624): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), Array, Array, '`t`.')
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1490): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#2 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(49): CActiveRecord->findByPk('116551')
+#3 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(62): TrabajadorAfiliacionesController->loadModel('116551')
+#4 [internal function]: TrabajadorAfiliacionesController->actionView('116551')
+#5 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(TrabajadorAfiliacionesController), Array)
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(TrabajadorAfiliacionesController), Object(ReflectionMethod), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#17 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/view&id=116551
+---
+2016/04/26 01:30:50 [error] [exception.CDbException] CDbException: El valor para la columna "Cedula" no es suministrado cuando se consulta la tabla "trabajador_afiliaciones". in C:\xampp\htdocs\yii\framework\db\schema\CDbCommandBuilder.php:816
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\schema\CDbCommandBuilder.php(624): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), Array, Array, '`t`.')
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1490): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#2 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(49): CActiveRecord->findByPk('1,16551')
+#3 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(62): TrabajadorAfiliacionesController->loadModel('1,16551')
+#4 [internal function]: TrabajadorAfiliacionesController->actionView('1,16551')
+#5 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(TrabajadorAfiliacionesController), Array)
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(TrabajadorAfiliacionesController), Object(ReflectionMethod), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#17 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/view&id=1,16551
+---
+2016/04/26 01:30:56 [error] [exception.CDbException] CDbException: El valor para la columna "Cedula" no es suministrado cuando se consulta la tabla "trabajador_afiliaciones". in C:\xampp\htdocs\yii\framework\db\schema\CDbCommandBuilder.php:816
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\schema\CDbCommandBuilder.php(624): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), Array, Array, '`t`.')
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1490): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#2 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(49): CActiveRecord->findByPk('16551,1')
+#3 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(62): TrabajadorAfiliacionesController->loadModel('16551,1')
+#4 [internal function]: TrabajadorAfiliacionesController->actionView('16551,1')
+#5 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(TrabajadorAfiliacionesController), Array)
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(TrabajadorAfiliacionesController), Object(ReflectionMethod), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#17 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/view&id=16551,1
+---
+2016/04/26 01:32:34 [error] [exception.CDbException] CDbException: El valor para la columna "Cedula" no es suministrado cuando se consulta la tabla "trabajador_afiliaciones". in C:\xampp\htdocs\yii\framework\db\schema\CDbCommandBuilder.php:816
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\schema\CDbCommandBuilder.php(624): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), Array, Array, '`t`.')
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1490): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#2 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(49): CActiveRecord->findByPk('1,16551')
+#3 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(62): TrabajadorAfiliacionesController->loadModel('1,16551')
+#4 [internal function]: TrabajadorAfiliacionesController->actionView('1,16551')
+#5 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(TrabajadorAfiliacionesController), Array)
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(TrabajadorAfiliacionesController), Object(ReflectionMethod), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#17 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/view&id=1,16551
+---
+2016/04/26 01:32:34 [error] [exception.CDbException] CDbException: El valor para la columna "Cedula" no es suministrado cuando se consulta la tabla "trabajador_afiliaciones". in C:\xampp\htdocs\yii\framework\db\schema\CDbCommandBuilder.php:816
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\schema\CDbCommandBuilder.php(624): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), Array, Array, '`t`.')
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1490): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#2 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(49): CActiveRecord->findByPk('116551')
+#3 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(62): TrabajadorAfiliacionesController->loadModel('116551')
+#4 [internal function]: TrabajadorAfiliacionesController->actionView('116551')
+#5 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(TrabajadorAfiliacionesController), Array)
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(TrabajadorAfiliacionesController), Object(ReflectionMethod), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#17 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/view&id=116551
+---
+2016/04/26 01:32:36 [error] [exception.CDbException] CDbException: El valor para la columna "Cedula" no es suministrado cuando se consulta la tabla "trabajador_afiliaciones". in C:\xampp\htdocs\yii\framework\db\schema\CDbCommandBuilder.php:816
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\schema\CDbCommandBuilder.php(624): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), Array, Array, '`t`.')
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1490): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#2 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(49): CActiveRecord->findByPk('116551')
+#3 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(62): TrabajadorAfiliacionesController->loadModel('116551')
+#4 [internal function]: TrabajadorAfiliacionesController->actionView('116551')
+#5 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(TrabajadorAfiliacionesController), Array)
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(TrabajadorAfiliacionesController), Object(ReflectionMethod), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#17 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/view&id=116551
+---
+2016/04/26 01:32:37 [error] [exception.CDbException] CDbException: El valor para la columna "Cedula" no es suministrado cuando se consulta la tabla "trabajador_afiliaciones". in C:\xampp\htdocs\yii\framework\db\schema\CDbCommandBuilder.php:816
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\schema\CDbCommandBuilder.php(624): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), Array, Array, '`t`.')
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1490): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#2 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(49): CActiveRecord->findByPk('165511')
+#3 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(62): TrabajadorAfiliacionesController->loadModel('165511')
+#4 [internal function]: TrabajadorAfiliacionesController->actionView('165511')
+#5 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(TrabajadorAfiliacionesController), Array)
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(TrabajadorAfiliacionesController), Object(ReflectionMethod), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#17 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/view&id=165511
+---
+2016/04/26 01:32:37 [error] [exception.CDbException] CDbException: El valor para la columna "Cedula" no es suministrado cuando se consulta la tabla "trabajador_afiliaciones". in C:\xampp\htdocs\yii\framework\db\schema\CDbCommandBuilder.php:816
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\schema\CDbCommandBuilder.php(624): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), Array, Array, '`t`.')
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1490): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#2 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(49): CActiveRecord->findByPk('1')
+#3 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(62): TrabajadorAfiliacionesController->loadModel('1')
+#4 [internal function]: TrabajadorAfiliacionesController->actionView('1')
+#5 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(TrabajadorAfiliacionesController), Array)
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(TrabajadorAfiliacionesController), Object(ReflectionMethod), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#17 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/view&id=1
+---
+2016/04/26 01:32:42 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\yii\SGSST\protected\models\TrabajadorAfiliaciones.php:108)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): TrabajadorAfiliacionesController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): TrabajadorAfiliacionesController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): TrabajadorAfiliacionesController->renderPartial()
+#3 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(88): TrabajadorAfiliacionesController->render()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TrabajadorAfiliacionesController->actionAdmin()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): TrabajadorAfiliacionesController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): TrabajadorAfiliacionesController->filterAccessControl()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(265): TrabajadorAfiliacionesController->runActionWithFilters()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): TrabajadorAfiliacionesController->run()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yii\SGSST\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/admin
+in C:\xampp\htdocs\yii\SGSST\protected\models\TrabajadorAfiliaciones.php (108)
+in C:\xampp\htdocs\yii\SGSST\protected\views\trabajadorAfiliaciones\admin.php (19)
+in C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php (88)
+2016/04/26 01:33:03 [error] [exception.CException] CException: La propiedad "TrabajadorAfiliaciones"."IdAfliaciones" no se encuentra definida. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('IdAfliaciones')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2729): CActiveRecord->__get('IdAfliaciones')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2452): CHtml::resolveValue(Object(TrabajadorAfiliaciones), 'IdAfliaciones')
+#3 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1534): CHtml::activeInputField('text', Object(TrabajadorAfiliaciones), 'IdAfliaciones', Array)
+#4 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CDataColumn.php(104): CHtml::activeTextField(Object(TrabajadorAfiliaciones), 'IdAfliaciones', Array)
+#5 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridColumn.php(253): CDataColumn->getFilterCellContent()
+#6 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridColumn.php(119): CGridColumn->renderFilterCellContent()
+#7 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(538): CGridColumn->renderFilterCell()
+#8 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(516): CGridView->renderFilter()
+#9 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(486): CGridView->renderTableHeader()
+#10 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#11 [internal function]: CBaseListView->renderSection(Array)
+#12 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{item...')
+#13 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(149): CBaseListView->renderContent()
+#14 C:\xampp\htdocs\yii\framework\web\CBaseController.php(181): CBaseListView->run()
+#15 C:\xampp\htdocs\yii\SGSST\protected\views\trabajadorAfiliaciones\admin.php(12): CBaseController->widget('zii.widgets.gri...', Array)
+#16 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#17 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#20 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(88): CController->render('admin', Array)
+#21 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TrabajadorAfiliacionesController->actionAdmin()
+#22 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#23 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#24 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#25 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#26 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#27 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#28 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#29 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#30 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#31 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#32 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#33 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#34 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/admin
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+---
+2016/04/26 01:33:18 [error] [exception.CHttpException.400] CHttpException: Su solicitud es inválida. in C:\xampp\htdocs\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/update&id%5BCedula%5D=1094899656&id%5BIdAfiliaciones%5D=1
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajadorAfiliaciones/admin
+---
+2016/04/26 01:42:23 [error] [exception.CHttpException.400] CHttpException: Su solicitud es inválida. in C:\xampp\htdocs\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/update&id%5BCedula%5D=1094899656&id%5BIdAfiliaciones%5D=1
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajadorAfiliaciones/admin
+---
+2016/04/26 01:42:27 [error] [exception.CHttpException.400] CHttpException: Su solicitud es inválida. in C:\xampp\htdocs\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/view&id%5BCedula%5D=1094899656&id%5BIdAfiliaciones%5D=1
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajadorAfiliaciones/admin
+---
+2016/04/26 01:45:21 [error] [exception.ParseError] ParseError: syntax error, unexpected ';', expecting ')' in C:\xampp\htdocs\yii\SGSST\protected\views\trabajadorAfiliaciones\index.php:15
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#3 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(73): CController->render('index', Array)
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TrabajadorAfiliacionesController->actionIndex()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#15 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=afiliaciones/index
+---
+2016/04/26 01:45:45 [error] [php] Undefined variable: model (C:\xampp\htdocs\yii\SGSST\protected\views\trabajadorAfiliaciones\index.php:13)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): TrabajadorAfiliacionesController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): TrabajadorAfiliacionesController->renderPartial()
+#2 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(73): TrabajadorAfiliacionesController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TrabajadorAfiliacionesController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): TrabajadorAfiliacionesController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): TrabajadorAfiliacionesController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): TrabajadorAfiliacionesController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): TrabajadorAfiliacionesController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\SGSST\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+in C:\xampp\htdocs\yii\SGSST\protected\views\trabajadorAfiliaciones\index.php (13)
+in C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php (73)
+in C:\xampp\htdocs\yii\SGSST\index.php (13)
+2016/04/26 01:51:30 [error] [php] Undefined variable: model (C:\xampp\htdocs\yii\SGSST\protected\views\trabajadorAfiliaciones\index.php:13)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): TrabajadorAfiliacionesController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): TrabajadorAfiliacionesController->renderPartial()
+#2 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(73): TrabajadorAfiliacionesController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TrabajadorAfiliacionesController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): TrabajadorAfiliacionesController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): TrabajadorAfiliacionesController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): TrabajadorAfiliacionesController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): TrabajadorAfiliacionesController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\SGSST\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+in C:\xampp\htdocs\yii\SGSST\protected\views\trabajadorAfiliaciones\index.php (13)
+in C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php (73)
+in C:\xampp\htdocs\yii\SGSST\index.php (13)
+2016/04/26 01:52:15 [error] [php] Undefined variable: model (C:\xampp\htdocs\yii\SGSST\protected\views\trabajadorAfiliaciones\index.php:13)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): TrabajadorAfiliacionesController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): TrabajadorAfiliacionesController->renderPartial()
+#2 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(73): TrabajadorAfiliacionesController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TrabajadorAfiliacionesController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): TrabajadorAfiliacionesController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): TrabajadorAfiliacionesController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): TrabajadorAfiliacionesController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): TrabajadorAfiliacionesController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\SGSST\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+in C:\xampp\htdocs\yii\SGSST\protected\views\trabajadorAfiliaciones\index.php (13)
+in C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php (73)
+in C:\xampp\htdocs\yii\SGSST\index.php (13)
+2016/04/26 01:52:28 [error] [exception.CException] CException: La propiedad "TrabajadorAfiliacionesController"."IdAfiliaciones" no se encuentra definida. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\SGSST\protected\views\trabajadorAfiliaciones\index.php(13): CComponent->__get('IdAfiliaciones')
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#5 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(73): CController->render('index', Array)
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TrabajadorAfiliacionesController->actionIndex()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#17 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=afiliaciones/index
+---
+2016/04/26 01:53:48 [error] [php] Undefined variable: data (C:\xampp\htdocs\yii\SGSST\protected\views\trabajadorAfiliaciones\index.php:13)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): TrabajadorAfiliacionesController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): TrabajadorAfiliacionesController->renderPartial()
+#2 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(73): TrabajadorAfiliacionesController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TrabajadorAfiliacionesController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): TrabajadorAfiliacionesController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): TrabajadorAfiliacionesController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): TrabajadorAfiliacionesController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): TrabajadorAfiliacionesController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\SGSST\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+in C:\xampp\htdocs\yii\SGSST\protected\views\trabajadorAfiliaciones\index.php (13)
+in C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php (73)
+in C:\xampp\htdocs\yii\SGSST\index.php (13)
+2016/04/26 01:55:25 [error] [php] Undefined variable: data (C:\xampp\htdocs\yii\SGSST\protected\views\trabajadorAfiliaciones\index.php:13)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): TrabajadorAfiliacionesController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): TrabajadorAfiliacionesController->renderPartial()
+#2 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(73): TrabajadorAfiliacionesController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TrabajadorAfiliacionesController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): TrabajadorAfiliacionesController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): TrabajadorAfiliacionesController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): TrabajadorAfiliacionesController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): TrabajadorAfiliacionesController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\SGSST\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+in C:\xampp\htdocs\yii\SGSST\protected\views\trabajadorAfiliaciones\index.php (13)
+in C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php (73)
+in C:\xampp\htdocs\yii\SGSST\index.php (13)
+2016/04/26 01:55:25 [error] [php] Undefined variable: data (C:\xampp\htdocs\yii\SGSST\protected\views\trabajadorAfiliaciones\index.php:13)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): TrabajadorAfiliacionesController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): TrabajadorAfiliacionesController->renderPartial()
+#2 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(73): TrabajadorAfiliacionesController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TrabajadorAfiliacionesController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): TrabajadorAfiliacionesController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): TrabajadorAfiliacionesController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): TrabajadorAfiliacionesController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): TrabajadorAfiliacionesController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\SGSST\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+in C:\xampp\htdocs\yii\SGSST\protected\views\trabajadorAfiliaciones\index.php (13)
+in C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php (73)
+in C:\xampp\htdocs\yii\SGSST\index.php (13)
+2016/04/26 01:55:26 [error] [php] Undefined variable: data (C:\xampp\htdocs\yii\SGSST\protected\views\trabajadorAfiliaciones\index.php:13)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): TrabajadorAfiliacionesController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): TrabajadorAfiliacionesController->renderPartial()
+#2 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(73): TrabajadorAfiliacionesController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TrabajadorAfiliacionesController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): TrabajadorAfiliacionesController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): TrabajadorAfiliacionesController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): TrabajadorAfiliacionesController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): TrabajadorAfiliacionesController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\SGSST\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+in C:\xampp\htdocs\yii\SGSST\protected\views\trabajadorAfiliaciones\index.php (13)
+in C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php (73)
+in C:\xampp\htdocs\yii\SGSST\index.php (13)
+2016/04/26 01:55:57 [error] [exception.CHttpException.400] CHttpException: Su solicitud es inválida. in C:\xampp\htdocs\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/view&IdAfiliaciones=3&Cedula=9773559
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+---
+2016/04/26 01:56:18 [error] [exception.CHttpException.400] CHttpException: Su solicitud es inválida. in C:\xampp\htdocs\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/view&IdAfiliaciones=3&Cedula=9773559
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+---
+2016/04/26 02:19:53 [error] [exception.CHttpException.400] CHttpException: Su solicitud es inválida. in C:\xampp\htdocs\yii\framework\web\CController.php:1118
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/delete
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+---
+2016/04/26 02:21:06 [error] [exception.CHttpException.400] CHttpException: Su solicitud es inválida. in C:\xampp\htdocs\yii\framework\web\CController.php:1118
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/delete
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+---
+2016/04/26 02:21:25 [error] [exception.CHttpException.400] CHttpException: Su solicitud es inválida. in C:\xampp\htdocs\yii\framework\web\CController.php:1118
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/delete
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+---
+2016/04/26 02:21:32 [error] [exception.CHttpException.400] CHttpException: Su solicitud es inválida. in C:\xampp\htdocs\yii\framework\web\CController.php:1118
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/delete
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+---
+2016/04/26 02:24:16 [error] [exception.CHttpException.400] CHttpException: Su solicitud es inválida. in C:\xampp\htdocs\yii\framework\web\CController.php:1118
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/delete
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+---
+2016/04/26 02:24:16 [error] [exception.CHttpException.400] CHttpException: Su solicitud es inválida. in C:\xampp\htdocs\yii\framework\web\CController.php:1118
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/delete
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+---
+2016/04/26 02:24:16 [error] [exception.CHttpException.400] CHttpException: Su solicitud es inválida. in C:\xampp\htdocs\yii\framework\web\CController.php:1118
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/delete
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+---
+2016/04/26 02:24:17 [error] [exception.CHttpException.400] CHttpException: Su solicitud es inválida. in C:\xampp\htdocs\yii\framework\web\CController.php:1118
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/delete
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+---
+2016/04/26 02:25:44 [error] [exception.CHttpException.400] CHttpException: Su solicitud es inválida. in C:\xampp\htdocs\yii\framework\web\CController.php:1118
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/delete
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+---
+2016/04/26 02:25:45 [error] [exception.CHttpException.400] CHttpException: Su solicitud es inválida. in C:\xampp\htdocs\yii\framework\web\CController.php:1118
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/delete
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+---
+2016/04/26 02:25:49 [error] [exception.CHttpException.400] CHttpException: Su solicitud es inválida. in C:\xampp\htdocs\yii\framework\web\CController.php:1118
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/delete
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+---
+2016/04/26 02:26:08 [error] [exception.CHttpException.400] CHttpException: Su solicitud es inválida. in C:\xampp\htdocs\yii\framework\web\CController.php:1118
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/delete
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+---
+2016/04/26 02:26:09 [error] [exception.CHttpException.400] CHttpException: Su solicitud es inválida. in C:\xampp\htdocs\yii\framework\web\CController.php:1118
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/delete
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+---
+2016/04/26 02:31:19 [error] [exception.CHttpException.400] CHttpException: Su solicitud es inválida. in C:\xampp\htdocs\yii\framework\web\CController.php:1118
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/delete
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+---
+2016/04/26 02:31:19 [error] [exception.CHttpException.400] CHttpException: Su solicitud es inválida. in C:\xampp\htdocs\yii\framework\web\CController.php:1118
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/delete
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+---
+2016/04/26 02:31:35 [error] [exception.CHttpException.400] CHttpException: Su solicitud es inválida. in C:\xampp\htdocs\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1116): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/SGSST/index.php?ajax=trabajadorAfiliaciones-grid&id%5BCedula%5D=1094899656&id%5BIdAfiliaciones%5D=1&r=trabajadorAfiliaciones%2Fdelete
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajadorAfiliaciones/admin
+---
+2016/04/26 02:31:47 [error] [exception.CHttpException.400] CHttpException: Su solicitud es inválida. in C:\xampp\htdocs\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/update&id%5BCedula%5D=1094899656&id%5BIdAfiliaciones%5D=1
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajadorAfiliaciones/admin
+---
+2016/04/26 02:31:52 [error] [exception.CHttpException.400] CHttpException: Su solicitud es inválida. in C:\xampp\htdocs\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1116): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/SGSST/index.php?ajax=trabajadorAfiliaciones-grid&id%5BCedula%5D=1094899656&id%5BIdAfiliaciones%5D=2&r=trabajadorAfiliaciones%2Fdelete
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=trabajadorAfiliaciones/admin
+---
+2016/04/26 02:57:13 [error] [exception.CException] CException: La propiedad "TrabajadorAfiliaciones"."IdAfiliacion" no se encuentra definida. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('IdAfiliacion')
+#1 C:\xampp\htdocs\yii\SGSST\protected\views\trabajadorAfiliaciones\_view.php(13): CActiveRecord->__get('IdAfiliacion')
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(130): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, false)
+#4 C:\xampp\htdocs\yii\framework\zii\widgets\CListView.php(291): CBaseController->renderFile('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#8 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(149): CBaseListView->renderContent()
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(181): CBaseListView->run()
+#10 C:\xampp\htdocs\yii\SGSST\protected\views\trabajadorAfiliaciones\index.php(25): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#15 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(73): CController->render('index', Array)
+#16 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TrabajadorAfiliacionesController->actionIndex()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#26 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#27 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#28 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=afiliaciones/index
+---
+2016/04/26 03:21:28 [error] [exception.ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' in C:\xampp\htdocs\yii\SGSST\protected\views\trabajadorAfiliaciones\_view.php:17
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, false)
+#1 C:\xampp\htdocs\yii\framework\zii\widgets\CListView.php(291): CBaseController->renderFile('C:\\xampp\\htdocs...', Array)
+#2 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(181): CListView->renderItems()
+#3 [internal function]: CBaseListView->renderSection(Array)
+#4 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#5 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(149): CBaseListView->renderContent()
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(181): CBaseListView->run()
+#7 C:\xampp\htdocs\yii\SGSST\protected\views\trabajadorAfiliaciones\index.php(26): CBaseController->widget('zii.widgets.CLi...', Array)
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#12 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(74): CController->render('index', Array)
+#13 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TrabajadorAfiliacionesController->actionIndex()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#23 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#24 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#25 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=afiliaciones/index
+---
+2016/04/26 03:22:50 [error] [exception.CException] CException: La propiedad "TrabajadorAfiliaciones"."getNombreAfiliacion" no se encuentra definida. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('getNombreAfilia...')
+#1 C:\xampp\htdocs\yii\SGSST\protected\views\trabajadorAfiliaciones\_view.php(16): CActiveRecord->__get('getNombreAfilia...')
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(130): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, false)
+#4 C:\xampp\htdocs\yii\framework\zii\widgets\CListView.php(291): CBaseController->renderFile('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#8 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(149): CBaseListView->renderContent()
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(181): CBaseListView->run()
+#10 C:\xampp\htdocs\yii\SGSST\protected\views\trabajadorAfiliaciones\index.php(26): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#15 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php(74): CController->render('index', Array)
+#16 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TrabajadorAfiliacionesController->actionIndex()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#26 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#27 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#28 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=afiliaciones/index
+---

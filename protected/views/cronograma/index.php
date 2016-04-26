@@ -12,7 +12,7 @@ $this->menu=array(
 );
 ?>
 
-
+<h1><font color="#336699">Cronogramas</font></h1>
 
 <?php Yii::app()->user->setFlash("info","Cronogramas pendientes: ".round($this->metricaGeneral,2)." %") ?>
 <?php if($this->vencidos): ?>
