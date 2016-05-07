@@ -144,19 +144,13 @@ class Historiaclinica extends CActiveRecord
 			{
 				$ultimoExamen=$examen;
 			}
-			elseif(strcmp ($examen->Tipo , "Examen de ingreso" ) == 0)
+			elseif(strcmp ($examen->Tipo , "Examen de ingreso" ) == 0 && !$this->existenPeriodicos)
 			{
-				if(!$this->existenPeriodicos)
-				{
-					$ultimoExamen=$examen;
-				}			
+					$ultimoExamen=$examen;							
 			}
-			if(strcmp ($examen->Tipo , "Examen periodico" ) == 0)
+			if(strcmp ($examen->Tipo , "Examen periodico" ) == 0 && $this->getEsMayor($ultimoExamen->Fecha,$examen->Fecha))
 			{
-				if($this->getEsMayor($ultimoExamen->Fecha,$examen->Fecha))
-				{
 					$ultimoExamen=$examen;
-				}
 			}						
 			if (strcmp ($examen->Tipo , "Examen de egreso" ) == 0)
 			{

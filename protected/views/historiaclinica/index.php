@@ -16,7 +16,7 @@ $this->menu=array(
 
 <?php 
 		
-		if($this->getExamenRealizacionGeneral() == true)
+		if($this->getExamenRealizacionGeneral())
 		{
 			Yii::app()->user->setFlash("warning","Se debe realizar un examen de ingreso o periodico en algunas historias clinicas");
 		} 

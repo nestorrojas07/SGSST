@@ -17,11 +17,11 @@ $this->menu=array(
 <h1><font color="#336699">Historia clinica de:</font><font color="black"> <?php echo $model->getNombreTrabajador($model->Cedula_trabajador); ?></font></h1>
 
 <?php 
-		if ($this->getExamenIngreso($model->Id) == true) 
+		if ($this->getExamenIngreso($model->Id)) 
 		{
 			Yii::app()->user->setFlash("warning","Se debe realizar un examen de ingreso");
 		}
-		elseif($this->getExamenRealizacionEspecifico($model->Id) == true)
+		elseif($this->getExamenRealizacionEspecifico($model->Id))
 		{
 			Yii::app()->user->setFlash("warning","Se debe realizar un examen periodico");
 		} 

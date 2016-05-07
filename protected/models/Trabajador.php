@@ -172,7 +172,7 @@ class Trabajador extends CActiveRecord
 			{
 				Yii::app()->user->setFlash("warning","Se debe realizar un examen de ingreso");
 			}	
-			elseif($historia->examenPeriodico == true)
+			elseif($historia->examenPeriodico)
 			{
 				Yii::app()->user->setFlash("warning","Se debe realizar un examen periodico");
 			}

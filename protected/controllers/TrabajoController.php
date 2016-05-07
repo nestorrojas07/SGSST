@@ -97,7 +97,6 @@ class TrabajoController extends Controller
 		$model=new Trabajo;
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['Trabajo']))
 		{
@@ -137,7 +136,6 @@ class TrabajoController extends Controller
 		$model=$this->loadModel($id);
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['Trabajo']))
 		{

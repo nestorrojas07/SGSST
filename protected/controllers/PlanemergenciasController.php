@@ -70,7 +70,9 @@ class PlanemergenciasController extends Controller
 		{
 			$model->attributes=$_POST['Planemergencias'];
 			if($model->save())
+			{
 				$this->redirect(array('view','id'=>$model->IdPlan));
+			}
 		}
 
 		$this->render('create',array(
@@ -93,7 +95,9 @@ class PlanemergenciasController extends Controller
 		{
 			$model->attributes=$_POST['Planemergencias'];
 			if($model->save())
+			{
 				$this->redirect(array('view','id'=>$model->IdPlan));
+			}
 		}
 
 		$this->render('update',array(
@@ -112,7 +116,9 @@ class PlanemergenciasController extends Controller
 
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		if(!isset($_GET['ajax']))
+		{
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+		}
 	}
 
 	/**
