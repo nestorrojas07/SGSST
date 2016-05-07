@@ -65,7 +65,6 @@ class TrabajadorController extends Controller
 		$model=new Trabajador;
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['Trabajador']))
 		{
@@ -96,7 +95,6 @@ class TrabajadorController extends Controller
 		$model=$this->loadModel($id);
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['Trabajador']))
 		{
@@ -157,7 +155,9 @@ class TrabajadorController extends Controller
 		$model=new Trabajador('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Trabajador']))
+		{
 			$model->attributes=$_GET['Trabajador'];
+		}
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -175,7 +175,9 @@ class TrabajadorController extends Controller
 	{
 		$model=Trabajador::model()->findByPk($id);
 		if($model===null)
+		{
 			throw new CHttpException(404,'The requested page does not exist.');
+		}
 		return $model;
 	}
 

@@ -116,26 +116,29 @@ class Examenes extends CActiveRecord
 		return CHtml::listData(Historiaclinica::Model()->findAll(),"Id","concatened");
 	}
 
-
-
-
 	public function getNombreHistoriaClinica($id)
 	{
 		$modelo=Historiaclinica::model()->findByPk($id);
 		if($modelo!==null)
+		{
 			return $modelo->Descripcion;
+		}
 	}
 	public function getCedulaTrabajador($id)
 	{
 		$modelo=Historiaclinica::model()->findByPk($id);
 		if($modelo!==null)
+		{
 			return $modelo->Cedula_trabajador;
+		}
 	}
 	public function getNombreTrabajador($id)
 	{
 		$modelo=Trabajador::model()->findByPk($id);
 		if($modelo!==null)
+		{
 			return $modelo->Nombre;
+		}
 	}
 
 	public function getMenuTipos()
@@ -150,7 +153,7 @@ class Examenes extends CActiveRecord
 		$fechaRealizacion = strtotime ( '-1 year' , strtotime ( $fecha ) ) ;
 		$fechaRealizacion = date ( 'Y-m-d' , $fechaRealizacion );
 
-		if($this->getEsMayor($fechaRealizacion,$this->Fecha)==true)
+		if($this->getEsMayor($fechaRealizacion,$this->Fecha))
 		{		 
 			return true;
 		}

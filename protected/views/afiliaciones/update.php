@@ -10,9 +10,7 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'Lista de Afiliaciones', 'url'=>array('index')),
-	#array('label'=>'Crear Afiliaciones', 'url'=>array('create')),
 	array('label'=>'Ver Afiliación', 'url'=>array('view', 'id'=>$model->Id)),
-	#array('label'=>'Manage Afiliaciones', 'url'=>array('admin')),
 );
 ?>
 

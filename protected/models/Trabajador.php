@@ -148,13 +148,17 @@ class Trabajador extends CActiveRecord
 	{
 		$modelo=Brigada::model()->findByPk($id);
 		if($modelo!==null)
+		{
 			return $modelo->Funcion;
+		}
 	}
 	public function getTareaTrabajo($id)
 	{
 		$modelo=Trabajo::model()->findByPk($id);
 		if($modelo!==null)
+		{
 			return $modelo->tarea;
+		}
 	}
 	public function getMenuAfiliaciones()
 	{

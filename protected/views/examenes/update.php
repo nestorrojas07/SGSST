@@ -10,9 +10,7 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'Lista de Examenes', 'url'=>array('index')),
-	#array('label'=>'Create Examenes', 'url'=>array('create')),
 	array('label'=>'Ver Examen', 'url'=>array('view', 'id'=>$model->id)),
-	#array('label'=>'Manage Examenes', 'url'=>array('admin')),
 );
 ?>
 

@@ -64,8 +64,7 @@ class BrigadaController extends Controller
 	{
 		$model=new Brigada;
 
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		// Uncomment the following line if AJAX validation is needed		
 
 		if(isset($_POST['Brigada']))
 		{
@@ -95,8 +94,7 @@ class BrigadaController extends Controller
 	{
 		$model=$this->loadModel($id);
 
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		// Uncomment the following line if AJAX validation is needed		
 
 		if(isset($_POST['Brigada']))
 		{
@@ -157,8 +155,9 @@ class BrigadaController extends Controller
 		$model=new Brigada('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Brigada']))
+		{
 			$model->attributes=$_GET['Brigada'];
-
+		}
 		$this->render('admin',array(
 			'model'=>$model,
 		));
@@ -175,7 +174,9 @@ class BrigadaController extends Controller
 	{
 		$model=Brigada::model()->findByPk($id);
 		if($model===null)
+		{
 			throw new CHttpException(404,'The requested page does not exist.');
+		}
 		return $model;
 	}
 

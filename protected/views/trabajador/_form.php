@@ -17,8 +17,6 @@
 
 	<p class="note">Campos con <span class="required">*</span> son obligatorios.</p>
 
-	<!--<?php echo $form->errorSummary($model); ?>-->
-
 	<div >
 		<?php echo $form->labelEx($model,'Cedula'); ?>
 		<?php echo $form->textField($model,'Cedula',array('size'=>20,'maxlength'=>20)); ?>
@@ -36,12 +34,6 @@
 		<?php echo $form->textField($model,'Telefono',array('size'=>20,'maxlength'=>20)); ?>
 		<?php echo $form->error($model,'Telefono'); ?>
 	</div>
-	<!--
-	<div >
-		<?php echo $form->labelEx($model,'Foto_Link'); ?>
-		<?php echo $form->textField($model,'Foto_Link',array('size'=>60,'maxlength'=>255)); ?>
-		<?php echo $form->error($model,'Foto_Link'); ?>
-	</div> -->
 
 	<div >
 		<?php echo $form->labelEx($model,'Correo'); ?>

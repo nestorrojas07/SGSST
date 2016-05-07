@@ -48,7 +48,9 @@ class TrabajadorAfiliacionesController extends Controller
 	{
 		$model=$this->existe($id,$cedula);
 		if($model===null)
+		{
 			throw new CHttpException(404,'The requested page does not exist.');
+		}
 		return $model;
 	}
 
@@ -56,13 +58,7 @@ class TrabajadorAfiliacionesController extends Controller
 	 * Displays a particular model.
 	 * @param integer $id the ID of the model to be displayed
 	 */
-	/*
-	public function actionView($id,$cedula)
-	{
-		$this->render('view',array(
-			'model'=>$this->loadModel($id,$cedula),
-		));
-	}*/
+	
 
 	/**
 	 * Lists all models.
@@ -75,20 +71,7 @@ class TrabajadorAfiliacionesController extends Controller
 		));
 	}
 
-	/**
-	 * Manages all models.
-	 *//*
-	public function actionAdmin()
-	{
-		$model=new TrabajadorAfiliaciones('search');
-		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['TrabajadorAfiliaciones']))
-			$model->attributes=$_GET['TrabajadorAfiliaciones'];
 
-		$this->render('admin',array(
-			'model'=>$model,
-		));
-	}*/
 
 	/**
 	 * Creates a new model.
@@ -99,7 +82,6 @@ class TrabajadorAfiliacionesController extends Controller
 		$model=new TrabajadorAfiliaciones;
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['TrabajadorAfiliaciones']))
 		{	
@@ -128,37 +110,7 @@ class TrabajadorAfiliacionesController extends Controller
 		));
 	}
 
-	/**
-	 * Updates a particular model.
-	 * If update is successful, the browser will be redirected to the 'view' page.
-	 * @param integer $id the ID of the model to be updated
-	 *//*
-	public function actionUpdate($id,$cedula)
-	{
-		$model=$this->loadModel($id,$cedula);
-
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-
-		if(isset($_POST['TrabajadorAfiliaciones']))
-		{
-			$afiliacion=$model->IdAfiliaciones;
-			$model->attributes=$_POST['TrabajadorAfiliaciones'];
-			if($model->save())
-			{
-				Yii::app()->user->setFlash("success","La afiliación se actualizó exitosamente");
-				$this->redirect(array('afiliaciones/&id='.$afiliacion));
-			}
-			else
-			{
-				Yii::app()->user->setFlash("error","La afiliación no se actualizó exitosamente");
-			}
-		}
-
-		$this->render('update',array(
-			'model'=>$model,
-		));
-	}*/
+	
 
 	public function actionDelete($id,$cedula)
 	{
@@ -192,21 +144,7 @@ class TrabajadorAfiliacionesController extends Controller
 		}
 		return null;
 	}
-	/*
-	public function eliminar($idAfiliacion,$cedula)
-	{
-		$afiliaciones=TrabajadorAfiliaciones::model()->findAll();
-
-		foreach ($afiliaciones as $afiliacion) 
-		{
-			if($afiliacion->Cedula == $cedula && $afiliacion->IdAfiliaciones == $idAfiliacion)
-			{
-				$afiliacion->delete();
-				return true;
-			}
-		}
-		return false;		
-	*/
+	
 }
 
  ?>

@@ -115,7 +115,9 @@ class Vencimientos extends CActiveRecord
 	{
 		$modelo=Trabajador::model()->findByPk($id);
 		if($modelo!==null)
+		{
 			return $modelo->Nombre;
+		}
 	}
 
 	public function getMenuTrabajadores()

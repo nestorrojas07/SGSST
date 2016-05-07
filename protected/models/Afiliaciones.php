@@ -51,7 +51,6 @@ class Afiliaciones extends CActiveRecord
 			'trabajadors' => array(self::MANY_MANY, 'Trabajador', 'trabajador_afiliaciones(IdAfiliaciones, Cedula)'),
 		);
 	}
-
 	/**
 	 * @return array customized attribute labels (name=>label)
 	 */

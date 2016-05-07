@@ -11,9 +11,7 @@
 	$this->menu=array(
 	array('label'=>'MIPECR', 'url'=>array('index')),
 	array('label'=>'Actualizar', 'url'=>array('update', 'id'=>$model->Id)),
-	#array('label'=>'Create Trabajo', 'url'=>array('create')),
 	array('label'=>'Principal', 'url'=>array('view', 'id'=>$model->Id)),
-	#array('label'=>'Manage Trabajo', 'url'=>array('admin')),
 	);
 ?>
 

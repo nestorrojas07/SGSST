@@ -65,7 +65,6 @@ class PlanemergenciasController extends Controller
 		$model=new Planemergencias;
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['Planemergencias']))
 		{
@@ -89,7 +88,6 @@ class PlanemergenciasController extends Controller
 		$model=$this->loadModel($id);
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['Planemergencias']))
 		{
@@ -136,7 +134,9 @@ class PlanemergenciasController extends Controller
 		$model=new Planemergencias('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Planemergencias']))
+		{
 			$model->attributes=$_GET['Planemergencias'];
+		}
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -154,7 +154,9 @@ class PlanemergenciasController extends Controller
 	{
 		$model=Planemergencias::model()->findByPk($id);
 		if($model===null)
+		{
 			throw new CHttpException(404,'The requested page does not exist.');
+		}
 		return $model;
 	}
 

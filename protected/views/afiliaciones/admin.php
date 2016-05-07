@@ -8,7 +8,6 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	#array('label'=>'Lista de Afiliaciones', 'url'=>array('index')),
 	array('label'=>'Crear Afiliación', 'url'=>array('create')),
 );
 
@@ -45,7 +44,6 @@ or <b>=</b>)  en busquedas que incluyan caracteres numericos al comienzo de cada
 		'Id',
 		'Nombre',
 		'Descripcion',
-		#'Fecha',
 		array(
 			'class'=>'CButtonColumn',
 		),

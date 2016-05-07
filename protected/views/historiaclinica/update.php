@@ -10,9 +10,7 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'Lista de Historias clinicas', 'url'=>array('index')),
-	#array('label'=>'Create Historiaclinica', 'url'=>array('create')),
 	array('label'=>'Ver Historia clinica', 'url'=>array('view', 'id'=>$model->Id)),
-	#array('label'=>'Manage Historiaclinica', 'url'=>array('admin')),
 );
 ?>
 

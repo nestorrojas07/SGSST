@@ -37,55 +37,17 @@
 
 
           <div class="nav-collapse collapse pull-right">
-           <!-- <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Login</a></li>
-            </ul>-->
-            <!--
-            <ul class="nav"> 
-
-              <li class="dropdown">
-
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                "Dropdown"
-                <b class="caret"></b>
-              </a>
-
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="#">Uno</a>
-                </li>
-                <li>
-                  <a href="#">Dos</a>
-                </li>
-                <li class="divider"></li>
-                <li class="nav-header">Nav</li>
-                <li>
-                  <a href="#">Dos</a>
-                </li>
-              </ul>
-
-              </li>
-            </ul>-->
-
-            
+          
           
           <?php $this->widget('zii.widgets.CMenu',array(
           'htmlOptions'=> array("class"=>"nav"),
           'items'=>array(
-            #array('label'=>'Inicio', 'url'=>array('/site/index')),
             array('label'=>'Trabajadores', 'url'=>array('/trabajador/index')),
             array('label'=>'Afiliaciones', 'url'=>array('/afiliaciones/index')),
             array('label'=>'Insumos', 'url'=>array('/vencimientos/index')),
             array('label'=>'Brigadas', 'url'=>array('/brigada/index')),
-            #array('label'=>'Historias clinicas', 'url'=>array('/historiaclinica/index')),
-            #array('label'=>'Examenes', 'url'=>array('/examenes/index')),
             array('label'=>'Cronogramas', 'url'=>array('/cronograma/index')),
              array('label'=>'MIPECR', 'url'=>array('/trabajo/index')),
-            #array('label'=>'Acerca de', 'url'=>array('/site/page', 'view'=>'about')),
-            #array('label'=>'Contact', 'url'=>array('/site/contact')),
             array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
             array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
           ),
@@ -121,7 +83,6 @@
           <div class="span12">
             <?php foreach ($msgs as $type => $message):?>
               <div class="alert alert-<?php echo $type?>">
-                <!--<buttom type="buttom" class"close" data-dismiss="alert">&times;</buttom>-->
                 <h4><?php echo ucfirst($type) ?>!</h4>
                 <?php echo $message ?>
 
@@ -143,8 +104,6 @@
                 <li>ISIII</li>
                 <li>Santiago Salazar Osorno - Mauricio Ramirez</li>
                 
-                <!--<li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>-->
             </ul>
         </div>
         <!--close footer-credits container-->

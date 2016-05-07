@@ -10,9 +10,7 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'Lista de Brigadas', 'url'=>array('index')),
-	#array('label'=>'Crear Brigada', 'url'=>array('create')),
 	array('label'=>'Ver Brigada', 'url'=>array('view', 'id'=>$model->IdBrigada)),
-	#array('label'=>'Manage Brigada', 'url'=>array('admin')),
 );
 ?>
 

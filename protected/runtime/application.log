@@ -14017,3 +14017,163 @@ Stack trace:
 REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
 HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=afiliaciones/index
 ---
+2016/05/07 06:32:50 [error] [exception.ParseError] ParseError: syntax error, unexpected '?>', expecting function (T_FUNCTION) in C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php:137
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('index/')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#2 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=afiliaciones/index
+---
+2016/05/07 06:32:54 [error] [exception.ParseError] ParseError: syntax error, unexpected '?>', expecting function (T_FUNCTION) in C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php:137
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('index/')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#2 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=afiliaciones/index
+---
+2016/05/07 06:33:00 [error] [exception.ParseError] ParseError: syntax error, unexpected '?>', expecting function (T_FUNCTION) in C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php:137
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('index/')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#2 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=afiliaciones/index
+---
+2016/05/07 06:33:05 [error] [exception.ParseError] ParseError: syntax error, unexpected '?>', expecting function (T_FUNCTION) in C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php:137
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('index/')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#2 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=afiliaciones/index
+---
+2016/05/07 06:33:50 [error] [exception.ParseError] ParseError: syntax error, unexpected end of file, expecting function (T_FUNCTION) in C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php:137
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('index/')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#2 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=afiliaciones/index
+---
+2016/05/07 06:34:09 [error] [exception.ParseError] ParseError: syntax error, unexpected '?>', expecting function (T_FUNCTION) in C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php:137
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('index/')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#2 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=afiliaciones/index
+---
+2016/05/07 06:34:23 [error] [exception.ParseError] ParseError: syntax error, unexpected '?>', expecting function (T_FUNCTION) in C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php:137
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('index/')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#2 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=afiliaciones/index
+---
+2016/05/07 06:34:54 [error] [exception.ParseError] ParseError: syntax error, unexpected '?>', expecting function (T_FUNCTION) in C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php:137
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('index/')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#2 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=afiliaciones/index
+---
+2016/05/07 06:35:23 [error] [exception.ParseError] ParseError: syntax error, unexpected end of file, expecting function (T_FUNCTION) in C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php:137
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('index/')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#2 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=afiliaciones/index
+---
+2016/05/07 06:36:18 [error] [exception.ParseError] ParseError: syntax error, unexpected '?>', expecting function (T_FUNCTION) in C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php:137
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('index/')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#2 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=afiliaciones/index
+---
+2016/05/07 06:37:18 [error] [exception.ParseError] ParseError: syntax error, unexpected '?>', expecting function (T_FUNCTION) in C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php:137
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('index/')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#2 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=afiliaciones/index
+---
+2016/05/07 06:38:17 [error] [exception.ParseError] ParseError: syntax error, unexpected end of file, expecting function (T_FUNCTION) in C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php:137
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('index/')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#2 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=afiliaciones/index
+---
+2016/05/07 06:39:09 [error] [exception.ParseError] ParseError: syntax error, unexpected end of file, expecting function (T_FUNCTION) in C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php:138
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('index/')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#2 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=afiliaciones/index
+---
+2016/05/07 06:39:10 [error] [exception.ParseError] ParseError: syntax error, unexpected end of file, expecting function (T_FUNCTION) in C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php:138
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('index/')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#2 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=afiliaciones/index
+---
+2016/05/07 06:39:10 [error] [exception.ParseError] ParseError: syntax error, unexpected end of file, expecting function (T_FUNCTION) in C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorAfiliacionesController.php:138
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('index/')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('trabajadorAfili...')
+#2 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=trabajadorAfiliaciones/index
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=afiliaciones/index
+---
+2016/05/07 06:54:07 [error] [exception.ParseError] ParseError: syntax error, unexpected '!', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in C:\xampp\htdocs\yii\SGSST\protected\controllers\ExamenesController.php:72
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('create/')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('examenes/create')
+#2 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 C:\xampp\htdocs\yii\SGSST\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/yii/SGSST/index.php?r=examenes/create
+HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=historiaclinica/view&id=1
+---

@@ -8,7 +8,6 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	#array('label'=>'Lista de insumos', 'url'=>array('index')),
 	array('label'=>'Crear insumo', 'url'=>array('create')),
 );
 
@@ -33,13 +32,6 @@ Usted puede ingresar operadores de comparación como (<b>&lt;</b>, <b>&lt;=</b>,
 or <b>=</b>)  en busquedas que incluyan caracteres numericos al comienzo de cada una de sus busquedas, seguido del valor a buscar. (<b>Ejemplo:</b> <b>&lt;2</b>)
 </p>
 
-<!--
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
-<div class="search-form" style="display:none">
-<?php $this->renderPartial('_search',array(
-	'model'=>$model,
-)); ?>
-</div><!-- search-form -->
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'vencimientos-grid',
@@ -51,8 +43,6 @@ or <b>=</b>)  en busquedas que incluyan caracteres numericos al comienzo de cada
 		'id',
 		'Nombre',
 		'fecha_Vencimiento',
-		#'Instrucciones',
-		#'estado',
 		'Cedula_Trabajador',
 		array(
 			'class'=>'CButtonColumn',

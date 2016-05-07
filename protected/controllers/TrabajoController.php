@@ -102,7 +102,7 @@ class TrabajoController extends Controller
 		if(isset($_POST['Trabajo']))
 		{
 			$model->attributes=$_POST['Trabajo'];
-			if($model->verificarDatos()==true)
+			if($model->verificarDatos())
 			{
 				$model->asignarDatos();
 				$model->calcularNivelesRiesgo();
@@ -142,7 +142,7 @@ class TrabajoController extends Controller
 		if(isset($_POST['Trabajo']))
 		{
 			$model->attributes=$_POST['Trabajo'];
-			if($model->verificarDatos()==true)
+			if($model->verificarDatos())
 			{
 				$model->asignarDatos();
 				$model->calcularNivelesRiesgo();
@@ -207,7 +207,9 @@ class TrabajoController extends Controller
 		$model=new Trabajo('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Trabajo']))
+		{
 			$model->attributes=$_GET['Trabajo'];
+		}
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -225,7 +227,9 @@ class TrabajoController extends Controller
 	{
 		$model=Trabajo::model()->findByPk($id);
 		if($model===null)
+		{
 			throw new CHttpException(404,'The requested page does not exist.');
+		}
 		return $model;
 	}
 

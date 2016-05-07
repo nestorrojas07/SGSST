@@ -9,28 +9,13 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'Lista de Afiliaciones', 'url'=>array('index')),
-	#array('label'=>'Crear Afiliación', 'url'=>array('create')),
 	array('label'=>'Actualizar Afiliación', 'url'=>array('update', 'id'=>$model->Id)),
 	array('label'=>'Eliminar Afiliación', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->Id),'confirm'=>'Seguro que desea eliminar esta efiliación?')),
-	#array('label'=>'Manage Afiliaciones', 'url'=>array('admin')),
 	
 );
 ?>
 
 <h1><font color="#336699">Afiliación: </font><font color="black"><?php echo $model->Descripcion; ?></font></h1>
-
-<!--
-
-<?php $this->widget('zii.widgets.CDetailView', array(
-	'data'=>$model,
-	'attributes'=>array(
-		'Id',
-		'Nombre',
-		'Descripcion',
-		'Fecha',
-	),
-)); ?>-->
-
 
 <table class="table table-bordered table-striped">
 	<tr>

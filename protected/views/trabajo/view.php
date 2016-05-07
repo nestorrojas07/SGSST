@@ -9,10 +9,8 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'MIPECR', 'url'=>array('index')),
-	#array('label'=>'Create Trabajo', 'url'=>array('create')),
 	array('label'=>'Actualizar', 'url'=>array('update', 'id'=>$model->Id)),
 	array('label'=>'Eliminar', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->Id),'confirm'=>'Are you sure you want to delete this item?')),
-	#array('label'=>'Manage Trabajo', 'url'=>array('admin')),
 );
 ?>
 
@@ -27,39 +25,7 @@ $this->menu=array(
 <?php echo CHtml::submitButton('Medidas de intervencion', array('submit'=>array('trabajo/medidasIntervencion&id='.$model->Id),"class"=>"btn btn-inverse btn-medium")); ?> 
 <br>
 <br>
-<!--
-<?php $this->widget('zii.widgets.CDetailView', array(
-	'data'=>$model,
-	'attributes'=>array(
-		'Id',
-		'proceso',
-		'zona',
-		'actividad',
-		'tarea',
-		'rutinaria',
-		'peligro_descripcion',
-		'peligro_clasificacion',
-		'peligro__efectosPosibles',
-		'control_existente_fuente',
-		'control_existente_medio',
-		'control_existente_persona',
-		'evaluacion_riesgo_nivel_deficiencia',
-		'evaluacion_riesgo_nivel_exposicion',
-		'evaluacion_riesgo_nivel_probabilidad',
-		'evaluacion_riesgo_interpretacion_nivel_probabilidad',
-		'evaluacion_riesgo_nivel_consecuencia',
-		'evaluacion_riesgo_nivel_riesgo_intervencion',
-		'evaluacion_riesgo_interpretacion_nivel_riesgo',
-		'valoracion_riesgo',
-		'criterio_peor_consecuencia',
-		'criterio_requisito_legal',
-		'intervencion_eliminacion',
-		'intervencion_sustituacion',
-		'intervencion_control_ingenieria',
-		'intervencion_control_administrativo',
-		'intervencion_elementos_proteccion_personal',
-	),
-)); ?>-->
+
 
 <table class="table table-bordered table-striped">
 	<tr>

@@ -9,36 +9,17 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'Lista de insumos', 'url'=>array('index')),
-	#array('label'=>'Crear insumo', 'url'=>array('create')),
 	array('label'=>'Actualizar insumo', 'url'=>array('update', 'id'=>$model->id)),
 	array('label'=>'Eliminar insumo', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Seguro que desea eliminar este insumo?')),
-	#array('label'=>'Manage Vencimientos', 'url'=>array('admin')),
 );
 ?>
 
 <h1><font color="#336699">Insumo: </font><font color="black"><?php echo $model->Nombre; ?></font></h1>
-<!--
-<?php $this->widget('zii.widgets.CDetailView', array(
-	'data'=>$model,
-	'attributes'=>array(
-		'id',
-		'Nombre',
-		'fecha_Vencimiento',
-		'Instrucciones',
-		'estado',
-		'Cedula_Trabajador',
-	),
-)); ?>
 
--->
 
 <?php 
 $date1=date('Y-m-d');
-#echo "----".strtotime($date1);
-#echo "<br>";
 $date2=$model->fecha_Vencimiento;
-#echo "----".strtotime($date2);
-#echo "<br>";
 
 if(strtotime($date1)>=strtotime($date2))
 {

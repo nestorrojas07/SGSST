@@ -72,7 +72,6 @@ class HistoriaclinicaController extends Controller
 		$model=new Historiaclinica;
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['Historiaclinica']))
 		{
@@ -103,7 +102,6 @@ class HistoriaclinicaController extends Controller
 		$model=$this->loadModel($id);
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['Historiaclinica']))
 		{
@@ -164,7 +162,9 @@ class HistoriaclinicaController extends Controller
 		$model=new Historiaclinica('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Historiaclinica']))
+		{
 			$model->attributes=$_GET['Historiaclinica'];
+		}
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -182,7 +182,9 @@ class HistoriaclinicaController extends Controller
 	{
 		$model=Historiaclinica::model()->findByPk($id);
 		if($model===null)
+		{
 			throw new CHttpException(404,'The requested page does not exist.');
+		}
 		return $model;
 	}
 
@@ -208,7 +210,7 @@ class HistoriaclinicaController extends Controller
 			{
 				return true;
 			}
-			if($historia->examenPeriodico == true)
+			if($historia->examenPeriodico)
 			{
 				return true;
 			}
@@ -219,7 +221,7 @@ class HistoriaclinicaController extends Controller
 	public function getExamenRealizacionEspecifico($id)
 	{
 		$historia=$this->loadModel($id);		
-		if($historia->examenPeriodico == true)
+		if($historia->examenPeriodico)
 		{
 			return true;
 		}

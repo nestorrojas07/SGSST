@@ -65,12 +65,11 @@ class ExamenesController extends Controller
 		$model=new Examenes;
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['Examenes']))
 		{
 			$model->attributes=$_POST['Examenes'];
-			if($model->validarDatos()==false)
+			if(!$model->validarDatos())
 			{
 				Yii::app()->user->setFlash("error","Debe elegir un tipo de examen");
 			}
@@ -106,7 +105,6 @@ class ExamenesController extends Controller
 		$backUp=$model->Tipo;
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['Examenes']))
 		{
@@ -177,7 +175,9 @@ class ExamenesController extends Controller
 		$model=new Examenes('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Examenes']))
+		{
 			$model->attributes=$_GET['Examenes'];
+		}
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -195,7 +195,9 @@ class ExamenesController extends Controller
 	{
 		$model=Examenes::model()->findByPk($id);
 		if($model===null)
+		{
 			throw new CHttpException(404,'The requested page does not exist.');
+		}
 		return $model;
 	}
 

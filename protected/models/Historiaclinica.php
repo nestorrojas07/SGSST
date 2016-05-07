@@ -112,7 +112,9 @@ class Historiaclinica extends CActiveRecord
 	{
 		$modelo=Trabajador::model()->findByPk($id);
 		if($modelo!==null)
+		{
 			return $modelo->Nombre;
+		}
 	}
 
 	
@@ -144,7 +146,7 @@ class Historiaclinica extends CActiveRecord
 			}
 			elseif(strcmp ($examen->Tipo , "Examen de ingreso" ) == 0)
 			{
-				if($this->existenPeriodicos == false)
+				if(!$this->existenPeriodicos)
 				{
 					$ultimoExamen=$examen;
 				}			
@@ -161,7 +163,7 @@ class Historiaclinica extends CActiveRecord
 				return false;
 			}			
 		}
-		if($ultimoExamen->fechaRealizacion == true)
+		if($ultimoExamen->fechaRealizacion)
 		{
 			return true;
 		}

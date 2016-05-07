@@ -9,7 +9,6 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'Lista de insumos', 'url'=>array('index')),
-	#array('label'=>'Administrar insumos', 'url'=>array('admin')),
 );
 ?>
 

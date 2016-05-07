@@ -17,8 +17,6 @@
 
 	<p class="note">Campos con <span class="required">*</span> son obligatorios.</p>
 
-	<!--<?php echo $form->errorSummary($model); ?>-->
-
 	<div >
 		<?php echo $form->labelEx($model,'Funcion'); ?>
 		<?php echo $form->textField($model,'Funcion',array('size'=>45,'maxlength'=>45)); ?>

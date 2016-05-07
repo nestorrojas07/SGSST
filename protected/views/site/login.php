@@ -34,9 +34,7 @@ $this->breadcrumbs=array(
 		<?php echo $form->labelEx($model,'password'); ?>
 		<?php echo $form->passwordField($model,'password'); ?>
 		<?php echo $form->error($model,'password'); ?>
-		<!--<p class="hint">
-			Hint: Se puede loggear con <kbd>demo</kbd>/<kbd>demo</kbd> o <kbd>admin</kbd>/<kbd>admin</kbd>.
-		</p>-->
+		
 	</div>
 
 	<div class="rememberMe">

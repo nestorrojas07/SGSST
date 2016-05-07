@@ -17,8 +17,6 @@
 
 	<p class="note">Campos con <span class="required">*</span> son obligatorios.</p>
 
-	<!--<?php echo $form->errorSummary($model); ?>-->
-
 	<div >
 		<?php echo $form->labelEx($model,'Tipo'); ?>
 		<?php echo $form->dropDownList($model,'Tipo',$model->getMenuTipos()); ?>

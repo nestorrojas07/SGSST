@@ -9,7 +9,6 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'MIPECR', 'url'=>array('index')),
-	#array('label'=>'Manage Trabajo', 'url'=>array('admin')),
 );
 ?>
 

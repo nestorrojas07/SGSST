@@ -7,8 +7,6 @@ $this->breadcrumbs=array(
 );
 ?>
 
-
-
 <h1>Acerca de </h1>
 
 <p><strong>Ley que rige el SGSST?</strong><BR>

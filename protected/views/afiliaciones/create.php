@@ -9,7 +9,6 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'Lista de Afiliaciones', 'url'=>array('index')),
-	#array('label'=>'Manage Afiliaciones', 'url'=>array('admin')),
 );
 ?>
 

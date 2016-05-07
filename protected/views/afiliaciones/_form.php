@@ -17,8 +17,6 @@
 
 	<p class="note">Campos con <span class="required">*</span> son obligatorios.</p>
 
-	<!--<?php echo $form->errorSummary($model); ?>-->
-
 	<div >
 		<?php echo $form->labelEx($model,'Nombre'); ?>
 		<?php echo $form->textField($model,'Nombre',array('size'=>30,'maxlength'=>30)); ?>
@@ -30,27 +28,6 @@
 		<?php echo $form->textField($model,'Descripcion',array('size'=>60,'maxlength'=>300)); ?>
 		<?php echo $form->error($model,'Descripcion'); ?>
 	</div>
-	<!--
-	<div >
-		<?php echo $form->labelEx($model,'Fecha'); ?>
-		<?php 
-
-			$this->widget("zii.widgets.jui.CJuiDatePicker", array(
-			"attribute"=>"Fecha",
-			"model"=>$model,
-			"language"=>"es",
-			"options"=>array(
-				"dateFormat"=>"yy-mm-dd",
-				'showButtonPanel'=>true,
-				'changeYear'=>true,
-				'changeYear'=>true,
-				'yearRange'=>'0:+5',
-				'minDate'=>'0Y',
-				'maxDate'=>'+5Y',
-				)))
-		?>
-	</div>-->
-
 	<div >
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Crear' : 'Guardar',array("class"=>"btn btn-inverse btn-medium")); ?>
 	</div>

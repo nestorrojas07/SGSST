@@ -10,9 +10,7 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'Lista de insumos', 'url'=>array('index')),
-	#array('label'=>'Crear insumo', 'url'=>array('create')),
 	array('label'=>'Ver insumo', 'url'=>array('view', 'id'=>$model->id)),
-	#array('label'=>'Administrar insumos', 'url'=>array('admin')),
 );
 ?>
 

@@ -8,8 +8,6 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	#array('label'=>'Crear Afiliación', 'url'=>array('create')),
-	#array('label'=>'Administrar afiliaciones realizadas', 'url'=>array('admin')),
 	
 	
 );

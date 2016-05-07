@@ -65,7 +65,6 @@ class VencimientosController extends Controller
 		$model=new Vencimientos;
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['Vencimientos']))
 		{
@@ -110,7 +109,6 @@ class VencimientosController extends Controller
 		$model=$this->loadModel($id);
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['Vencimientos']))
 		{
@@ -171,7 +169,9 @@ class VencimientosController extends Controller
 		$model=new Vencimientos('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Vencimientos']))
+		{
 			$model->attributes=$_GET['Vencimientos'];
+		}
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -189,7 +189,9 @@ class VencimientosController extends Controller
 	{
 		$model=Vencimientos::model()->findByPk($id);
 		if($model===null)
+		{
 			throw new CHttpException(404,'The requested page does not exist.');
+		}
 		return $model;
 	}
 
@@ -233,7 +235,6 @@ class VencimientosController extends Controller
 			{
 				return true;
 			}
-			# code...
 		}
 		return false;
 	}
@@ -254,8 +255,7 @@ class VencimientosController extends Controller
 				$insumosVencidos++;
 			}
 		}
-		$metricaRealizacion=($insumosVencidos*100)/$numeroInsumos;
-		return $metricaRealizacion;
+		return $metricaRealizacion=($insumosVencidos*100)/$numeroInsumos;		
 	}
 
 	

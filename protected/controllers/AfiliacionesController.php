@@ -80,8 +80,7 @@ class AfiliacionesController extends Controller
 	{
 		$model=new Afiliaciones;
 
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		// Uncomment the following line if AJAX validation is needed		
 
 		if(isset($_POST['Afiliaciones']))
 		{
@@ -111,8 +110,7 @@ class AfiliacionesController extends Controller
 	{
 		$model=$this->loadModel($id);
 
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		// Uncomment the following line if AJAX validation is needed		
 
 		if(isset($_POST['Afiliaciones']))
 		{
@@ -173,7 +171,9 @@ class AfiliacionesController extends Controller
 		$model=new Afiliaciones('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Afiliaciones']))
+		{
 			$model->attributes=$_GET['Afiliaciones'];
+		}
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -191,7 +191,9 @@ class AfiliacionesController extends Controller
 	{
 		$model=Afiliaciones::model()->findByPk($id);
 		if($model===null)
+		{
 			throw new CHttpException(404,'The requested page does not exist.');
+		}
 		return $model;
 	}
 

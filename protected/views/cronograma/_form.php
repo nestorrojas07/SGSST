@@ -17,7 +17,6 @@
 
 	<p class="note">Campos con <span class="required">*</span> son obligatorios.</p>
 
-	<!--<?php echo $form->errorSummary($model); ?>-->
 
 	<div >
 		<?php echo $form->labelEx($model,'Descripcion'); ?>
@@ -44,26 +43,11 @@
 				)))
 		?>
 	</div>
-	<!--
-	<div >
-		<?php echo $form->labelEx($model,'estado'); ?>
-		<?php echo $form->textField($model,'estado'); ?>
-		<?php echo $form->error($model,'estado'); ?>
-	</div>-->
-
 	<div >
 		<?php echo $form->labelEx($model,'PersonasProgramadas'); ?>
 		<?php echo $form->textField($model,'PersonasProgramadas'); ?>
 		<?php echo $form->error($model,'PersonasProgramadas'); ?>
 	</div>
-	<!--
-	<div >
-		<?php echo $form->labelEx($model,'PersonasAsistieron'); ?>
-		<?php echo $form->textField($model,'PersonasAsistieron'); ?>
-		<?php echo $form->error($model,'PersonasAsistieron'); ?>
-	</div>
-	-->
-
 	<div >
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Crear' : 'Guardar',array("class"=>"btn btn-inverse btn-medium")); ?>
 	</div>

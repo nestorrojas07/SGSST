@@ -65,7 +65,6 @@ class CronogramaController extends Controller
 		$model=new Cronograma;
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['Cronograma']))
 		{
@@ -97,7 +96,6 @@ class CronogramaController extends Controller
 		$model=$this->loadModel($id);
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['Cronograma']))
 		{
@@ -158,7 +156,9 @@ class CronogramaController extends Controller
 		$model=new Cronograma('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Cronograma']))
+		{
 			$model->attributes=$_GET['Cronograma'];
+		}
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -176,7 +176,9 @@ class CronogramaController extends Controller
 	{
 		$model=Cronograma::model()->findByPk($id);
 		if($model===null)
+		{
 			throw new CHttpException(404,'The requested page does not exist.');
+		}
 		return $model;
 	}
 
@@ -266,8 +268,8 @@ class CronogramaController extends Controller
 				$cronogramasPendientes++;
 			}
 		}
-		$metricaRealizacion=($cronogramasPendientes*100)/$numeroCronogramas;
-		return $metricaRealizacion;
+		return $metricaRealizacion=($cronogramasPendientes*100)/$numeroCronogramas;
+		
 	}
 
 	public function getVencidos()
@@ -280,7 +282,6 @@ class CronogramaController extends Controller
 			{
 				return true;
 			}
-			# code...
 		}
 		return false;
 	}

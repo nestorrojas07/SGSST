@@ -9,24 +9,12 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'Lista de Brigadas', 'url'=>array('index')),
-	#array('label'=>'Create Brigada', 'url'=>array('create')),
 	array('label'=>'Actulizar Brigada', 'url'=>array('update', 'id'=>$model->IdBrigada)),
 	array('label'=>'Eliminar Brigada', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->IdBrigada),'confirm'=>'Seguro que desea eliminar esta brigada?')),
-	#array('label'=>'Manage Brigada', 'url'=>array('admin')),
 );
 ?>
 
 <h1><font color="#336699">Brigada: </font><font color="black"><?php echo $model->Funcion; ?></font></h1>
-
-<!--
-<?php $this->widget('zii.widgets.CDetailView', array(
-	'data'=>$model,
-	'attributes'=>array(
-		'IdBrigada',
-		'Funcion',
-		'Descripcion_funcion',
-	),
-)); ?>-->
 
 <table class="table table-bordered table-striped">
 	<tr>

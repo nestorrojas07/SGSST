@@ -119,8 +119,7 @@ class Cronograma extends CActiveRecord
 		return $metrica;
 
 	}
-
-
+	
 	public function getVencido()
 	{
 		$date1=date('Y-m-d');

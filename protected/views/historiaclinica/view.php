@@ -8,12 +8,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	#array('label'=>'Lista de Historias clinicas', 'url'=>array('index')),
-	#array('label'=>'Create Historiaclinica', 'url'=>array('create')),
 	array('label'=>'Actualizar Historia clinica', 'url'=>array('update', 'id'=>$model->Id)),
 	array('label'=>'Eliminar Historia clinica', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->Id),'confirm'=>'Seguro que desea eliminar esta historia clinica?')),
-	#array('label'=>'Manage Historiaclinica', 'url'=>array('admin')),
-	#array('label'=>'Examen de ingreso vs Examen de egreso', 'url'=>array('view2','id'=>$model->Id)),
 	
 );
 ?>
@@ -31,16 +27,6 @@ $this->menu=array(
 		} 
 	?>
 
-
-<!--
-<?php $this->widget('zii.widgets.CDetailView', array(
-	'data'=>$model,
-	'attributes'=>array(
-		'Id',
-		'Descripcion',
-		'Cedula_trabajador',
-	),
-)); ?>-->
 
 <table class="table table-bordered table-striped">
 	<tr>

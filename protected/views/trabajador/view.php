@@ -9,10 +9,8 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'Lista de Trabajadores', 'url'=>array('index')),
-	#array('label'=>'Crear Trabajador', 'url'=>array('create')),
 	array('label'=>'Actualizar Trabajador', 'url'=>array('update', 'id'=>$model->Cedula)),
 	array('label'=>'Eliminar Trabajador', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->Cedula),'confirm'=>'Seguro que desea eliminar este trabajador?')),
-	#array('label'=>'Manage Trabajador', 'url'=>array('admin')),	
 
 );
 ?>
@@ -24,28 +22,6 @@ $this->menu=array(
 <?php 
 	$this->tieneExamenes($model->Cedula);
  ?>
-
-
-
-
-<!--
-<?php $this->widget('zii.widgets.CDetailView', array(
-	'data'=>$model,
-	'htmlOptions'=>array("class"=>"table table-striped"),
-	'attributes'=>array(
-		'Cedula',
-		'Nombre',
-		'Telefono',
-		'Foto_Link',
-		'Correo',
-		'Titulo_academico',
-		'experiencia',
-		'ausencias',
-		'IdBrigada',
-		'IdTrabajo',
-	),
-)); ?>-->
-
 
 <table class="table table-bordered table-striped">
 	<tr>
@@ -92,14 +68,12 @@ $this->menu=array(
 <table class="table table-bordered table-striped">
 	
 	<tr>
-		<!--<td><strong><font color="#336699">Id</font></strong></td>-->
 		<td> <strong><font color="#336699">Nombre</font></strong></td>
 		<td><strong><font color="#336699">Descripción</font></strong></td>
 	</tr>
 	<?php foreach ($model->afiliaciones as $afiliacion)	: ?>
 
 		<tr>			
-			<!--<td> <?php  echo $afiliacion->Id ?></td>-->
 			<td> <?php  echo CHtml::link($afiliacion->Nombre, array('afiliaciones/view&id='.$afiliacion->Id)) ?></td>
 			<td><?php echo $afiliacion->Descripcion ?></td>
 		</tr>
@@ -117,13 +91,11 @@ $this->menu=array(
 <table class="table table-bordered table-striped">
 	
 	<tr>
-		<!--<td> <strong><font color="#336699">Id</font></strong></td>-->
 		<td><strong><font color="#336699">Descripción</font></strong></td>
 	</tr>
 	<?php foreach ($model->historiaclinicas as $historiaClinica)	: ?>
 
 		<tr>		
-			<!--<td><?php  echo  $historiaClinica->Id ?></td>-->
 			<td><?php echo CHtml::link($historiaClinica->Descripcion, array('historiaclinica/view&id='.$historiaClinica->Id))?></td>
 		</tr>
 

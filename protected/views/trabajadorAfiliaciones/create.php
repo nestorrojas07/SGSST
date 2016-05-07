@@ -6,8 +6,6 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	#array('label'=>'Lista de Examenes', 'url'=>array('index')),
-	#array('label'=>'Manage Examenes', 'url'=>array('admin')),
 );
 ?>
 

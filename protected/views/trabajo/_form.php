@@ -17,8 +17,6 @@
 
 	<p class="note">Campos con <span class="required">*</span> son obligatorios.</p>
 
-	<!--<?php echo $form->errorSummary($model); ?>-->
-
 	<div >
 		<?php echo $form->labelEx($model,'proceso'); ?>
 		<?php echo $form->textField($model,'proceso',array('size'=>60,'maxlength'=>60)); ?>
@@ -96,39 +94,11 @@
 		<?php echo $form->dropDownList($model,'evaluacion_riesgo_nivel_exposicion',$model->getNivelesExposicion()); ?>
 		<?php echo $form->error($model,'evaluacion_riesgo_nivel_exposicion'); ?>
 	</div>
-	<!--
-	<div >
-		<?php echo $form->labelEx($model,'evaluacion_riesgo_nivel_probabilidad'); ?>
-		<?php echo $form->textField($model,'evaluacion_riesgo_nivel_probabilidad'); ?>
-		<?php echo $form->error($model,'evaluacion_riesgo_nivel_probabilidad'); ?>
-	</div>
-	
-	<div >
-		<?php echo $form->labelEx($model,'evaluacion_riesgo_interpretacion_nivel_probabilidad'); ?>
-		<?php echo $form->textField($model,'evaluacion_riesgo_interpretacion_nivel_probabilidad',array('size'=>9,'maxlength'=>9)); ?>
-		<?php echo $form->error($model,'evaluacion_riesgo_interpretacion_nivel_probabilidad'); ?>
-	</div>
-
-	-->
 
 	<div >
 		<?php echo $form->labelEx($model,'evaluacion_riesgo_nivel_consecuencia'); ?>
 		<?php echo $form->dropDownList($model,'evaluacion_riesgo_nivel_consecuencia',$model->getNivelConsecuencia()); ?>
 		<?php echo $form->error($model,'evaluacion_riesgo_nivel_consecuencia'); ?>
-	</div>
-	<!--
-	<div >
-		<?php echo $form->labelEx($model,'evaluacion_riesgo_nivel_riesgo_intervencion'); ?>
-		<?php echo $form->textField($model,'evaluacion_riesgo_nivel_riesgo_intervencion'); ?>
-		<?php echo $form->error($model,'evaluacion_riesgo_nivel_riesgo_intervencion'); ?>
-	</div>
-
-
-
-	<div >
-		<?php echo $form->labelEx($model,'evaluacion_riesgo_interpretacion_nivel_riesgo'); ?>
-		<?php echo $form->textField($model,'evaluacion_riesgo_interpretacion_nivel_riesgo',array('size'=>60,'maxlength'=>300)); ?>
-		<?php echo $form->error($model,'evaluacion_riesgo_interpretacion_nivel_riesgo'); ?>
 	</div>
 	
 

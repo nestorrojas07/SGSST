@@ -9,11 +9,8 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'Lista de Cronogramas', 'url'=>array('index')),
-	#array('label'=>'Create Cronograma', 'url'=>array('create')),
 	array('label'=>'Actualizar Cronograma', 'url'=>array('update', 'id'=>$model->id)),
 	array('label'=>'Eliminar Cronograma', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Seguro que desea eliminar este cronograma?')),
-	#array('label'=>'Manage Cronograma', 'url'=>array('admin')),
-	#array('label'=>'Registrar personas que asistieron', 'url'=>array('update2', 'id'=>$model->id)),
 );
 ?>
 
@@ -23,11 +20,7 @@ $this->menu=array(
 
 <?php 
 $date1=date('Y-m-d');
-#echo "----".strtotime($date1);
-#echo "<br>";
 $date2=$model->Fecha;
-#echo "----".strtotime($date2);
-#echo "<br>";
 
 if(strtotime($date1)>=strtotime($date2)&&$model->estado==0)
 {
@@ -39,19 +32,6 @@ if(strtotime($date1)>=strtotime($date2)&&$model->estado==0)
 
  <br>
  <br>
-
-<!--
-<?php $this->widget('zii.widgets.CDetailView', array(
-	'data'=>$model,
-	'attributes'=>array(
-		'id',
-		'Descripcion',
-		'Fecha',
-		'estado',
-		'PersonasProgramadas',
-		'PersonasAsistieron',
-	),
-)); ?>-->
 
 <table class="table table-bordered table-striped">
 	<tr>
