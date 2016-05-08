@@ -1,6 +1,6 @@
 <?php
 
-class SiteTest extends WebTestCase
+class SiteTest extends CWebDriverTestCase
 {
 	public function testIndex()
 	{

@@ -33,6 +33,9 @@ return array(
 
 	// application components
 	'components'=>array(
+		'fixture' => array(
+            'class' => 'system.test.CDbFixtureManager',
+        ),
 		'recordatorio'=>array(
 			"class"=>"ext.CRecordatorio",
 			),
@@ -40,7 +43,7 @@ return array(
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
-		),
+			),
 
 		// uncomment the following to enable URLs in path-format
 		/*

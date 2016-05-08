@@ -100,20 +100,6 @@
 		<?php echo $form->dropDownList($model,'evaluacion_riesgo_nivel_consecuencia',$model->getNivelConsecuencia()); ?>
 		<?php echo $form->error($model,'evaluacion_riesgo_nivel_consecuencia'); ?>
 	</div>
-	
-
-	<div >
-		<?php echo $form->labelEx($model,'valoracion_riesgo'); ?>
-		<?php echo $form->textField($model,'valoracion_riesgo',array('size'=>60,'maxlength'=>80)); ?>
-		<?php echo $form->error($model,'valoracion_riesgo'); ?>
-	</div>
-	
-	<div >
-		<?php echo $form->labelEx($model,'criterio_numero_expuestos'); ?>
-		<?php echo $form->textField($model,'criterio_numero_expuestos',array('size'=>20,'maxlength'=>10)); ?>
-		<?php echo $form->error($model,'criterio_numero_expuestos'); ?>
-	</div>
-	-->
 
 	<div >
 		<?php echo $form->labelEx($model,'criterio_peor_consecuencia'); ?>

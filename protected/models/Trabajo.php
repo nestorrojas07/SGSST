@@ -365,7 +365,7 @@ class Trabajo extends CActiveRecord
 		{
 			$this->evaluacion_riesgo_nivel_deficiencia=2;
 		}
-		if($this->evaluacion_riesgo_nivel_deficiencia==2)
+		elseif($this->evaluacion_riesgo_nivel_deficiencia==2)
 		{
 			$this->evaluacion_riesgo_nivel_deficiencia=6;
 		}
