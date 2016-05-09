@@ -207,7 +207,9 @@ class VencimientosController extends Controller
 			Yii::app()->end();
 		}
 	}
-
+	/**
+		PErmite cambiar el estado del insumo que corresponde al id ingresado por parametro.
+	*/
 	public function actionEnabled($id)
 	{
 
@@ -224,7 +226,9 @@ class VencimientosController extends Controller
 		$model->save();
 		$this->redirect(array("index"));
 	}
-
+	/**
+		Retorna true si algun insumo se encuentra vencido, es decir, si su fecha de caducidad expiro.
+	*/
 	public function getVencidos()
 	{
 		$insumos= Vencimientos::model()->findAll();
@@ -238,8 +242,9 @@ class VencimientosController extends Controller
 		}
 		return false;
 	}
-
-
+	/**
+		Retorna el porcentaje de todos los insumos que se encuentran vencidos.
+	*/
 	public function getMetricaGeneral()
 	{
 		$insumos= Vencimientos::model()->findAll();

@@ -32,8 +32,6 @@ Usted puede ingresar operadores de comparación como (<b>&lt;</b>, <b>&lt;=</b>,
 or <b>=</b>)  en busquedas que incluyan caracteres numericos al comienzo de cada una de sus busquedas, seguido del valor a buscar. (<b>Ejemplo:</b> <b>&lt;2</b>)
 </p>
 
-
-
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'afiliaciones-grid',
 	'itemsCssClass'=>"table table-striped",

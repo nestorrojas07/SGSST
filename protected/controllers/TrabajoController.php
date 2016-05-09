@@ -243,7 +243,9 @@ class TrabajoController extends Controller
 			Yii::app()->end();
 		}
 	}
-
+	/**
+		Retorna la lista de todos los resigtros de la tabla trabajo.
+	*/
 	public function getListaMipecr()
 	{
 		return Trabajo::model()->findAll();

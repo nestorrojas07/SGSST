@@ -200,7 +200,9 @@ class HistoriaclinicaController extends Controller
 			Yii::app()->end();
 		}
 	}
-
+	/**
+		Retorna true si se debe realizar algun examen en la historia clinica del trabajador.
+	*/
 	public function getExamenRealizacionGeneral()
 	{
 		$historiasClinicas=Historiaclinica::model()->findAll();
@@ -217,7 +219,9 @@ class HistoriaclinicaController extends Controller
 		}
 		return false;
 	}
-
+	/**
+		Retorna true si se cumplio un año desde la realizacion del ultimo examen periodico.
+	*/
 	public function getExamenRealizacionEspecifico($id)
 	{
 		$historia=$this->loadModel($id);		
@@ -227,7 +231,9 @@ class HistoriaclinicaController extends Controller
 		}
 		return false;
 	}
-
+	/**
+		Retorna true si no existen examens de ingreso, indicando que se debe realizar uno.
+	*/
 	public function getExamenIngreso($id)
 	{
 		$historia=$this->loadModel($id);

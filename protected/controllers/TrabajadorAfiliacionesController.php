@@ -109,9 +109,9 @@ class TrabajadorAfiliacionesController extends Controller
 			'model'=>$model,
 		));
 	}
-
-	
-
+	/**
+		Permite eliminar de la tabla TrabajadorAfiliaciones la fila que corresponde al $id de la afiliacion y la $cedula del trabajador ingresados por parametro.
+	*/
 	public function actionDelete($id,$cedula)
 	{
 		$afiliacion=$this->loadModel($id,$cedula)->IdAfiliaciones;
@@ -129,8 +129,9 @@ class TrabajadorAfiliacionesController extends Controller
 			Yii::app()->user->setFlash("error","La afiliación no pudo ser removida");
 		}
 	}
-
-
+	/**
+		Permite verificar si existe en la tabla TrabajadorAfiliaciones la fila que corresponde al $id de la afiliacion y la $cedula del trabajador ingresados por parametro.
+	*/
 	public function existe($idAfiliacion,$cedula)
 	{
 		$afiliaciones=TrabajadorAfiliaciones::model()->findAll();

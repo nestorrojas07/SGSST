@@ -194,7 +194,9 @@ class CronogramaController extends Controller
 			Yii::app()->end();
 		}
 	}
-
+	/**
+		Permite cambiar el estado del modelo que corresponde al id ingresado por parametro.
+	*/
 	public function actionEnabled($id)
 	{
 		$model=Cronograma::model()->findByPk($id);
@@ -210,8 +212,9 @@ class CronogramaController extends Controller
 		$model->save();
 		$this->redirect(array("index"));
 	}
-
-
+	/**
+		Permite actualizar el valor de la variable, personas que asistieron, si el cronograma fue realizado y el numero no es mayor al numero de las personas programadas.
+	*/
 	public function actionUpdate2($id)
 	{
 		$model=$this->loadModel($id);
@@ -251,7 +254,9 @@ class CronogramaController extends Controller
 			'model'=>$model,
 		));
 	}
-
+	/**
+		Retorna el valor de la metrica que corresponde al porcentaje de cronogramas que aun no se han realizado.
+	*/
 	public function getMetricaGeneral()
 	{
 		$cronogramas= Cronograma::model()->findAll();
@@ -270,7 +275,9 @@ class CronogramaController extends Controller
 		return $metricaRealizacion=($cronogramasPendientes*100)/$numeroCronogramas;
 		
 	}
-
+	/**
+		Retorna true si existen cronogramas que deben realizarse, es decir que su fecha de realizacion ya paso y no han sido realizados.
+	*/
 	public function getVencidos()
 	{
 		$cronogramas= Cronograma::model()->findAll();

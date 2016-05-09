@@ -181,7 +181,9 @@ class Trabajo extends CActiveRecord
 	{
 		return parent::model($className);
 	}
-
+	/**
+		Retorna un valor String a la variable rutinaria dependiendo del indice ingresado en el drop down list	
+	*/
 	public function getCambiarRutinaria()
 	{
 		if($this->rutinaria==0)
@@ -193,7 +195,9 @@ class Trabajo extends CActiveRecord
 			return "si";
 		}
 	}
-
+	/**
+		Retorna un valor String a la variable requisito legal dependiendo del indice ingresado en el drop down list.
+	*/
 	public function getCambiarRequisitoLegal()
 	{
 		if($this->criterio_requisito_legal==0)
@@ -205,31 +209,44 @@ class Trabajo extends CActiveRecord
 			return "si";
 		}
 	}
-
+	/**
+		Retorna una lista con los valores predeterminados de la variable nivel de consecuencia que seran mostrados por el drop down list.
+	*/
 	public function getNivelConsecuencia()
 	{
 		return array("Seleccione un nivel de consecuencia","10","25","60","100");
 	}
-
+	/**
+		Retorna una lista con los valores predeterminados de la variable clasificacion del peligro que seran mostrados por el drop down list.
+	*/
 	public function getPeligroClasificacion()
 	{
 		return array("Seleccione una clasificacion","Biologicos","Fisicos","Quimicos","Psicosociales","Biomecanicos","Condiciones de seguridad","Fenomenos naturales");
 	}	
-
+	/**
+		Retorna una lista con los valores predeterminados de la variable nivele de deficiencia que seran mostrados por el drop down list.
+	*/
 	public function getNivelesDeficiencia()
 	{
 		return array("Seleccione un nivel de deficiencia","2","6","10");
 	}
-
+	/**
+		Retorna una lista con los valores predeterminados de la variable nivel de exposicion que seran mostrados por el drop down list.
+	*/
 	public function getNivelesExposicion()
 	{
 		return array("Seleccione un nivel de exposicion","1","2","3","4");
 	}
-
+	/**
+		Retorna una lista con los valores predeterminados de las variables que requieren la respuesta si o no que seran mostrados por el drop down list.
+	*/
 	public function getSiONo()
 	{
 		return array("Seleccione una opcion","si","no");
 	}
+	/**
+		Retorna falso si alguno de los campos en los drop down list son iguales a 0, es decir no se selecciono una opcion.
+	*/
 	public function verificarDatos()
 	{
 		if($this->criterio_requisito_legal==0 || $this->rutinaria==0 || $this->peligro_clasificacion==0 || $this->evaluacion_riesgo_nivel_consecuencia==0 || $this->evaluacion_riesgo_nivel_deficiencia==0 || $this->evaluacion_riesgo_nivel_exposicion==0)
@@ -241,7 +258,9 @@ class Trabajo extends CActiveRecord
 			return true;
 		}
 	}
-
+	/**
+		Permite calcular y asignar todos los valores de la categoria niveles de riesgo de acuerdo a los valores ingresados.
+	*/
 	public function calcularNivelesRiesgo()
 	{
 		$this->calcularNivelProbablidad();
@@ -251,12 +270,16 @@ class Trabajo extends CActiveRecord
 		$this->toStringNivelRiesgo();
 		$this->calcularValoracionRiesgo();		
 	}
-
+	/**
+		Permite calcular y asignar el valor de la variable nivel de probabilidad de acuerdo a los valores ingresados.
+	*/
 	public function calcularNivelProbablidad()
 	{
 		$this->evaluacion_riesgo_nivel_probabilidad=$this->evaluacion_riesgo_nivel_exposicion * $this->evaluacion_riesgo_nivel_deficiencia;
 	}
-
+	/**
+		Permite asignar la interpretacion del nivel de riesgo de acuerdo al valor del nivel de probabilidad.
+	*/
 	public function calcularInterpretacionNivelProbabilidad()
 	{
 		$nProbabilidad= $this->evaluacion_riesgo_nivel_probabilidad;
@@ -277,7 +300,9 @@ class Trabajo extends CActiveRecord
 			$this->evaluacion_riesgo_interpretacion_nivel_probabilidad="Muy alto";
 		}
 	}
-
+	/**
+		Retorna el valor del nivel del riesgo calculado por medio de nivel de consecuebncia y el nivel de probabilidad del riesgo.
+	*/
 	public function calcularNivelRiesgo()
 	{
 		$nConsecuencia=$this->evaluacion_riesgo_nivel_consecuencia;
@@ -285,7 +310,9 @@ class Trabajo extends CActiveRecord
 		return $nRiesgo=$nConsecuencia*$nProbabilidad;
 	
 	}
-
+	/**
+		Permite Asginar un nivel del riesgo entre 4 y 1 de acuerdo al valor obtenido en el nivel del riesgo.
+	*/
 	public function toStringNivelRiesgo()
 	{
 		$nRiesgo=$this->calcularNivelRiesgo();
@@ -307,7 +334,9 @@ class Trabajo extends CActiveRecord
 			$this->evaluacion_riesgo_nivel_riesgo_intervencion=1;
 		}	
 	}
-
+	/**
+		Permite asignar una interpretacion del nivel del riesgo deacuerdo al valor obtenido en el nivel de riesgo.
+	*/
 	public function calularEvaluacionInterpretacionNivelRiesgo()
 	{
 		$nRiesgo=$this->calcularNivelRiesgo();
@@ -328,7 +357,9 @@ class Trabajo extends CActiveRecord
 			$this->evaluacion_riesgo_interpretacion_nivel_riesgo="SITUACION CRITICA. SUSPENDER ACTIVIDAD HASTA QUE EL RIESGO ESTE BAJO CONTROL. INTERVENCION URGENTE";
 		}
 	}
-
+	/**
+		Permite asignar una valoracion del riesgo de acuerdo al valor obtenido ene l nivel del riesgo.
+	*/
 	public function calcularValoracionRiesgo()
 	{
 		$nRiesgo=$this->evaluacion_riesgo_nivel_riesgo_intervencion;
@@ -350,15 +381,18 @@ class Trabajo extends CActiveRecord
 			$this->valoracion_riesgo="ACEPTABLE";
 		}
 	}
-
-
+	/**
+		Permite asiganar los valores de las variables nivel de consecuencia, nivel de deficiencia y clasificacion del peligro de acuerdo a al indece respectivo ingresado por el drop down list.
+	*/
 	public function asignarDatos()
 	{
 		$this->asignarNivelConsecuencia();
 		$this->asignarClasificacionPeligro();
 		$this->asignarNivelDeficiencia();		
 	}
-	
+	/**
+		Permite asignar el valor a la variable nivel de deficiencia de acuerdo al indice ingresado en el drop down list.
+	*/	
 	public function asignarNivelDeficiencia()
 	{
 		if($this->evaluacion_riesgo_nivel_deficiencia==1)
@@ -374,7 +408,9 @@ class Trabajo extends CActiveRecord
 			$this->evaluacion_riesgo_nivel_deficiencia=10;
 		}
 	}
-
+	/**
+		Permite asignar el valor a la variable nivel de consecuencia de acuerdo al indice ingresado en el drop down list.
+	*/	
 	public function asignarNivelConsecuencia()
 	{
 		if($this->evaluacion_riesgo_nivel_consecuencia==1)
@@ -394,7 +430,9 @@ class Trabajo extends CActiveRecord
 			$this->evaluacion_riesgo_nivel_consecuencia=100;
 		}
 	}
-
+	/**
+		Permite asignar el valor a la variable clasificacion del peligro de acuerdo al indice ingresado en el drop down list.
+	*/	
 	public function asignarClasificacionPeligro()
 	{
 		if($this->peligro_clasificacion==1)

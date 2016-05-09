@@ -102,17 +102,24 @@ class Afiliaciones extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+	/**
+	*Retorna toda la lista de trabajadores para ser usada por el DropDwonList 
+	*/
 
 	public function getMenuTrabajadores()
 	{
 		return CHtml::listData(Trabajador::model()->findAll(),"Cedula","Cedula");
 	}
-
+	/**
+	*Retorna toda la lista de afiliaciones para ser usada por el DropDwonList 
+	*/
 	public function getMenuAfiliacion()
 	{
 		return CHtml::listData(Afiliaciones::model()->findAll(),"Id","Descripcion");
 	}
-
+	/**
+	*Metodo de prueba implementado para verificar el funcionamiento de los llamados en el controlador. Es irrelevante para el proyecto.
+	*/
 	public function getUno($prueba)
 	{
 		return $prueba;

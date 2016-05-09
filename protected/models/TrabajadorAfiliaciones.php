@@ -92,16 +92,23 @@ class TrabajadorAfiliaciones extends CActiveRecord
 	{
 		return parent::model($className);
 	}
-
+	/**
+		Retorna la lista de trabajadores para ser usada en el drop down list.
+	*/
 	public function getMenuTrabajadores()
 	{
 		return CHtml::listData(Trabajador::model()->findAll(),"Cedula","Cedula");
 	}
-
+	/**
+		Retorna la lista de afiliaciones para ser usada en el drop dwon list.
+	*/
 	public function getMenuAfiliacion()
 	{
 		return CHtml::listData(Afiliaciones::model()->findAll(),"Id","Descripcion");
 	}
+	/**
+		Retorna la descripcion de la afiliacion realcionada al presente modelo.
+	*/
 	public function getNombreAfiliacion()
 	{
 		$afiliacion= Afiliaciones::model()->findByPk($this->IdAfiliaciones);

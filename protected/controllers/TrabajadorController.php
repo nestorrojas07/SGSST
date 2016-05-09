@@ -193,7 +193,9 @@ class TrabajadorController extends Controller
 			Yii::app()->end();
 		}
 	}
-
+	/**
+		Permite verificar si existen mensajes sobre los examenes pendientes del trabajador.
+	*/
 	public function tieneExamenes($cedula)
 	{
 		$trabajador=$this->loadModel($cedula);

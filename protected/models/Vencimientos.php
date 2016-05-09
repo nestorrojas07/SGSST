@@ -110,7 +110,9 @@ class Vencimientos extends CActiveRecord
 	{
 		return parent::model($className);
 	}
-
+	/**
+		Retorna el nombre del trabajador que corresponde al id ingresado por parametro.
+	*/
 	public function getNombreTrabajador($id)
 	{
 		$modelo=Trabajador::model()->findByPk($id);
@@ -119,19 +121,25 @@ class Vencimientos extends CActiveRecord
 			return $modelo->Nombre;
 		}
 	}
-
+	/**
+		Retorna la lista de trabajadores para ser utilizada por el drop down list.
+	*/
 	public function getMenuTrabajadores()
 	{
 		return CHtml::listData(Trabajador::model()->findAll(),"Cedula","Nombre");
 	}
-
+	/**
+		Permite cambiar el valor del estado ingresado por parametro del modelo ingresado por parametro.
+	*/
 	public function cambiarEstado($id,$state)
 	{
 		$model=Vencimientos::model()->findByPk($id);
 		$model->estado=$state;
 		$model->save();
 	}
-
+	/**
+		Retorna true si la fecha actual es mayor a la fecha de vencimiento del insumo.
+	*/
 	public function getVencido()
 	{
 		$date1=date('Y-m-d');

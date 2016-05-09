@@ -2,7 +2,7 @@
 /* @var $this AfiliacionesController */
 /* @var $data Afiliaciones */
 ?>
-
+<!-- Vista de la afiliaciones -->
 <div class="view">
 
 	<div class="view">
@@ -21,4 +21,4 @@
 		</div>
 	</div>
 
-</div>
+</div><!-- Vista de la afiliaciones -->

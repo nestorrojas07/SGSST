@@ -105,6 +105,9 @@ class Cronograma extends CActiveRecord
 		return parent::model($className);
 	}
 
+	/**
+	* Retorna la metrica que equivale al porcentaje de las personas invitadas que asistieron a la realizacion del cronograma.
+	*/
 	public function getMetrica()
 	{
 		$metrica=0; 
@@ -119,7 +122,9 @@ class Cronograma extends CActiveRecord
 		return $metrica;
 
 	}
-	
+	/**
+	Retorna true si la fecha actual es mayor a la fecha de realizacion del cronograma, y de esta forma, saber si el cronograma esta vencido y debe realizarse.
+	*/
 	public function getVencido()
 	{
 		$date1=date('Y-m-d');

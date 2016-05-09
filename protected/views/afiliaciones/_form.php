@@ -3,7 +3,7 @@
 /* @var $model Afiliaciones */
 /* @var $form CActiveForm */
 ?>
-
+<!-- Inicio del form-->
 <div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(

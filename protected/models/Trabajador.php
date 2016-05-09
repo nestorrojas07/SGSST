@@ -1,4 +1,4 @@
-<?php
+´+ñ<?php
 
 /**
  * This is the model class for table "trabajador".
@@ -133,17 +133,23 @@ class Trabajador extends CActiveRecord
 	{
 		return parent::model($className);
 	}
-
+	/**
+		Retorna la lista de trabajos para ser usada en el drop down list.
+	*/
 	public function getMenuTrabajo()
 	{
 		return CHtml::listData(Trabajo::Model()->findAll(),"Id","tarea");
 	}	
-
+	/**
+		Retorna la lista de brigadas para ser usada en el drop down list.
+	*/
 	public function getMenuBrigada()
 	{
 		return CHtml::listData(Brigada::Model()->findAll(),"IdBrigada","Funcion");
 	}
-
+	/**
+		Retorna la funcion de la brigada que corresponde al id ingresado por parametro.
+	*/
 	public function getFuncionBrigada($id)
 	{
 		$modelo=Brigada::model()->findByPk($id);
@@ -152,6 +158,9 @@ class Trabajador extends CActiveRecord
 			return $modelo->Funcion;
 		}
 	}
+	/**
+		Retorna la tarea del trabajo que corresponde al id ingresado por parametro.
+	*/
 	public function getTareaTrabajo($id)
 	{
 		$modelo=Trabajo::model()->findByPk($id);
@@ -160,10 +169,16 @@ class Trabajador extends CActiveRecord
 			return $modelo->tarea;
 		}
 	}
+	/**
+		Retorna la lista de afiliaciones para ser usadas por el drop down list.
+	*/
 	public function getMenuAfiliaciones()
 	{
 		return CHtml::listData(Afiliaciones::model()->findAll(),"Id","Descripcion");
 	}	
+	/**
+		Permite enviar un mensaje dependiendo de si existe o no un examen de ingreso y si se debe realiza un examen periodico anual.	
+	*/
 	public function getMensaje()
 	{
 		foreach ($this->historiaclinicas as $historia)

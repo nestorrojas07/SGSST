@@ -103,11 +103,16 @@ class Historiaclinica extends CActiveRecord
 	{
 		return parent::model($className);
 	}
-
+	/**
+		Retorna la lista de trabajadores para ser usada en el Drop down list.
+	*/
 	public function getMenuTrabajadores()
 	{
 		return CHtml::listData(Trabajador::model()->findAll(),"Cedula","Nombre");
 	}
+	/**
+		Retorn ael nombre del trabajador al que pertenece la historia clinica por medio del id, que corresponde a su cedula.
+	*/
 	public function getNombreTrabajador($id)
 	{
 		$modelo=Trabajador::model()->findByPk($id);
@@ -116,13 +121,16 @@ class Historiaclinica extends CActiveRecord
 			return $modelo->Nombre;
 		}
 	}
-
-	
+	/**
+		Retorna la concatenación de la cedula del trabajador al cual pertenece la historia clinica y la descripcion de la misma.
+	*/
 	public function getConcatened()
 	{
 		return $this->Cedula_trabajador.' - '.$this->Descripcion;
 	}
-	
+	/**
+		Retorna el examen de ingreso dentro de la lista de examenes realizados al trabajador.
+	*/
 	public function getExamenIngreso()
 	{
 		foreach ($this->examenes as $examen) 
@@ -134,7 +142,9 @@ class Historiaclinica extends CActiveRecord
 		}
 		return null;
 	}
-
+	/**
+	Retorna true si no se ha cumplido el año de realización del ultimo examen periodico.
+	*/
 	public function getExamenPeriodico()
 	{
 		$ultimoExamen=null;
@@ -164,6 +174,10 @@ class Historiaclinica extends CActiveRecord
 		return false;
 	}
 
+	/**
+		Retorna true si existen examenes periodicos dentro de la lista de examens realizados al trabajador.
+	*/
+
 	public function getExistenPeriodicos()
 	{
 		foreach ($this->examenes as $examen)
@@ -175,7 +189,9 @@ class Historiaclinica extends CActiveRecord
 		}
 		return false;
 	}
-
+	/**
+		Retorna true si la fecha $date2  es mayor a la fecha $date1
+	*/
 	public function getEsMayor($date1,$date2)
 	{
 		

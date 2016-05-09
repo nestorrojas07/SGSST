@@ -1,13 +1,14 @@
 <?php
 
 class SiteTest extends CWebDriverTestCase
-{
+{	
+	// Prueba de carga del index.
 	public function testIndex()
 	{
 		$this->open('');
 		$this->assertTextPresent('Welcome');
 	}
-
+	//Prueba de carga del contact form.
 	public function testContact()
 	{
 		$this->open('?r=site/contact');
@@ -20,7 +21,7 @@ class SiteTest extends CWebDriverTestCase
 		$this->click("//input[@value='Submit']");
 		$this->waitForTextPresent('Body cannot be blank.');
 	}
-
+	//Prueba de carga del formulario loggin loggout.
 	public function testLoginLogout()
 	{
 		$this->open('');

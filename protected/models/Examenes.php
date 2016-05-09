@@ -110,12 +110,16 @@ class Examenes extends CActiveRecord
 	{
 		return parent::model($className);
 	}
-
+	/**
+	*Retorna toda la lista de historias clinicas para ser usada por el DropDwonList 
+	*/
 	public function getMenuHistoriaClinica()
 	{
 		return CHtml::listData(Historiaclinica::Model()->findAll(),"Id","concatened");
 	}
-
+	/**
+		Retorna el nombre de la historia clinica  a la cual pertenece el examen con el parametro ingresado, el cual corresponde a su Id en la BD.
+	*/
 	public function getNombreHistoriaClinica($id)
 	{
 		$modelo=Historiaclinica::model()->findByPk($id);
@@ -124,6 +128,9 @@ class Examenes extends CActiveRecord
 			return $modelo->Descripcion;
 		}
 	}
+	/**
+		Retorna la Cedula del trabajador al cual pertece dicho examen con el id de la historia clinica ingresado como parametro.
+	*/
 	public function getCedulaTrabajador($id)
 	{
 		$modelo=Historiaclinica::model()->findByPk($id);
@@ -132,6 +139,9 @@ class Examenes extends CActiveRecord
 			return $modelo->Cedula_trabajador;
 		}
 	}
+	/**
+		Retorna el nombre del trabajador al cual pertece dicho examen con el id de la historia clinica ingresado como parametro.
+	*/
 	public function getNombreTrabajador($id)
 	{
 		$modelo=Trabajador::model()->findByPk($id);
@@ -140,13 +150,17 @@ class Examenes extends CActiveRecord
 			return $modelo->Nombre;
 		}
 	}
-
+	/**
+		Retorna un arreglo con los valores predeterminados de la variable Tipo de examen, que seran usados por el DropDownList.
+	*/
 	public function getMenuTipos()
 	{
 		return array("Seleccione un tipo de examen","Examen de ingreso","Examen periodico","Examen de egreso");
 	}
 	
-	
+	/**
+		Retorna true si la fecha actual, menos un año, es mayor a la fecha de realizacion del presente examen.
+	*/
 	public function getFechaRealizacion()
 	{
 		$fecha = date('Y-m-d');
@@ -159,7 +173,9 @@ class Examenes extends CActiveRecord
 		}
 		return false;
 	}
-	
+	/**
+		Retorna true si la fecha $date2 es mayor a la fecha $date1
+	*/
 	public function getEsMayor($date2,$date1)
 	{
 		
@@ -169,7 +185,9 @@ class Examenes extends CActiveRecord
 		}
 		return false;
 	}
-
+	/**
+		REtorna verdadero si el valor del tipo de examen es diferentes de 0, es decir, si se selecciona un opción diferente a ala incial en el Drop Down List.
+	*/
 	public function validarDatos()
 	{
 		if($this->Tipo==0)
@@ -178,7 +196,9 @@ class Examenes extends CActiveRecord
 		}
 		return true;
 	}
-
+	/**
+		Metodo que permite asignar los datos a la variable tipo de examen segun el indice ingresado en el Drop down list.
+	*/
 	public function asignarDatos()
 	{
 		if($this->Tipo==1)

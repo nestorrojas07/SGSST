@@ -3,7 +3,7 @@
 /* @var $model Afiliaciones */
 /* @var $form CActiveForm */
 ?>
-
+<!-- search-form -->
 <div class="wide form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
