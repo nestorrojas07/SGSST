@@ -9,13 +9,13 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'Lista de Afiliaciones', 'url'=>array('index')),
-	array('label'=>'Actualizar Afiliación', 'url'=>array('update', 'id'=>$model->Id)),
-	array('label'=>'Eliminar Afiliación', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->Id),'confirm'=>'Seguro que desea eliminar esta efiliación?')),
+	array('label'=>'Actualizar Afiliacion', 'url'=>array('update', 'id'=>$model->Id)),
+	array('label'=>'Eliminar Afiliacion', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->Id),'confirm'=>'Seguro que desea eliminar esta efiliación?')),
 	
 );
 ?>
 
-<h1><font color="#336699">Afiliación: </font><font color="black"><?php echo $model->Descripcion; ?></font></h1>
+<h1><font color="#336699">Afiliacion: </font><font color="black"><?php echo $model->Descripcion; ?></font></h1>
 
 <table class="table table-bordered table-striped">
 	<tr>
@@ -28,7 +28,7 @@ $this->menu=array(
 		
 	</tr>
 	<tr>
-		<td><strong><font color="#336699">Descripción</font></strong></td>
+		<td><strong><font color="#336699">Descripcion</font></strong></td>
 		<td><?php echo $model->Descripcion ?></td>
 	</tr>
 </table>

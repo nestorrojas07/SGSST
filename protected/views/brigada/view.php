@@ -22,7 +22,7 @@ $this->menu=array(
 		<td><?php echo $model->IdBrigada ?></td>		
 	</tr>
 	<tr>
-		<td><strong><font color="#336699">Función</font></strong></td>
+		<td><strong><font color="#336699">Funcion</font></strong></td>
 		<td><?php echo $model->Funcion ?></td>
 		
 	</tr>

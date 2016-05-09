@@ -14177,3 +14177,32 @@ Stack trace:
 REQUEST_URI=/yii/SGSST/index.php?r=examenes/create
 HTTP_REFERER=http://localhost/yii/SGSST/index.php?r=historiaclinica/view&id=1
 ---
+2016/05/09 18:21:25 [error] [php] Invalid argument supplied for foreach() (C:\xampp\htdocs\yii\framework\db\CDbConnection.php:472)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbConnection.php(325): CDbConnection->setActive()
+#1 C:\xampp\htdocs\yii\framework\base\CModule.php(394): CDbConnection->init()
+#2 C:\xampp\htdocs\yii\framework\base\CApplication.php(459): CWebApplication->getComponent()
+#3 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(637): CWebApplication->getDb()
+#4 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1433): Trabajador->getDbConnection()
+#5 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1489): Trabajador->getTableAlias()
+#6 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorController.php(172): Trabajador->findByPk()
+#7 C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorController.php(51): TrabajadorController->loadModel()
+#8 unknown(0): TrabajadorController->actionView()
+#9 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#10 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): TrabajadorController->runAction()
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#15 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): TrabajadorController->filterAccessControl()
+#16 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(265): TrabajadorController->runActionWithFilters()
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): TrabajadorController->run()
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\yii\SGSST\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/SGSST/index.php?r=trabajador/view&id=1254698
+in C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorController.php (172)
+in C:\xampp\htdocs\yii\SGSST\protected\controllers\TrabajadorController.php (51)
+in C:\xampp\htdocs\yii\SGSST\index.php (13)

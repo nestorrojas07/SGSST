@@ -9,7 +9,7 @@
 			<b><strong><font color="#336699"><?php echo CHtml::encode($data->getAttributeLabel('Afiliacion')); ?>:</font></strong></b>
 			<small><?php echo CHtml::link(CHtml::encode($data->getNombreAfiliacion()),array('afiliaciones/view', 'id'=>$data->IdAfiliaciones)); ?></small>
 			<br>
-			<?php  echo CHtml::linkButton('Remover afiliación',array(
+			<?php  echo CHtml::linkButton('Remover afiliacion',array(
             	'href'=>Yii::app()->createUrl('trabajadorAfiliaciones/delete',array(
                 'id'=>$data->IdAfiliaciones, 
                 'cedula'=>$data->Cedula)

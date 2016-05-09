@@ -27,11 +27,11 @@ $this->menu=array(
 		
 	</tr>
 	<tr>
-		<td><strong><font color="#336699">Descripción</font></strong></td>
+		<td><strong><font color="#336699">Descripcion</font></strong></td>
 		<td><?php echo $model->Descripcion ?></td>
 	</tr>
 	<tr>
-		<td><strong><font color="#336699">Diagnóstico</font></strong></td>
+		<td><strong><font color="#336699">Diagnostico</font></strong></td>
 		<td><?php echo $model->Diagnostico ?></td>
 	</tr>
 	<tr>

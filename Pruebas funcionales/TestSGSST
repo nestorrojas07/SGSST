@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Test Suite</title>
+</head>
+<body>
+<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
+<tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="../Documents/DOCUMENTOS UNIVERSIDAD/SEMESTRE XII/Ingeniería de software III/SGSST/Pruebas funcionales/TestAfiliacionCRUD.html">TestAfiliacionCRUD</a></td></tr>
+<tr><td><a href="../Documents/DOCUMENTOS UNIVERSIDAD/SEMESTRE XII/Ingeniería de software III/SGSST/Pruebas funcionales/TestBrigadaCRUD.html">TestBrigadaCRUD</a></td></tr>
+<tr><td><a href="../Documents/DOCUMENTOS UNIVERSIDAD/SEMESTRE XII/Ingeniería de software III/SGSST/Pruebas funcionales/TestCronogramaCRUD.html">TestCronogramaCRUD</a></td></tr>
+<tr><td><a href="../Documents/DOCUMENTOS UNIVERSIDAD/SEMESTRE XII/Ingeniería de software III/SGSST/Pruebas funcionales/TestCronogramaRegistroDePersonasYMetricas.html">TestCronogramaRegistroDePersonasYMetricas</a></td></tr>
+<tr><td><a href="../Documents/DOCUMENTOS UNIVERSIDAD/SEMESTRE XII/Ingeniería de software III/SGSST/Pruebas funcionales/TestExamenesCRUDyComparacion.html">TestExamenesCRUDyComparacion</a></td></tr>
+<tr><td><a href="../Documents/DOCUMENTOS UNIVERSIDAD/SEMESTRE XII/Ingeniería de software III/SGSST/Pruebas funcionales/TestHistoriaClinicaCRUD.html">TestHistoriaClinicaCRUD</a></td></tr>
+<tr><td><a href="../Documents/DOCUMENTOS UNIVERSIDAD/SEMESTRE XII/Ingeniería de software III/SGSST/Pruebas funcionales/TestInsumosCRUD.html">TestInsumosCRUD</a></td></tr>
+<tr><td><a href="../Documents/DOCUMENTOS UNIVERSIDAD/SEMESTRE XII/Ingeniería de software III/SGSST/Pruebas funcionales/TestMipecrCRUD.html">TestMipecrCRUD</a></td></tr>
+<tr><td><a href="../Documents/DOCUMENTOS UNIVERSIDAD/SEMESTRE XII/Ingeniería de software III/SGSST/Pruebas funcionales/TestRealizarAfiliacion.html">TestRealizarAfiliacion</a></td></tr>
+<tr><td><a href="../Documents/DOCUMENTOS UNIVERSIDAD/SEMESTRE XII/Ingeniería de software III/SGSST/Pruebas funcionales/TestTrabajadorCRUD.html">TestTrabajadorCRUD</a></td></tr>
+</tbody></table>
+</body>
+</html>

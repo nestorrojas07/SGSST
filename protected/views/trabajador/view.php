@@ -82,7 +82,7 @@ $this->menu=array(
 	
 </table>	
 
-<h2><font color="#336699">Lista de historias clínicas</font></h2>
+<h2><font color="#336699">Lista de historias clinicas</font></h2>
 
 <?php echo CHtml::submitButton('Crear historia clinica', array('submit'=>array('historiaclinica/create'),"class"=>"btn btn-inverse btn-medium")); ?>
 <br> 
@@ -91,7 +91,7 @@ $this->menu=array(
 <table class="table table-bordered table-striped">
 	
 	<tr>
-		<td><strong><font color="#336699">Descripción</font></strong></td>
+		<td><strong><font color="#336699">Descripcion</font></strong></td>
 	</tr>
 	<?php foreach ($model->historiaclinicas as $historiaClinica)	: ?>
 

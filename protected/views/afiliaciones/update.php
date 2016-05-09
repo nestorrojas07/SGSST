@@ -14,6 +14,6 @@ $this->menu=array(
 );
 ?>
 
-<h1><font color="#336699">Actualizar afiliación: </font><font color="black"> <?php echo $model->Descripcion; ?></font></h1>
+<h1><font color="#336699">Actualizar afiliacion: </font><font color="black"> <?php echo $model->Descripcion; ?></font></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

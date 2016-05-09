@@ -5,7 +5,7 @@
     <title><?php echo $this->pageTitle;?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content=""> 
 
     <!-- Le styles -->
     <link href="<?php echo Yii::app()->theme->baseUrl?>/css/bootstrap.min.css" rel="stylesheet">

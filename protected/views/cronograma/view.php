@@ -39,7 +39,7 @@ if(strtotime($date1)>=strtotime($date2)&&$model->estado==0)
 		<td><?php echo $model->id ?></td>		
 	</tr>
 	<tr>
-		<td><strong><font color="#336699">Descripción</font></strong></td>
+		<td><strong><font color="#336699">Descripcion</font></strong></td>
 		<td><?php echo $model->Descripcion ?></td>
 		
 	</tr>

@@ -24,7 +24,7 @@ $this->menu=array(
 	<tr>
 		<td> <strong><font color="#336699">Tipo</font></strong></td>
 		<td><strong><font color="#336699">Fecha</font></strong></td>
-		<td><strong><font color="#336699">Descripción</font></strong></td>
+		<td><strong><font color="#336699">Descripcion</font></strong></td>
 		<td><strong><font color="#336699">Diagnostico</font></strong></td>
 	</tr>
 	<?php foreach ($model->examenes as $examen)	: ?>
@@ -47,7 +47,7 @@ $this->menu=array(
 	<tr>
 		<td> <strong><font color="#336699">Tipo</font></strong></td>
 		<td><strong><font color="#336699">Fecha</font></strong></td>
-		<td><strong><font color="#336699">Descripción</font></strong></td>
+		<td><strong><font color="#336699">Descripcion</font></strong></td>
 		<td><strong><font color="#336699">Diagnostico</font></strong></td>
 	</tr>
 	<?php foreach ($model->examenes as $examen)	: ?>

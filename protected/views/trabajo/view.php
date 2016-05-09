@@ -20,7 +20,7 @@ $this->menu=array(
 
 <?php echo CHtml::submitButton('Peligro', array('submit'=>array('trabajo/peligro&id='.$model->Id),"class"=>"btn btn-inverse btn-medium")); ?> 
 <?php echo CHtml::submitButton('Controles existentes', array('submit'=>array('trabajo/controlesExistentes&id='.$model->Id),"class"=>"btn btn-inverse btn-medium")); ?> 
-<?php echo CHtml::submitButton('Evaluación del riesgo', array('submit'=>array('trabajo/evaluacionRiesgo&id='.$model->Id),"class"=>"btn btn-inverse btn-medium")); ?> 
+<?php echo CHtml::submitButton('Evaluacion del riesgo', array('submit'=>array('trabajo/evaluacionRiesgo&id='.$model->Id),"class"=>"btn btn-inverse btn-medium")); ?> 
 <?php echo CHtml::submitButton('Criterios para establecer controles', array('submit'=>array('trabajo/criteriosControles&id='.$model->Id),"class"=>"btn btn-inverse btn-medium")); ?> 
 <?php echo CHtml::submitButton('Medidas de intervencion', array('submit'=>array('trabajo/medidasIntervencion&id='.$model->Id),"class"=>"btn btn-inverse btn-medium")); ?> 
 <br>
