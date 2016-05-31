@@ -67,6 +67,7 @@ class Trabajo extends CActiveRecord
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('Id, proceso, zona, actividad, tarea, rutinaria, peligro_descripcion, peligro_clasificacion, peligro__efectosPosibles, control_existente_fuente, control_existente_medio, control_existente_persona, evaluacion_riesgo_nivel_deficiencia, evaluacion_riesgo_nivel_exposicion, evaluacion_riesgo_nivel_probabilidad, evaluacion_riesgo_interpretacion_nivel_probabilidad, evaluacion_riesgo_nivel_consecuencia, evaluacion_riesgo_nivel_riesgo_intervencion, evaluacion_riesgo_interpretacion_nivel_riesgo, valoracion_riesgo, criterio_numero_expuestos, criterio_peor_consecuencia, criterio_requisito_legal, intervencion_eliminacion, intervencion_sustituacion, intervencion_control_ingenieria, intervencion_control_administrativo, intervencion_elementos_proteccion_personal', 'safe', 'on'=>'search'),
+			array('proceso, zona, actividad, tarea, rutinaria, peligro_descripcion, peligro_clasificacion, peligro__efectosPosibles, control_existente_fuente, control_existente_medio, control_existente_persona,criterio_peor_consecuencia,intervencion_eliminacion, intervencion_sustituacion, intervencion_control_ingenieria, intervencion_control_administrativo, intervencion_elementos_proteccion_personal', 'match', 'pattern'=>'/^[¿!¡;,:\.\?#@()"\p{L}\p{N}\s_]+$/u', 'message'=>Yii::t('app','Special characters are not valid')),
 		);
 	}
 

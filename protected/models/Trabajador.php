@@ -51,6 +51,8 @@ class Trabajador extends CActiveRecord
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('Cedula, Nombre, Telefono, Foto_Link, Correo, Titulo_academico, experiencia, ausencias, IdBrigada, IdTrabajo', 'safe', 'on'=>'search'),
+			array('Cedula, Telefono, ausencias', 'numerical', 'integerOnly'=>true),
+			array('Nombre, Titulo_academico, experiencia', 'match', 'pattern'=>'/^[¿!¡;,:\.\?#@()"\p{L}\p{N}\s_]+$/u', 'message'=>Yii::t('app','Special characters are not valid')),
 		);
 	}
 

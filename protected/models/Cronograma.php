@@ -35,6 +35,8 @@ class Cronograma extends CActiveRecord
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, Descripcion, Fecha, estado, PersonasProgramadas, PersonasAsistieron', 'safe', 'on'=>'search'),
+			
+			array('Descripcion', 'match', 'pattern'=>'/^[¿!¡;,:\.\?#@()"\p{L}\p{N}\s_]+$/u', 'message'=>Yii::t('app','Special characters are not valid')),
 		);
 	}
 

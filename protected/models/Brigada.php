@@ -35,6 +35,7 @@ class Brigada extends CActiveRecord
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('IdBrigada, Funcion, Descripcion_funcion', 'safe', 'on'=>'search'),
+			array('Funcion, Descripcion_funcion', 'match', 'pattern'=>'/^[¿!¡;,:\.\?#@()"\p{L}\p{N}\s_]+$/u', 'message'=>Yii::t('app','Special characters are not valid')),
 		);
 	}
 

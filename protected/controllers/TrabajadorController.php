@@ -65,14 +65,18 @@ class TrabajadorController extends Controller
 		if(isset($_POST['Trabajador']))
 		{
 			$model->attributes=$_POST['Trabajador'];
-			if($model->save())
+			if($this->existe($model))
+			{
+				Yii::app()->user->setFlash("error","Ya existe un trabajador con la cedula ".$model->Cedula);
+			}
+			elseif($model->save())
 			{
 				Yii::app()->user->setFlash("success","El trabajador se creó exitosamente");
 				$this->redirect(array('view','id'=>$model->Cedula));
 			}
 			else
 			{
-				Yii::app()->user->setFlash("success","El trabajador no se creó exitosamente");
+				Yii::app()->user->setFlash("error","El trabajador no se creó exitosamente");
 			}
 		}
 
@@ -196,5 +200,20 @@ class TrabajadorController extends Controller
 	{
 		$trabajador=$this->loadModel($cedula);
 		$trabajador->getMensaje();
+	}
+	/**
+		Permite verificar por medio de la Cedula si el trabajador a crear ya existe como registro en la base de datos.
+	*/
+	public function existe($modelo)
+	{
+		$trabajadores= Trabajador::model()->findAll();
+		foreach ($trabajadores as $trabajador)
+		{
+			if($trabajador->Cedula == $modelo->Cedula)
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 }

@@ -40,6 +40,7 @@ class Vencimientos extends CActiveRecord
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, Nombre, fecha_Vencimiento, Instrucciones, estado, Cedula_Trabajador', 'safe', 'on'=>'search'),
+			array('Nombre, Instrucciones', 'match', 'pattern'=>'/^[¿!¡;,:\.\?#@()"\p{L}\p{N}\s_]+$/u', 'message'=>Yii::t('app','Special characters are not valid')),
 		);
 	}
 

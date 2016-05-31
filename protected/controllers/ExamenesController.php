@@ -71,11 +71,11 @@ class ExamenesController extends Controller
 			$model->attributes=$_POST['Examenes'];
 			if(!$model->validarDatos())
 			{
-				Yii::app()->user->setFlash("error","Debe elegir un tipo de examen");
+				Yii::app()->user->setFlash("error","Debe elegir un tipo de examen y una historia clinica");
 			}
 			else
 			{
-				$model->asignarDatos();				
+				$model->asignarDatos();			
 				if($model->save())
 				{
 					Yii::app()->user->setFlash("success","El examen se creó exitosamente");

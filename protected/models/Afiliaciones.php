@@ -37,6 +37,7 @@ class Afiliaciones extends CActiveRecord
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('Id, Nombre, Descripcion, Fecha', 'safe', 'on'=>'search'),
+			array('Nombre, Descripcion', 'match', 'pattern'=>'/^[¿!¡;,:\.\?#@()"\p{L}\p{N}\s_]+$/u', 'message'=>Yii::t('app','Special characters are not valid')),
 		);
 	}
 

@@ -40,6 +40,7 @@ class Examenes extends CActiveRecord
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, Tipo, Fecha, Descripcion, Diagnostico, IdHistoriaClinica', 'safe', 'on'=>'search'),
+			array('Descripcion, Diagnostico', 'match', 'pattern'=>'/^[¿!¡;,:\.\?#@()"\p{L}\p{N}\s_]+$/u', 'message'=>Yii::t('app','Special characters are not valid')),
 		);
 	}
 
@@ -190,7 +191,7 @@ class Examenes extends CActiveRecord
 	*/
 	public function validarDatos()
 	{
-		if($this->Tipo==0)
+		if($this->Tipo==0 || $this->IdHistoriaClinica==0)
 		{
 			return false;
 		}
