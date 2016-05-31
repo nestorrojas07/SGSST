@@ -18,9 +18,7 @@ class UserIdentity extends CUserIdentity
 	public function authenticate()
 	{
 		$users=array(
-			// username => password
-			'demo'=>'demo',
-			'admin'=>'admin',
+			// username => password			
 			'SGSST'=>'ISIII',
 		);
 		if(!isset($users[$this->username]))
